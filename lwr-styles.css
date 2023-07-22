@@ -68,6 +68,22 @@ a:active {
         rgba(255,255,255,0.7),
         rgba(255,255,255,0.3)
     );
+    --mobile-nav-color: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255, 0.7),
+        rgba(255,255,255, 0.5)
+    );
+    --mobile-infocard-color: rgba(255,255,255, 0.6);
+    --mobile-button-color: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255, 0.6),
+        rgba(255,255,255, 0.5)
+    );
+    --mobile-button-hvr-color: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255, 0.7),
+        rgba(255,255,255, 0.6)
+    );
 }
 .dark-theme {
     --primary-color: rgb(0,0,0);
@@ -101,6 +117,22 @@ a:active {
     --infocard-color: linear-gradient(
         to right bottom, 
         rgba(0,0,0, 0.7),
+        rgba(0,0,0, 0.5)
+    );
+    --mobile-nav-color: linear-gradient(
+        to right bottom, 
+        rgba(0,0,0, 0.7),
+        rgba(0,0,0, 0.5)
+    );
+    --mobile-infocard-color: rgba(0,0,0, 0.6);
+    --mobile-button-color: linear-gradient(
+        to right bottom, 
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.4)
+    );
+    --mobile-button-hvr-color: linear-gradient(
+        to right bottom, 
+        rgba(0,0,0, 0.6),
         rgba(0,0,0, 0.5)
     );
 }
@@ -254,7 +286,6 @@ html {
     margin-right: 2rem;
 }
 #active-nav {
-    /* color: #EF4765; */
     color: var(--accent-color);
 }
 
@@ -1031,11 +1062,21 @@ html {
 @media (max-width: 500px) {
 
     /* "ALL": MOBILE */
+    .dynamic-window {
+        background: none;
+        border-radius: 0rem;
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        right: 0; 
+    }
     .title-card-left h1 { /*for non index title cards*/
         font-size: 2.25rem;
     }
     .info-card {
+        background: var(--mobile-infocard-color);
         margin: 0.5rem 0rem;
+        width: 75%;
     }
     .info-card h1 {
         /* margin: 0rem 0rem 1.5rem 0rem; */
@@ -1048,9 +1089,31 @@ html {
 
 
 
+    /* "NAV": MOBILE */
+    .nav-menu {
+        background: var(--mobile-nav-color);
+        border-radius: 2rem 2rem 0rem 0rem;
+        box-shadow: -20px 0px 30px rgba(100, 100, 100, 0.75);
+    }
+    .menu-button {
+        background: var(--mobile-button-color);
+    }
+    .menu-button:hover {
+        background: var(--mobile-button-hvr-color);
+    }
+    .theme-button {
+        background: var(--mobile-button-color);
+    }
+    .theme-button:hover {
+        background: var(--mobile-button-hvr-color);
+    }
+
+
     /* "HOME": MOBILE */
     .title-card {
+        width: 75%;
         margin: 4rem 0.5rem 0.5rem 0.5rem;
+        background: var(--mobile-infocard-color);
     }
     .index-title-text h1 {
         font-size: 2.25rem;
@@ -1066,10 +1129,16 @@ html {
         width: 100%;
     }
     .index-contact-ctnr {
+        width: 75%;
         margin: 0.5rem 0rem;
+        background: var(--mobile-infocard-color);
     }
     .index-contact {
+        background: var(--mobile-button-color);
         font-size: 1.25rem;
+    }
+    .index-contact:hover {
+        background: var(--mobile-button-hvr-color);
     }
     .index-contact img {
         max-width: 2rem;
@@ -1080,6 +1149,9 @@ html {
 
 
     /* "RESUME": MOBILE */
+    .resume-card {
+        background: var(--mobile-button-color);
+    }
     .resume-card img {
         max-width: 8rem;
     }
@@ -1088,6 +1160,12 @@ html {
     }
     .pdf-button {
         font-size: 1.25rem;
+    }
+    .skill-card {
+        background: var(--mobile-button-color);
+    }
+    .course-card {
+        background: var(--mobile-button-color);
     }
 
 
@@ -1104,6 +1182,9 @@ html {
     .back-btn {
         font-size: 1.25rem;
         margin: 1rem 0rem 0rem 0rem;
+    }
+    .proj-info-card {
+        background: var(--mobile-button-color);
     }
 }
     
