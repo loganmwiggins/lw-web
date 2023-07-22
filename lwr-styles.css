@@ -966,12 +966,49 @@ html {
 @media (max-width: 800px) {
 
     /* "ALL": TABLETS */
+    .dynamic-window {
+        background: none;
+        border-radius: 0rem;
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        right: 0; 
+    }
+    .title-card-left h1 { /*for non index title cards*/
+        font-size: 3rem;
+    }
     .info-card {
         margin: 0.5rem 0rem;
+        width: 70%;
+        background: var(--mobile-infocard-color);
     }
     
 
+    /* "NAV": TABLETS */
+    .nav-menu {
+        background: var(--mobile-nav-color);
+        border-radius: 2rem 2rem 0rem 0rem;
+        box-shadow: -20px 0px 30px rgba(100, 100, 100, 0.75);
+    }
+    .menu-button {
+        background: var(--mobile-button-color);
+    }
+    .menu-button:hover {
+        background: var(--mobile-button-hvr-color);
+    }
+    .theme-button {
+        background: var(--mobile-button-color);
+    }
+    .theme-button:hover {
+        background: var(--mobile-button-hvr-color);
+    }
+
+
     /* "HOME": TABLETS */
+    .title-card {
+        width: 70%;
+        background: var(--mobile-infocard-color);
+    }
     .title-card-left {
         flex-direction: column;
     }
@@ -987,6 +1024,29 @@ html {
     .index-title-text p {
         font-size: 1.5rem;
     }
+    .index-contact-ctnr {
+        width: 70%;
+        background: var(--mobile-infocard-color);
+    }
+    .index-contact {
+        background: var(--mobile-button-color);
+    }
+    .index-contact:hover {
+        background: var(--mobile-button-hvr-color);
+    }
+
+
+    /* "RESUME": TABLETS */
+    .resume-card {
+        background: var(--mobile-button-color);
+    }
+    .skill-card {
+        background: var(--mobile-button-color);
+    }
+    .course-card {
+        background: var(--mobile-button-color);
+    }
+    
 
 
     /* "PROJECTS": TABLETS */
@@ -997,7 +1057,9 @@ html {
         width: 50rem;
         margin-top: 2rem;
         transform: translate(-15rem, 0rem);
-        /* display: none; */
+    }
+    .proj-info-card {
+        background: var(--mobile-button-color);
     }
     .proj-info-card img {
         width: 100%;
@@ -1018,14 +1080,6 @@ html {
 @media (max-width: 500px) {
 
     /* "ALL": MOBILE */
-    .dynamic-window {
-        background: none;
-        border-radius: 0rem;
-        top: 0;
-        bottom: 0;
-        left: 0; 
-        right: 0; 
-    }
     .title-card-left h1 { /*for non index title cards*/
         font-size: 2.25rem;
     }
@@ -1042,31 +1096,9 @@ html {
     }
 
 
-    /* "NAV": MOBILE */
-    .nav-menu {
-        background: var(--mobile-nav-color);
-        border-radius: 2rem 2rem 0rem 0rem;
-        box-shadow: -20px 0px 30px rgba(100, 100, 100, 0.75);
-    }
-    .menu-button {
-        background: var(--mobile-button-color);
-    }
-    .menu-button:hover {
-        background: var(--mobile-button-hvr-color);
-    }
-    .theme-button {
-        background: var(--mobile-button-color);
-    }
-    .theme-button:hover {
-        background: var(--mobile-button-hvr-color);
-    }
-
-
     /* "HOME": MOBILE */
     .title-card {
-        width: 70%;
         margin: 4rem 0.5rem 0.5rem 0.5rem;
-        background: var(--mobile-infocard-color);
     }
     .index-title-text h1 {
         font-size: 2.25rem;
@@ -1079,16 +1111,10 @@ html {
         width: 100%;
     }
     .index-contact-ctnr {
-        width: 70%;
         margin: 0.5rem 0rem;
-        background: var(--mobile-infocard-color);
     }
     .index-contact {
-        background: var(--mobile-button-color);
         font-size: 1.25rem;
-    }
-    .index-contact:hover {
-        background: var(--mobile-button-hvr-color);
     }
     .index-contact img {
         max-width: 2rem;
@@ -1099,9 +1125,6 @@ html {
 
 
     /* "RESUME": MOBILE */
-    .resume-card {
-        background: var(--mobile-button-color);
-    }
     .resume-card img {
         max-width: 8rem;
     }
@@ -1111,17 +1134,12 @@ html {
     .pdf-button {
         font-size: 1.25rem;
     }
-    .skill-card {
-        background: var(--mobile-button-color);
-    }
-    .course-card {
-        background: var(--mobile-button-color);
-    }
+    
 
 
     /* "PROJECTS": MOBILE */
     .tooltip h1 {
-        font-size: 1.2 5rem
+        font-size: 1.25rem
     }
     .project-card img {
         width: 50rem;
@@ -1132,8 +1150,5 @@ html {
     .back-btn {
         font-size: 1.25rem;
         margin: 1rem 0rem 0rem 0rem;
-    }
-    .proj-info-card {
-        background: var(--mobile-button-color);
     }
 }   
