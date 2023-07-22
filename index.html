@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Logan Wiggins Personal Website V5, started 06/30/23 -->
+
+<html lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Logan M. Wiggins">
+        <title>Logan Wiggins</title>
+        <!-- Links -->
+        <link rel="stylesheet" href="lwr-styles.css">
+        <link rel="icon" type="image/x-icon" href="assets/icons/favicon/my-favicon-3.ico">
+        <link rel="canonical" href="https://loganwiggins.com/index?">    <!-- tells search engines which page should be used -->
+    </head>  
+
+    <video autoplay muted loop class="bg-video">
+        <source src="assets/animated-bg-1mb.mp4" type="video/mp4">
+    </video>
+
+    <section class="dynamic-window">
+        <!-- Window LEFT -->
+        <div class="nav-menu">
+            <!-- "Home" button-->
+            <form action="https://loganwiggins.com/index?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/user-icon.png" id="aboutme-icon" draggable="false">
+                        <h2 id="active-nav">Home</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Resume" button-->
+            <form action="https://loganwiggins.com/resume?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/resume-icon.png" id="resume-icon" draggable="false">
+                        <h2>Resume</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Projects" button-->
+            <form action="https://loganwiggins.com/projects?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/project-icon.png" id="projects-icon" draggable="false">
+                        <h2>Projects</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Light/Dark" button -->
+            <div class="theme-button-ctnr">
+                <button class="theme-button" id="theme-btn">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/moon-icon.png" id="theme-icon" draggable="false">
+                        <h2 id="theme-text">Dark Mode</h2>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Window RIGHT -->
+        <div class="display-right">
+            <div class="display-body">
+                <div class="title-card">
+                    <div class="title-card-left">
+                        <img src="assets/headshot-square.jpg" draggable="false">
+                        <div class="index-title-text">
+                            <h1>Logan Wiggins</h1>
+                            <p>Student at Florida State University</p>
+                        </div>
+                    </div>
+                    <div class="title-card-right">
+                        <div class="role">
+                            <p>Software Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-contact-ctnr">
+                    <button id="phone-btn" class="index-contact" value="(561) 701-1496" onclick="copyPhone()">
+                        <img src="assets/icons/contact-icons/phone-icon.png" id="phone-icon">
+                        <p>(561) 701-1496</p>
+                    </button>
+                    <button id="email-btn" class="index-contact" value="loganmwiggins1@gmail.com" onclick="copyEmail()">
+                        <img src="assets/icons/contact-icons/email-icon.png" id="email-icon">
+                        <p>loganmwiggins1@gmail.com</p>
+                    </button>
+                    <button class="index-contact" onclick="openLinkedin()">
+                        <img src="assets/icons/contact-icons/linkedin-icon.png" id="linkedin-icon">
+                    </button>
+                </div>
+                <div class="info-card">
+                    <p>Welcome</p>
+                    <h1>While working on this project back in 2022, I was able to learn web development fundamentals
+                        and techniques — including how to conceptualize, design, write, test, debug, and maintain my own 
+                        website. This project was a great first step into the world of software development. Now, I am
+                        continuing to enhance my development skills through university courses, job experiences, 
+                        internship experiences, and more projects. 
+                    </h1>
+                </div>
+                <div class="info-card">
+                    <p>About Me</p>
+                    <h1>I am a third-year student at Florida State University pursuing a 
+                        Bachelor's Degree in Information Communication and Technology (ICT) with a minor in Computer Science. 
+                        I enjoy finding ways to apply my computer skills, and I am 
+                        passionate about discovering innovative software solutions that will 
+                        improve my community. I am currently seeking job or internship opportunities in the 
+                        field of Software Development, Web Development, Information Technology (IT), 
+                        or UI/UX Design in order to expand and develop my career capability. 
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="lwr-scripts.js"></script>
+</html>

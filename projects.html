@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Logan M. Wiggins">
+        <title>Logan Wiggins</title>
+        <!-- Links -->
+        <link rel="stylesheet" href="lwr-styles.css">
+        <link rel="icon" type="image/x-icon" href="assets/icons/favicon/my-favicon-3.ico">
+        <link rel="canonical" href="https://loganwiggins.com/projects?">
+    </head>  
+
+    <video autoplay muted loop class="bg-video">
+        <source src="assets/animated-bg-1mb.mp4" type="video/mp4">
+    </video>
+
+    <section class="dynamic-window">
+        <!-- NAVIGATION PANE -->
+        <div class="nav-menu">
+            <!-- "Home" button-->
+            <form action="https://loganwiggins.com/index?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/user-icon.png" id="aboutme-icon" draggable="false">
+                        <h2>Home</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Resume" button-->
+            <form action="https://loganwiggins.com/resume?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/resume-icon.png" id="resume-icon" draggable="false">
+                        <h2>Resume</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Projects" button-->
+            <form action="https://loganwiggins.com/projects?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/project-icon.png" id="projects-icon" draggable="false">
+                        <h2 id="active-nav">Projects</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Light/Dark" button -->
+            <div class="theme-button-ctnr">
+                <button class="theme-button" id="theme-btn">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/moon-icon.png" id="theme-icon" draggable="false">
+                        <h2 id="theme-text">Dark Mode</h2>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- MAIN CONTENT PANE -->
+        <div class="display-right">
+            <div class="display-body">
+                <div class="title-card">
+                    <div class="title-card-left">
+                        <h1>My Projects</h1>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <p>Web Development Projects</p>
+                    <!-- row -->
+                    <div class="project-card-row">
+                        <button class="project-card proj-card-lw" onclick="openProjectLW()">
+                            <h1>Logan Wiggins Portfolio</h1>
+                            <p>Personal resume website</p>
+                            <img src="assets/images/web-loganwiggins-min.png" draggable="false">
+                        </button>
+                        <button class="project-card proj-card-wn">
+                            <div class="tooltip">
+                                <h1>Coming soon</h1>
+                            </div>
+                            <h1>Wigginsnet</h1>
+                            <p>Personal company website</p>
+                            <img src="assets/images/web-wigginsnet-min.png" draggable="false">
+                        </button>
+                    </div>
+                    <!-- row -->
+                    <div class="project-card-row">
+                        <button class="project-card proj-card-he" onclick="openProjectHE()">
+                            <h1>Hold Everything of Florida</h1>
+                            <p>Client company website</p>
+                            <img src="assets/images/web-holdeverything-min.png" draggable="false">
+                        </button>
+                        <button class="project-card proj-card-iso" onclick="openProjectISO()">
+                            <h1>InduServ Online</h1>
+                            <p>Client company website</p>
+                            <img src="assets/images/web-induserv-min.png" draggable="false">
+                        </button>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <p>Software Projects</p>
+                    <!-- row -->
+                    <div class="project-card-row">
+                        <button class="project-card proj-card-ex">
+                            <h1>Expenses App</h1>
+                            <p>Expense tracker multi-user CRUD application.</p>
+                            <div class="tooltip">
+                                <h1>Coming soon</h1>
+                            </div>
+                            <img src="assets/images/web-expenses-min.png" draggable="false">
+                        </button>
+                        <div class="project-card proj-card-empty"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="lwr-scripts.js"></script>
+</html>
