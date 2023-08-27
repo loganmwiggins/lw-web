@@ -146,6 +146,99 @@
 
 
 
+// RESUME CARD SKILLS
+    let skillsArrowAitp = document.getElementById("skills-arrow-aitp");
+    let skillsArrowPcg = document.getElementById("skills-arrow-pcg");
+    let skillsArrowCot = document.getElementById("skills-arrow-cot");
+    let skillsArrow223 = document.getElementById("skills-arrow-223");
+    let skillsArrowSt = document.getElementById("skills-arrow-st");
+    let skillsArrowPub = document.getElementById("skills-arrow-pub");
+    let skillsArrowTt = document.getElementById("skills-arrow-tt");
+
+    let skillsAitp = document.getElementById("skills-aitp");
+    let skillsPcg = document.getElementById("skills-pcg");
+    let skillsCot = document.getElementById("skills-cot");
+    let skills223 = document.getElementById("skills-223");
+    let skillsSt = document.getElementById("skills-st");
+    let skillsPub = document.getElementById("skills-pub");
+    let skillsTt = document.getElementById("skills-tt");
+
+    function toggleSkillsAitp() {
+        if(skillsAitp.style.display == "flex") {
+            skillsAitp.style.display = "none";
+            skillsArrowAitp.innerHTML = "▼";
+        }
+        else {
+            skillsAitp.style.display = "flex";
+            skillsArrowAitp.innerHTML = "▲";
+        }
+    }
+    function toggleSkillsPcg() {
+        if(skillsPcg.style.display == "flex") {
+            skillsPcg.style.display = "none";
+            skillsArrowPcg.innerHTML = "▼";
+        }
+        else {
+            skillsPcg.style.display = "flex";
+            skillsArrowPcg.innerHTML = "▲";
+        }
+    }
+    function toggleSkillsCot() {
+        if(skillsCot.style.display == "flex") {
+            skillsCot.style.display = "none";
+            skillsArrowCot.innerHTML = "▼";
+        }
+        else {
+            skillsCot.style.display = "flex";
+            skillsArrowCot.innerHTML = "▲";
+        }
+    }
+    function toggleSkills223() {
+        if(skills223.style.display == "flex") {
+            skills223.style.display = "none";
+            skillsArrow223.innerHTML = "▼";
+        }
+        else {
+            skills223.style.display = "flex";
+            skillsArrow223.innerHTML = "▲";
+        }
+    }
+    function toggleSkillsSt() {
+        if(skillsSt.style.display == "flex") {
+            skillsSt.style.display = "none";
+            skillsArrowSt.innerHTML = "▼";
+        }
+        else {
+            skillsSt.style.display = "flex";
+            skillsArrowSt.innerHTML = "▲";
+        }
+    }
+    function toggleSkillsPub() {
+        if(skillsPub.style.display == "flex") {
+            skillsPub.style.display = "none";
+            skillsArrowPub.innerHTML = "▼";
+        }
+        else {
+            skillsPub.style.display = "flex";
+            skillsArrowPub.innerHTML = "▲";
+        }
+    }
+    function toggleSkillsTt() {
+        if(skillsTt.style.display == "flex") {
+            skillsTt.style.display = "none";
+            skillsArrowTt.innerHTML = "▼";
+        }
+        else {
+            skillsTt.style.display = "flex";
+            skillsArrowTt.innerHTML = "▲";
+        }
+    }
+// --------------------
+
+
+
+
+
 // PROJECT CARD LINKS
 
     function openProjectLW() {

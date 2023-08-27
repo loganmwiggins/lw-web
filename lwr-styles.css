@@ -68,6 +68,12 @@ a:active {
         rgba(255,255,255,0.7),
         rgba(255,255,255,0.3)
     );
+    --resume-card-skills: linear-gradient(
+        to top, 
+        rgba(255,255,255, 0.5),
+        rgba(255,255,255, 0.4),
+        rgba(255,255,255, 0)
+    );
     --mobile-nav-color: linear-gradient(
         to right bottom, 
         rgba(255,255,255, 0.7),
@@ -118,6 +124,12 @@ a:active {
         to right bottom, 
         rgba(0,0,0, 0.7),
         rgba(0,0,0, 0.5)
+    );
+    --resume-card-skills: linear-gradient(
+        to top, 
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.4),
+        rgba(0,0,0, 0)
     );
     --mobile-nav-color: linear-gradient(
         to right bottom, 
@@ -267,7 +279,7 @@ html {
     opacity: 0.8;
 }
 .menu-button-content:hover {
-    color: #EF4765;
+    /* color: #5e7296; */
     opacity: 1;
 }
 .menu-button-content img {
@@ -437,6 +449,7 @@ html {
     border-radius: 2rem;
     padding: 2rem 3rem;
     margin: 1.5rem 0rem;
+    cursor: pointer;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;
@@ -446,10 +459,12 @@ html {
     -ms-user-select: none;
 }
 .resume-card img {
+    flex: 1;
     max-width: 10rem;
     margin-right: 3rem;
 }
 .resume-card-text {
+    flex: 3;
     display: flex;
     flex-direction: column;
 }
@@ -461,6 +476,67 @@ html {
     margin: 0rem 0rem;
     font-size: 1.5rem;
 }
+#skills-arrow {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+.resume-card-skills {
+    display: none;
+    flex-flow: wrap;
+    translate: 0 -4rem;
+    padding: 3rem 3rem 1rem 3rem;
+    margin-bottom: -4rem;
+    background: var(--resume-card-skills);
+    border-radius: 0 0 2rem 2rem;
+}
+.resume-card-skills h3 {
+    font-size: 1.5rem;
+    margin: 10px 10px 10px 0;
+    opacity: 0.8;
+}
+.rcs {
+    display: flex;
+    flex-flow: wrap;
+}
+.resume-card-skills p {
+    font-size: 1.5rem;
+    /* background: rgb(250, 174, 255); */
+    color: black;
+    padding: 0.25rem 1.5rem;
+    margin: 1rem 0.5rem 1rem 0;
+    border-radius: 2rem;
+    scale: 100%;
+    cursor: default;
+}
+.resume-card-skills p:hover {
+    scale: 102%;
+    transition: scale 0.2s;
+}
+#skills-pcg p {
+    background: #c3ed9b;
+}
+#skills-cot p {
+    background: #93beff;
+    /* color: #33457e; */
+}
+#skills-aitp p {
+    background: #f2b2a8;
+    /* color: #692013; */
+}
+#skills-223 p {
+    background: #d6d6d6;
+}
+#skills-st p {
+    background: #faaeff;
+}
+#skills-pub p {
+    background: #73e97d;
+}
+#skills-tt p {
+    background: #93beff;
+}
+
 .divider {
     background-color: var(--secondary-color);
     opacity: 0.1;
@@ -468,6 +544,8 @@ html {
     height: 2px;
     margin: 2rem 0rem;
 }
+
+/* Skills sections */
 .skill-card-row {
     display: flex;
     flex-direction: row;
@@ -1045,6 +1123,21 @@ html {
     }
     .course-card {
         background: var(--mobile-button-color);
+    }
+    .resume-card-skills h3 {
+        font-size: 1.25rem;
+        margin: 10px 10px 10px 0;
+        opacity: 0.8;
+    }
+    .resume-card-skills p {
+        font-size: 1.5rem;
+        /* background: rgb(250, 174, 255); */
+        color: black;
+        padding: 0.25rem 1.25rem;
+        margin: 0.75rem 0.5rem 0.75rem 0;
+        border-radius: 2rem;
+        scale: 100%;
+        cursor: default;
     }
     
 

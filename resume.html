@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Logan M. Wiggins">
-        <title>Logan Wiggins</title>
+        <title>Logan Wiggins | Resume</title>
         <!-- Links -->
         <link rel="stylesheet" href="lwr-styles.css">
         <link rel="icon" type="image/x-icon" href="assets/icons/favicon/my-favicon-3.ico">
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                     <p>Organizations</p>
-                    <div class="resume-card">
+                    <div class="resume-card" onclick="toggleSkillsAitp()">
                         <img src="assets/icons/resume-icons/logo_aitp-min.png" draggable="false">
                         <div class="resume-card-text">
                             <h1>Association of IT Professionals</h1>
@@ -96,9 +96,20 @@
                             <p>Mar 2023 - Present</p>
                             <p>Tallahassee, FL</p>
                         </div>
+                        <p id="skills-arrow-aitp">▼</p>
+                    </div>
+                    <div class="resume-card-skills" id="skills-aitp">
+                        <h3>Skills Utilized:</h3>
+                        <div class="rcs">
+                            <p>IT Leadership</p>
+                            <p>Organization Management</p>
+                            <p>Networking</p>
+                            <p>Marketing Strategy</p>
+                            <p>Graphic Design</p>
+                        </div>
                     </div>
                     <p>Work Experience</p>
-                    <div class="resume-card">
+                    <div class="resume-card" onclick="toggleSkillsPcg()">
                         <img src="assets/icons/resume-icons/logo_pcg-min.png" draggable="false">
                         <div class="resume-card-text">
                             <h1>Paul Consulting Group</h1>
@@ -106,21 +117,61 @@
                             <p>May 2023 - Present</p>
                             <p>Tallahassee, FL</p>
                         </div>
+                        <p id="skills-arrow-pcg">▼</p>
                     </div>
-                    <div class="resume-card">
+                    <div class="resume-card-skills" id="skills-pcg">
+                        <h3>Skills Utilized:</h3>
+                        <div class="rcs">
+                            <p>Software Design</p>
+                            <p>Software Development</p>
+                            <p>Responsive Web Design</p>
+                            <p>Web Development</p>
+                            <p>HTML</p>
+                            <p>SCSS</p>
+                            <p>TypeScript</p>
+                            <p>Relational Database Management System (RDBMS)</p>
+                            <p>SQL Server Management Studio (SSMS)</p>
+                            <p>SQL</p>
+                            <p>Back-end Development</p>
+                            <p>Progressive Web Applications (PWA)</p>
+                            <p>Angular</p>
+                            <p>C#</p>
+                            <p>ASP.NET</p>
+                            <p>Language Integrated Query (LINQ)</p>
+                        </div>
+                    </div>
+                    <div class="resume-card" onclick="toggleSkillsCot()">
                         <img src="assets/icons/resume-icons/logo_city-min.png" draggable="false">
                         <div class="resume-card-text">
                             <h1>City of Tallahassee</h1>
                             <p><strong>Advanced Support Analyst</strong></p>
-                            <p>Nov 2022 - Present</p>
+                            <p>Nov 2022 - Aug 2023</p>
                             <p>Tallahassee, FL</p>
                             <p><strong>↑</strong></p>
                             <p><strong>Support Desk Operator</strong></p>
                             <p>Dec 2021 - Nov 2022</p>
                             <p>Tallahassee, FL</p>
                         </div>
+                        <p id="skills-arrow-cot">▼</p>
                     </div>
-                    <div class="resume-card">
+                    <div class="resume-card-skills" id="skills-cot">
+                        <h3>Skills Utilized:</h3>
+                        <div class="rcs">
+                            <p>IT Service Management</p>
+                            <p>ITIL</p>
+                            <p>IT Leadership</p>
+                            <p>Technical Support</p>
+                            <p>Help Desk Support</p>
+                            <p>User Management</p>
+                            <p>IT Operations</p>
+                            <p>Computer Literacy</p>
+                            <p>Computer Security</p>
+                            <p>Customer Service</p>
+                            <p>Recruiting</p>
+                            <p>Employee Training</p>
+                        </div>
+                    </div>
+                    <div class="resume-card" onclick="toggleSkills223()">
                         <img src="assets/icons/resume-icons/logo_223-min.png" draggable="false">
                         <div class="resume-card-text">
                             <h1>223 Agency</h1>
@@ -128,8 +179,19 @@
                             <p>Feb 2023 - May 2023</p>
                             <p>Tallahassee, FL</p>
                         </div>
+                        <p id="skills-arrow-223">▼</p>
                     </div>
-                    <div class="resume-card">
+                    <div class="resume-card-skills" id="skills-223">
+                        <h3>Skills Utilized:</h3>
+                        <div class="rcs">
+                            <p>Quality Assurance</p>
+                            <p>Software Testing</p>
+                            <p>Software Architectural Design</p>
+                            <p>Web Design</p>
+                            <p>Project Management</p>
+                        </div>
+                    </div>
+                    <div class="resume-card" onclick="toggleSkillsSt()">
                         <img src="assets/icons/resume-icons/logo_thriving-min.png" draggable="false">
                         <div class="resume-card-text">
                             <h1>Social Thriving</h1>
@@ -137,8 +199,22 @@
                             <p>Feb 2021 - Apr 2021</p>
                             <p>Tallahassee, FL</p>
                         </div>
+                        <p id="skills-arrow-st">▼</p>
                     </div>
-                    <div class="resume-card">
+                    <div class="resume-card-skills" id="skills-st">
+                        <h3>Skills Utilized:</h3>
+                        <div class="rcs">
+                            <p>Video Editing</p>
+                            <p>Photo Editing</p>
+                            <p>Graphic Design</p>
+                            <p>Marketing Strategy</p>
+                            <p>Social Media Management</p>
+                            <p>Adobe Photoshop</p>
+                            <p>Adobe Premiere Pro</p>
+                            <p>Adobe After Effects</p>
+                        </div>
+                    </div>
+                    <div class="resume-card" onclick="toggleSkillsPub()">
                         <img src="assets/icons/resume-icons/logo_publix-min.png" draggable="false">
                         <div class="resume-card-text">
                             <h1>Publix Supermarkets</h1>
@@ -146,8 +222,16 @@
                             <p>Aug 2016 - May 2017</p>
                             <p>Palm Beach Gardens, FL</p>
                         </div>
+                        <p id="skills-arrow-pub">▼</p>
                     </div>
-                    <div class="resume-card">
+                    <div class="resume-card-skills" id="skills-pub">
+                        <h3>Skills Utilized:</h3>
+                        <div class="rcs">
+                            <p>Customer Service</p>
+                            <p>Customer Satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="resume-card" onclick="toggleSkillsTt()">
                         <img src="assets/icons/resume-icons/logo_terabyte-min.png" draggable="false">
                         <div class="resume-card-text">
                             <h1>Terabyte Technologies</h1>
@@ -155,11 +239,22 @@
                             <p>Apr 2016 - Aug 2016</p>
                             <p>Palm Beach Gardens, FL</p>
                         </div>
+                        <p id="skills-arrow-tt">▼</p>
+                    </div>
+                    <div class="resume-card-skills" id="skills-tt">
+                        <h3>Skills Utilized:</h3>
+                        <div class="rcs">
+                            <p>IT Operations</p>
+                            <p>Server Installations</p>
+                            <p>Graphic Design</p>
+                            <p>Photo Editing</p>
+                            <p>Video Editing</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="info-card">
-                    <p>Programming Skills</p>
+                    <p>Technical Skills</p>
                     <!-- skill row -->
                     <div class="skill-card-row">
                         <div class="skill-card">
