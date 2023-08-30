@@ -461,6 +461,7 @@ html {
 .resume-card img {
     flex: 1;
     max-width: 10rem;
+    max-height: 10rem;
     margin-right: 3rem;
 }
 .resume-card-text {
