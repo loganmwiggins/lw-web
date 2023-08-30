@@ -1221,6 +1221,7 @@ html {
     /* "RESUME": MOBILE */
     .resume-card img {
         max-width: 8rem;
+        max-height: 8rem;
     }
     .pdf-button-field {
         margin: 1rem 0rem 0rem 0rem;
