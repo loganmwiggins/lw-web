@@ -51,15 +51,15 @@
 
         // if page is... then change contact icons
         if(window.location.href === "https://www.loganwiggins.com/") {
-            phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon.png";
-            emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon.png";
-            linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon.png";
+            phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon-min.png";
+            emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
+            linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
         }   
         // if page is... then change contact icons
         if(window.location.href === "https://loganwiggins.com/index?") {
-            phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon.png";
-            emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon.png";
-            linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon.png";
+            phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon-min.png";
+            emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
+            linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
         }    
     }
 
@@ -81,15 +81,15 @@
 
            // if page is... then change contact icons
             if(window.location.href === "https://www.loganwiggins.com/") {
-                phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon.png";
-                emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon.png";
-                linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon.png";
+                phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon-min.png";
+                emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
+                linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
             }   
             // if page is... then change contact icons
             if(window.location.href === "https://loganwiggins.com/index?") {
-                phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon.png";
-                emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon.png";
-                linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon.png";
+                phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon-min.png";
+                emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
+                linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
             }
         }
         else {
@@ -104,15 +104,15 @@
 
             // if page is index.html, then change contact icons
             if(window.location.href === "https://www.loganwiggins.com/") {
-                phoneIcon.src = "assets/icons/contact-icons/phone-icon.png";
-                emailIcon.src = "assets/icons/contact-icons/email-icon.png";
-                linkedinIcon.src = "assets/icons/contact-icons/linkedin-icon.png";
+                phoneIcon.src = "assets/icons/contact-icons/phone-icon-min.png";
+                emailIcon.src = "assets/icons/contact-icons/email-icon-min.png";
+                linkedinIcon.src = "assets/icons/contact-icons/linkedin-icon-min.png";
             }            
             // if page is index.html, then change contact icons
             if(window.location.href === "https://loganwiggins.com/index?") {
-                phoneIcon.src = "assets/icons/contact-icons/phone-icon.png";
-                emailIcon.src = "assets/icons/contact-icons/email-icon.png";
-                linkedinIcon.src = "assets/icons/contact-icons/linkedin-icon.png";
+                phoneIcon.src = "assets/icons/contact-icons/phone-icon-min.png";
+                emailIcon.src = "assets/icons/contact-icons/email-icon-min.png";
+                linkedinIcon.src = "assets/icons/contact-icons/linkedin-icon-min.png";
             }
         }
     }
