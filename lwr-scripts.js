@@ -127,14 +127,25 @@
 
     let phoneBtn = document.getElementById("phone-btn");
     let emailBtn = document.getElementById("email-btn");
+    let alertCtnr = document.querySelector(".alert-ctnr");
+    let copyMessage = document.querySelector(".copy-message");
+
+    function showAlert() {
+        copyMessage.classList.add("active");
+    }
+    function hideAlert() {
+        copyMessage.classList.remove("active");
+    }
 
     function copyPhone() {
         navigator.clipboard.writeText("(561) 701-1496");
-        alert("Copied \"" + phoneBtn.value + "\" to clipboard.");
+        showAlert();
+        setTimeout(hideAlert, 3000);
     }
     function copyEmail() {
         navigator.clipboard.writeText("loganmwiggins1@gmail.com");
-        alert("Copied \"" + emailBtn.value + "\" to clipboard.");
+        showAlert();
+        setTimeout(hideAlert, 3000);
     }
     function openLinkedin() {
         window.open("https://www.linkedin.com/in/loganwiggins/");

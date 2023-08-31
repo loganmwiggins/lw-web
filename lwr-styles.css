@@ -163,6 +163,34 @@ html {
     min-height: 100%;
     min-width: 100%;
 }
+.alert-ctnr {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 5;
+}
+.copy-message { 
+    position: fixed;
+    z-index: 5;
+    top: -100%;
+    transition: top 0.3s;
+    padding: 0.5rem 3rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+.copy-message img {
+    max-width: 2rem;
+    margin-left: 1rem;
+}
+.copy-message.active {
+    top: 1rem;
+}
 .dynamic-window {
     background: var(--window-color);
     position: absolute;
