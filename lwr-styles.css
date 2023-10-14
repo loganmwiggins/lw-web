@@ -441,8 +441,8 @@ html {
     cursor: pointer;
 }
 .index-contact:hover {
-    background: var(--button-hvr-color);
     color: var(--accent-color);
+    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.25);
 }
 .index-contact img {
     max-width: 2.75rem;
@@ -451,6 +451,25 @@ html {
 }
 .index-contact p {
     margin-left: 1.5rem;
+}
+
+#tooltip {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+
+    background: #242424;
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-left: 28px;
+    padding: 10px;
+    font-size: 1.25rem;
+    margin-bottom: 12rem;
+    /* background: linear-gradient(to bottom, #6e6e6e 0%, #242424 100%); */
+    /* box-shadow: 0px 0px 6px 2px rgba(110, 110, 110, 1); */
+}
+.index-contact:hover #tooltip {
+    display: block;
 }
 
 
@@ -1006,6 +1025,10 @@ html {
     }
     .index-contact img {
         margin: 1.5rem 0rem;
+    }
+    /* tooltips */
+    .index-contact:hover #tooltip {
+        display: none;
     }
     
 
