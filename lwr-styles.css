@@ -345,25 +345,6 @@ html {
 #date {
     opacity: 0.5;
     color: var(--secondary-color);
-    margin: 0;
-}
-.nav-socials-ctnr {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.nav-social {
-    background: none;
-    border: 2px solid var(--secondary-color);
-    border-radius: 2rem;
-    padding: 0.5rem 0.75rem;
-    margin: 1rem 0.5rem 1.5rem 0.5rem;
-    opacity: 0.5;
-    cursor: pointer;
-}
-.nav-social img {
-    max-width: 2rem;
 }
 
 
