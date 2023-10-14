@@ -455,20 +455,41 @@ html {
 
 
 /* "RESUME" PAGE */
-.pdf-button {
+.pdf-btn-ctnr {
+    display: flex;
+}
+.pdf-btn {
     background: linear-gradient(to bottom right, #EF4765, #ff79d7);
-    color: white;
-    font-family: "Poppins-Regular";
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
     border: none;
     border-radius: 1rem;
+    margin-left: 1rem;
+    padding: 0.75rem 2rem;
     cursor: pointer;
-    transition: box-shadow .1s ease-in-out;
 }
-.pdf-button:hover {
+.pdf-btn img {
+    max-width: 2.25rem;
+}
+.pdf-btn:hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5);
 }
+/* Tooltips */
+.b-tooltip {
+    display: inline-block;
+    font-size: .875em;
+    padding: .75em;
+    position: absolute;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.b-tooltip-dark {
+    background: #242424;
+    /* background: linear-gradient(to bottom, #6e6e6e 0%, #242424 100%); */
+    /* box-shadow: 0px 0px 6px 2px rgba(110, 110, 110, 1); */
+    color: #fff;
+}
+/* Resume cards */
 .resume-card {
     display: flex;
     align-items: center;
@@ -989,7 +1010,7 @@ html {
     
 
     /* "RESUME": LAPTOPS */
-    .pdf-button-field {
+    .pdf-btn-ctnr {
         margin: 1rem 0rem;
         text-align: center;
     }
@@ -1251,7 +1272,7 @@ html {
         max-width: 8rem;
         max-height: 8rem;
     }
-    .pdf-button-field {
+    .pdf-btn-ctnr {
         margin: 1rem 0rem 0rem 0rem;
     }
     .pdf-button {

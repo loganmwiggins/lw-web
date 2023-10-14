@@ -16,9 +16,8 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB5MERRJGY"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){ dataLayer.push(arguments); }
             gtag('js', new Date());
-
             gtag('config', 'G-ZB5MERRJGY');
         </script>
     </head>  
@@ -78,10 +77,10 @@
                         <h1>My Resume</h1>
                     </div>
                     <div class="title-card-right">
-                        <div class="pdf-button-field">
-                            <a href="assets/ResumeFall2023.pdf" target="_blank">
-                                <input type="button" class="pdf-button" value="View Paper Resume">
-                            </a>
+                        <div class="pdf-btn-ctnr"> 
+                            <button onclick="openResume()" class="pdf-btn" data-tooltip="Open PDF" data-position="center top">
+                                <img src="assets/icons/resume-icons/icon-doc-min.png" draggable="false" data-tooltip="Open PDF" data-position="center top">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -507,4 +506,6 @@
     </section>
 
     <script src="lwr-scripts.js"></script>
+    <script src="scripts/vanilla-js-tooltip.min.js"></script>
+    <script>var tooltip = new Tooltip({theme: "dark"});</script>
 </html>

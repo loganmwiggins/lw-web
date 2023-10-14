@@ -263,3 +263,14 @@
     }
 
 // --------------------
+
+
+
+
+// RESUME BUTTONS
+
+    function openResume() {
+        window.open("assets/ResumeFall2023.pdf", "_blank");
+    }
+
+// --------------------
