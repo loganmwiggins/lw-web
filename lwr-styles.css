@@ -217,7 +217,7 @@ html {
     margin-left: auto; 
     margin-right: auto; 
     max-width: 1400px; /* need a specific value to work */
-    max-height: 1050px;
+    max-height: 1400px;
     display: flex;
     flex-direction: row;
     border-radius: 2rem;
@@ -482,7 +482,7 @@ html {
     border: none;
     border-radius: 1rem;
     margin-left: 1rem;
-    padding: 0.75rem 2rem;
+    padding: 0.75rem 2.5rem;
     cursor: pointer;
 }
 .pdf-btn img {
@@ -962,8 +962,9 @@ html {
         margin-right: 0;
     }
     .menu-button-content h2 {
-        padding-left: 0rem;
-        display: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
     }
     .display-right {
         flex: 8; /* ratio to nav menu (1:8) */
@@ -1026,6 +1027,7 @@ html {
     }
     .pdf-btn {
         margin-left: 0;
+        padding: 0.75rem 3rem;
     }
     /* Tooltips */
     .pdf-btn:hover #tooltip {
@@ -1146,6 +1148,12 @@ html {
     }
     .theme-button:hover {
         background: var(--mobile-button-hvr-color);
+    }
+    .menu-button-content h2 {
+        display: none;
+    }
+    #active-nav {
+        box-shadow: 0 0 1.5rem rgba(96, 81, 254, 0.35);
     }
 
 
@@ -1285,6 +1293,9 @@ html {
 
 
     /* "RESUME": MOBILE */
+    .pdf-btn img {
+        max-width: 2rem;
+    }
     .resume-card img {
         max-width: 8rem;
         max-height: 8rem;
