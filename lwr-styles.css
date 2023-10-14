@@ -1014,6 +1014,12 @@ html {
         margin: 1rem 0rem;
         text-align: center;
     }
+    .pdf-btn {
+        margin-left: 0;
+    }
+    .b-tooltip {
+        display: none;
+    }
     .resume-card {
         display: flex;
         flex-direction: column;
@@ -1273,10 +1279,7 @@ html {
         max-height: 8rem;
     }
     .pdf-btn-ctnr {
-        margin: 1rem 0rem 0rem 0rem;
-    }
-    .pdf-button {
-        font-size: 1.25rem;
+        margin-top: 1rem;
     }
     .rcs p {
         margin: 0.6rem 0.5rem 0.6rem 0;
