@@ -280,12 +280,13 @@ html {
     background: var(--nav-color);
     flex: 1; /* ratio to display window (1:3) */
     display: flex;
-    flex-direction: column; /* stacks buttons vertically */
+    flex-direction: column;
     text-align: center; /*centers buttons horizontally in window */
     overflow: hidden;
     min-height: 8rem;
     border-radius: 2rem;
     padding-top: 3rem;
+    position: relative;
 }
 .menu-button {
     background: var(--button-color);
@@ -323,7 +324,6 @@ html {
     opacity: 0.8;
 }
 .menu-button-content:hover {
-    /* color: #5e7296; */
     opacity: 1;
 }
 .menu-button-content img {
@@ -332,6 +332,38 @@ html {
 }
 #active-nav {
     color: var(--accent-color);
+}
+.bottom-nav-ctnr {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    font-size: 1.5rem;
+}
+#date {
+    opacity: 0.5;
+    color: var(--secondary-color);
+    margin: 0;
+}
+.nav-socials-ctnr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-social {
+    background: none;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2rem;
+    padding: 0.5rem 0.75rem;
+    margin: 1rem 0.5rem 1.5rem 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.nav-social img {
+    max-width: 2rem;
 }
 
 
@@ -968,6 +1000,9 @@ html {
     }
     .display-right {
         flex: 8; /* ratio to nav menu (1:8) */
+    }
+    .bottom-nav-ctnr {
+        display: none;
     }
 
 
