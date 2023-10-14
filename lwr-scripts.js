@@ -267,10 +267,10 @@
 
 
 
-// RESUME BUTTONS
+// RESUME BUTTON
 
     function openResume() {
-        window.open("assets/ResumeFall2023.pdf", "_blank");
+        window.open("assets/LoganWiggins_Resume.pdf", "_blank");
     }
 
 // --------------------
