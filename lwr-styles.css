@@ -192,6 +192,21 @@ html {
 .copy-message.active {
     top: 1rem;
 }
+#tooltip {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+
+    background: #242424;
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-left: 28px;
+    padding: 10px;
+    font-size: 1.25rem;
+    margin-bottom: 12rem;
+    /* background: linear-gradient(to bottom, #6e6e6e 0%, #242424 100%); */
+    /* box-shadow: 0px 0px 6px 2px rgba(110, 110, 110, 1); */
+}
 .dynamic-window {
     background: var(--window-color);
     position: absolute;
@@ -452,22 +467,7 @@ html {
 .index-contact p {
     margin-left: 1.5rem;
 }
-
-#tooltip {
-    display: none;
-    position: absolute;
-    z-index: 1000;
-
-    background: #242424;
-    color: #fff;
-    border-radius: 0.5rem;
-    margin-left: 28px;
-    padding: 10px;
-    font-size: 1.25rem;
-    margin-bottom: 12rem;
-    /* background: linear-gradient(to bottom, #6e6e6e 0%, #242424 100%); */
-    /* box-shadow: 0px 0px 6px 2px rgba(110, 110, 110, 1); */
-}
+/* Tooltips */
 .index-contact:hover #tooltip {
     display: block;
 }
@@ -492,23 +492,10 @@ html {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5);
 }
 /* Tooltips */
-.b-tooltip {
-    display: inline-block;
-    font-size: .875em;
-    padding: .75em;
-    position: absolute;
-    text-align: center;
-    border: none;
-    border-radius: 0.5rem;
+.pdf-btn-ctnr:hover #tooltip {
+    display: block;
+    margin-left: 5rem;
 }
-
-.b-tooltip-dark {
-    background: #242424;
-    /* background: linear-gradient(to bottom, #6e6e6e 0%, #242424 100%); */
-    /* box-shadow: 0px 0px 6px 2px rgba(110, 110, 110, 1); */
-    color: #fff;
-}
-/* Resume cards */
 .resume-card {
     display: flex;
     align-items: center;
@@ -1026,7 +1013,7 @@ html {
     .index-contact img {
         margin: 1.5rem 0rem;
     }
-    /* tooltips */
+    /* Tooltips */
     .index-contact:hover #tooltip {
         display: none;
     }
@@ -1040,7 +1027,8 @@ html {
     .pdf-btn {
         margin-left: 0;
     }
-    .b-tooltip {
+    /* Tooltips */
+    .pdf-btn:hover #tooltip {
         display: none;
     }
     .resume-card {

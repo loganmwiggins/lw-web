@@ -78,8 +78,9 @@
                     </div>
                     <div class="title-card-right">
                         <div class="pdf-btn-ctnr"> 
-                            <button onclick="openResume()" class="pdf-btn" data-tooltip="Open PDF" data-position="center top">
-                                <img src="assets/icons/resume-icons/icon-doc-min.png" draggable="false" data-tooltip="Open PDF" data-position="center top">
+                            <button onclick="openResume()" class="pdf-btn">
+                                <span id="tooltip">Open PDF</span>
+                                <img src="assets/icons/resume-icons/icon-doc-min.png" draggable="false">
                             </button>
                         </div>
                     </div>
@@ -506,6 +507,4 @@
     </section>
 
     <script src="lwr-scripts.js"></script>
-    <script src="scripts/vanilla-js-tooltip.min.js"></script>
-    <script>var tooltip = new Tooltip({theme: "dark"});</script>
 </html>
