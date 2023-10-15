@@ -136,7 +136,7 @@ a:active {
         rgba(0,0,0, 0.7),
         rgba(0,0,0, 0.5)
     );
-    --mobile-infocard-color: rgba(0,0,0, 0.6);
+    --mobile-infocard-color: rgba(0,0,0, 0.7);
     --mobile-button-color: linear-gradient(
         to right bottom, 
         rgba(0,0,0, 0.5),
