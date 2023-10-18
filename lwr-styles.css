@@ -487,6 +487,7 @@ html {
 
 
 /* "RESUME" PAGE */
+/* Buttons */
 .pdf-btn-ctnr {
     display: flex;
 }
@@ -503,6 +504,29 @@ html {
 }
 .pdf-btn:hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5);
+}
+.resume-card-btn-ctnr {
+    display: flex;
+}
+.card-btn {
+    background: var(--button-color);
+    border: none;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    padding: 0.75rem 2.25rem;
+    cursor: pointer;
+}
+.card-btn.active {
+    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.25);
+}
+.card-btn:hover {
+    background: var(--button-hvr-color);
+}
+.card-btn img {
+    max-width: 2.25rem !important;
+    max-height: 2.25rem !important;
+    margin-right: 0 !important;
+    opacity: 0.75;
 }
 /* Tooltips */
 .pdf-btn-ctnr:hover #tooltip {
@@ -546,11 +570,7 @@ html {
     margin: 0rem 0rem;
     font-size: 1.5rem;
 }
-#skills-arrow {
-    flex: 1;
-    display: flex;
-    justify-content: right;
-}
+/* Resume card skills */
 .resume-card-skills {
     display: none;
     flex-flow: wrap;
@@ -573,7 +593,7 @@ html {
     font-size: 1.5rem;
     color: black;
     padding: 0.25rem 1.5rem;
-    margin: 1rem 0.5rem 1rem 0;
+    margin: 0.5rem 0.5rem 0.5rem 0;
     border-radius: 2rem;
     scale: 100%;
     cursor: default;
@@ -605,16 +625,45 @@ html {
 #skills-tt p {
     background: #93beff;
 }
-
-.divider {
-    background-color: var(--secondary-color);
-    opacity: 0.1;
-    width: 80%;
-    height: 2px;
-    margin: 2rem 0rem;
+/* Resume card gallery */
+.resume-card-gallery {
+    display: none;
+    flex-direction: column;
+    translate: 0 -4rem;
+    padding: 3rem 3rem 1rem 3rem;
+    margin-bottom: -4rem;
+    background: var(--resume-card-skills);
+    border-radius: 0 0 2rem 2rem;
+}
+.resume-card-gallery h3 {
+    font-size: 1.5rem;
+    margin: 10px 10px 10px 0;
+    opacity: 0.8;
+}
+.card-pics {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.card-pics::-webkit-scrollbar { display: none; }
+.card-pics img {
+    
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin: 0 1rem 1rem 0;
 }
 
-/* Skills sections */
+/* .divider {
+    background-color: var(--secondary-color);
+    opacity: 0.1;
+    width: 100%;
+    height: 2px;
+    margin: 1rem 0rem;
+} */
+
+/* Skill cards section */
 .skill-card-row {
     display: flex;
     flex-direction: row;
@@ -975,15 +1024,16 @@ html {
         margin-right: 0;
     }
     .menu-button-content h2 {
-        padding: 0;
-        margin: 0;
-        font-size: 1.5rem;
+        display: none;
     }
     .display-right {
         flex: 8; /* ratio to nav menu (1:8) */
     }
     .bottom-nav-ctnr {
         display: none;
+    }
+    #active-nav {
+        box-shadow: 0 0 1.5rem rgba(96, 81, 254, 0.35);
     }
 
 
@@ -1037,6 +1087,7 @@ html {
     
 
     /* "RESUME": LAPTOPS */
+    /* Buttons */
     .pdf-btn-ctnr {
         margin: 1rem 0rem;
         text-align: center;
@@ -1044,6 +1095,14 @@ html {
     .pdf-btn {
         margin-left: 0;
         padding: 0.75rem 3rem;
+    }
+    .resume-card-btn-ctnr {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: right;
+    }
+    .card-btn img {
+        margin-bottom: 0 !important;
     }
     /* Tooltips */
     .pdf-btn:hover #tooltip {
@@ -1092,7 +1151,6 @@ html {
         width: 65rem;
         margin-top: 2rem;
         transform: translate(-20rem, 0rem);
-        /* display: none; */
     }
     .proj-card-empty {
         padding: 0;
@@ -1165,12 +1223,6 @@ html {
     .theme-button:hover {
         background: var(--mobile-button-hvr-color);
     }
-    .menu-button-content h2 {
-        display: none;
-    }
-    #active-nav {
-        box-shadow: 0 0 1.5rem rgba(96, 81, 254, 0.35);
-    }
 
 
     /* "HOME": TABLETS */
@@ -1209,6 +1261,11 @@ html {
     .resume-card {
         background: var(--mobile-button-color);
     }
+    .resume-card-btn-ctnr {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
     .skill-card {
         background: var(--mobile-button-color);
     }
@@ -1229,6 +1286,10 @@ html {
         border-radius: 2rem;
         scale: 100%;
         cursor: default;
+    }
+    .resume-card-gallery h3 {
+        font-size: 1.25rem;
+        margin: 10px 10px 10px 0;
     }
     
 
@@ -1318,9 +1379,6 @@ html {
     }
     .pdf-btn-ctnr {
         margin-top: 1rem;
-    }
-    .rcs p {
-        margin: 0.6rem 0.5rem 0.6rem 0;
     }
     
 

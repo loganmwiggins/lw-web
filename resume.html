@@ -84,7 +84,7 @@
                         <div class="pdf-btn-ctnr"> 
                             <button onclick="openResume()" class="pdf-btn">
                                 <span id="tooltip">Open PDF</span>
-                                <img src="assets/icons/resume-icons/icon-doc-min.png" draggable="false">
+                                <img src="assets/icons/resume-icons/buttons/dark-theme/icon-doc-min.png" draggable="false">
                             </button>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                     </div>
                     <!-- Organizations -->
                     <p>Organizations</p>
-                    <div class="resume-card" onclick="toggleSkillsAitp()">
+                    <div class="resume-card" onclick="closeAllMenus()">
                         <img src="assets/icons/resume-icons/logo_aitp-min.png" draggable="false">
                         <div class="resume-card-text">
                             <h1>Association of IT Professionals</h1>
@@ -111,7 +111,24 @@
                             <p>Mar 2023 - Present</p>
                             <p>Tallahassee, FL</p>
                         </div>
-                        <p id="skills-arrow-aitp">▼</p>
+                        <div class="divider"></div>
+                        <div class="resume-card-btn-ctnr">
+                            <button id="aitp-gallery-btn" class="card-btn" onclick="toggleGalleryAitp(); event.stopPropagation();">
+                                <img id="aitp-gallery-btn-icon" src="assets/icons/resume-icons/buttons/icon-gallery-min.png" draggable="false">
+                            </button>
+                            <button id="aitp-skills-btn" class="card-btn" onclick="toggleSkillsAitp(); event.stopPropagation();">
+                                <img id="aitp-skills-btn-icon" src="assets/icons/resume-icons/buttons/icon-skills-min.png" draggable="false">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="resume-card-gallery" id="gallery-aitp">
+                        <h3>Gallery:</h3>
+                        <div class="card-pics">
+                            <img src="assets/images/resume-card-gallery/aitp/fall-23-exec-board-min.png">
+                            <img src="assets/images/resume-card-gallery/aitp/IMG_9759-min.jpg">
+                            <img src="assets/images/resume-card-gallery/aitp/IMG_9764-min.jpg">
+                            <img src="assets/images/resume-card-gallery/aitp/IMG_0891-min.JPG">
+                        </div>
                     </div>
                     <div class="resume-card-skills" id="skills-aitp">
                         <h3>Skills Utilized:</h3>

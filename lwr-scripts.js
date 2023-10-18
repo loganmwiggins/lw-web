@@ -18,6 +18,10 @@
     var emailIcon = document.getElementById("email-icon");
     var linkedinIcon = document.getElementById("linkedin-icon");
 
+    // declare resume icons
+    var galleryBtnIconAitp = document.getElementById("aitp-gallery-btn-icon");
+    var skillsBtnIconAitp = document.getElementById("aitp-skills-btn-icon");
+
 
     // functions for enabling and disabling darkMode
     const enableDarkMode = () => {
@@ -60,7 +64,12 @@
             phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon-min.png";
             emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
             linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
-        }    
+        }  
+        // if page is... then change contact icons
+        if(window.location.href === "https://loganwiggins.com/resume?") {
+            galleryBtnIconAitp.src = "assets/icons/resume-icons/buttons/dark-theme/icon-gallery-min.png";
+            skillsBtnIconAitp.src = "assets/icons/resume-icons/buttons/dark-theme/icon-skills-min.png";
+        }     
     }
 
 
@@ -91,6 +100,11 @@
                 emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
                 linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
             }
+            // if page is... then change contact icons
+            if(window.location.href === "https://loganwiggins.com/resume?") {
+                galleryBtnIconAitp.src = "assets/icons/resume-icons/buttons/dark-theme/icon-gallery-min.png";
+                skillsBtnIconAitp.src = "assets/icons/resume-icons/buttons/dark-theme/icon-skills-min.png";
+            }    
         }
         else {
             disableDarkMode();
@@ -114,6 +128,11 @@
                 emailIcon.src = "assets/icons/contact-icons/email-icon-min.png";
                 linkedinIcon.src = "assets/icons/contact-icons/linkedin-icon-min.png";
             }
+            // if page is... then change contact icons
+            if(window.location.href === "https://loganwiggins.com/resume?") {
+                galleryBtnIconAitp.src = "assets/icons/resume-icons/buttons/icon-gallery-min.png";
+                skillsBtnIconAitp.src = "assets/icons/resume-icons/buttons/icon-skills-min.png";
+            }    
         }
     }
 
@@ -157,8 +176,35 @@
 
 
 
-// RESUME CARD SKILLS
-    let skillsArrowAitp = document.getElementById("skills-arrow-aitp");
+// RESUME CARD
+
+    let galleryBtnAitp = document.getElementById("aitp-gallery-btn");
+    let skillsBtnAitp = document.getElementById("aitp-skills-btn");
+
+    // Close all menus
+    function closeAllMenus() {
+        galleryAitp.style.display = "none";
+        galleryBtnAitp.classList.remove("active");
+
+        skillsAitp.style.display = "none";
+        skillsBtnAitp.classList.remove("active");
+    }
+
+    // Resume card gallery
+    let galleryAitp = document.getElementById("gallery-aitp");
+
+    function toggleGalleryAitp() {
+        if(galleryAitp.style.display == "flex") {
+            galleryAitp.style.display = "none";
+            galleryBtnAitp.classList.remove("active");
+        }
+        else {
+            galleryAitp.style.display = "flex";
+            galleryBtnAitp.classList.add("active");
+        }
+    }
+
+    // Resume card skills
     let skillsArrowPcg = document.getElementById("skills-arrow-pcg");
     let skillsArrowCot = document.getElementById("skills-arrow-cot");
     let skillsArrow223 = document.getElementById("skills-arrow-223");
@@ -177,11 +223,11 @@
     function toggleSkillsAitp() {
         if(skillsAitp.style.display == "flex") {
             skillsAitp.style.display = "none";
-            skillsArrowAitp.innerHTML = "▼";
+            skillsBtnAitp.classList.remove("active");
         }
         else {
             skillsAitp.style.display = "flex";
-            skillsArrowAitp.innerHTML = "▲";
+            skillsBtnAitp.classList.add("active");
         }
     }
     function toggleSkillsPcg() {
