@@ -51,7 +51,7 @@
         resumeIcon.src = "assets/icons/nav-icons/dark-theme/resume-icon.png";
         projectsIcon.src = "assets/icons/nav-icons/dark-theme/project-icon.png";
         themeIcon.src = "assets/icons/nav-icons/dark-theme/sun-icon.png";
-        themeText.innerHTML = "Light Mode";
+        themeText.innerHTML = "Light mode";
 
         // if page is... then change contact icons
         if(window.location.href === "https://www.loganwiggins.com/") {
@@ -86,7 +86,7 @@
             resumeIcon.src = "assets/icons/nav-icons/dark-theme/resume-icon.png";
             projectsIcon.src = "assets/icons/nav-icons/dark-theme/project-icon.png";
             themeIcon.src = "assets/icons/nav-icons/dark-theme/sun-icon.png";
-            themeText.innerHTML = "Light Mode";
+            themeText.innerHTML = "Light mode";
 
            // if page is... then change contact icons
             if(window.location.href === "https://www.loganwiggins.com/") {
@@ -114,7 +114,7 @@
             resumeIcon.src = "assets/icons/nav-icons/resume-icon.png";
             projectsIcon.src = "assets/icons/nav-icons/project-icon.png";
             themeIcon.src = "assets/icons/nav-icons/moon-icon.png";
-            themeText.innerHTML = "Dark Mode";
+            themeText.innerHTML = "Dark mode";
 
             // if page is index.html, then change contact icons
             if(window.location.href === "https://www.loganwiggins.com/") {

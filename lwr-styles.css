@@ -38,58 +38,17 @@ a:active {
     --primary-color: rgb(255,255,255);
     --secondary-color: rgb(0,0,0);
     --accent-color: rgb(96, 81, 254);
-    --window-color: linear-gradient(
-        to right bottom, 
-        rgba(255,255,255,0.7),
-        rgba(255,255,255,0.3)
-    );
-    --nav-color: linear-gradient(
-        to right bottom, 
-        rgba(255,255,255,0.7),
-        rgba(255,255,255,0.3)
-    );
-    --button-color: linear-gradient(
-        to left top, 
-        rgba(255,255,255,0.4),
-        rgba(255,255,255,1.0)
-    );
-    --button-hvr-color: linear-gradient(
-        to left top, 
-        rgba(255,255,255,0.0),
-        rgba(255,255,255,1)
-    );
-    --card-color: linear-gradient(
-        to left top, 
-        rgba(255,255,255,0.6),
-        rgba(255,255,255,0.3)
-    ); 
-    --infocard-color: linear-gradient(
-        to right bottom, 
-        rgba(255,255,255,0.7),
-        rgba(255,255,255,0.3)
-    );
-    --resume-card-skills: linear-gradient(
-        to top, 
-        rgba(255,255,255, 0.5),
-        rgba(255,255,255, 0.4),
-        rgba(255,255,255, 0)
-    );
-    --mobile-nav-color: linear-gradient(
-        to right bottom, 
-        rgba(255,255,255, 0.7),
-        rgba(255,255,255, 0.5)
-    );
+    --window-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    --nav-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    --button-color: linear-gradient(to left top, rgba(255,255,255,0.4), rgba(255,255,255,1.0));
+    --button-hvr-color: linear-gradient(to left top, rgba(255,255,255,0.0), rgba(255,255,255,1));
+    --card-color: linear-gradient(to left top, rgba(255,255,255,0.6), rgba(255,255,255,0.3)); 
+    --infocard-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    --resume-card-skills: linear-gradient(to top, rgba(255,255,255, 0.5), rgba(255,255,255, 0.4),rgba(255,255,255, 0));
+    --mobile-nav-color: linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 0.3));
     --mobile-infocard-color: rgba(255,255,255, 0.6);
-    --mobile-button-color: linear-gradient(
-        to right bottom, 
-        rgba(255,255,255, 0.6),
-        rgba(255,255,255, 0.5)
-    );
-    --mobile-button-hvr-color: linear-gradient(
-        to right bottom, 
-        rgba(255,255,255, 0.7),
-        rgba(255,255,255, 0.6)
-    );
+    --mobile-button-color: linear-gradient(to right bottom, rgba(255,255,255, 0.6), rgba(255,255,255, 0.5));
+    --mobile-button-hvr-color: linear-gradient(to right bottom, rgba(255,255,255, 0.7),rgba(255,255,255, 0.6));
 }
 .dark-theme {
     --primary-color: rgb(0,0,0);
@@ -1000,31 +959,37 @@ html {
         margin: 0.5rem; /*space btwn btns */
     }
     .menu-button {
-        margin: 0rem 0.75rem;
-        padding: 0rem; 
+        background: none;
+        margin: 0 0.75rem;
+        padding: 0; 
         width: 100%;
     }
     .theme-button-ctnr {
         width: 100%;
         min-width: 40px;
-        margin: 0rem 2rem 0rem 0.5rem; /* space btwn btns */
+        margin: 0 2rem 0 0.5rem; /* space btwn btns */
     }
     .theme-button {
-        margin: 0rem 0.75rem;
-        padding: 0rem;
+        background: none;
+        margin: 0 0.75rem;
+        padding: 0;
         width: 100%;
     }
-    .menu-button-content{
+    .menu-button-content {
         flex-direction: column;
-        padding: 1.25rem 0rem;
+        padding: 1rem 0;
     }
     .menu-button-content img {
-        max-width: 30px;
-        padding-left: 0rem;
+        max-width: 25px;
+        max-height: 25px;
+        padding: 0;
         margin-right: 0;
+        opacity: 0.75;
     }
     .menu-button-content h2 {
-        display: none;
+        font-size: 1.25rem;
+        margin: 0;
+        opacity: 0.6;
     }
     .display-right {
         flex: 8; /* ratio to nav menu (1:8) */
@@ -1033,7 +998,9 @@ html {
         display: none;
     }
     #active-nav {
-        box-shadow: 0 0 1.5rem rgba(96, 81, 254, 0.35);
+        color: var(--secondary-color);
+        .menu-button-content img { opacity: 1; }
+        .menu-button-content h2 { opacity: 1; }
     }
 
 
@@ -1211,14 +1178,8 @@ html {
         border-radius: 2rem 2rem 0rem 0rem;
         box-shadow: -20px 0px 30px rgba(100, 100, 100, 0.75);
     }
-    .menu-button {
-        background: var(--mobile-button-color);
-    }
     .menu-button:hover {
         background: var(--mobile-button-hvr-color);
-    }
-    .theme-button {
-        background: var(--mobile-button-color);
     }
     .theme-button:hover {
         background: var(--mobile-button-hvr-color);
@@ -1338,6 +1299,11 @@ html {
     }
     .info-card p {
         font-size: 1.25rem;
+    }
+
+    /* "NAV": MOBILE */
+    #theme-text {
+        white-space: nowrap;
     }
 
 
