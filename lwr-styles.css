@@ -476,7 +476,7 @@ html {
     cursor: pointer;
 }
 .card-btn.active {
-    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.25);
+    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.4);
 }
 .card-btn:hover {
     background: var(--button-hvr-color);
@@ -492,6 +492,11 @@ html {
     display: block;
     margin-left: 5rem;
 }
+/* .card-btn:hover #tooltip {
+    display: block;
+    margin: 3.5rem 5rem 0 0;
+} */
+/* Cards */
 .resume-card {
     display: flex;
     align-items: center;
@@ -534,7 +539,7 @@ html {
     display: none;
     flex-flow: wrap;
     translate: 0 -4rem;
-    padding: 3rem 3rem 1rem 3rem;
+    padding: 3rem 3rem 1.5rem 3rem;
     margin-bottom: -4rem;
     background: var(--resume-card-skills);
     border-radius: 0 0 2rem 2rem;
@@ -603,6 +608,7 @@ html {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    margin-top: 2rem;
 }
 .card-pics::-webkit-scrollbar { display: none; }
 .card-pics img {
@@ -779,7 +785,7 @@ html {
     opacity: 0;
     cursor: default;
 }
-.tooltip {
+.proj-sub {
     position: absolute;
     background-color: black;
     color: white;
@@ -797,7 +803,7 @@ html {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-.tooltip h1 {
+.proj-sub h1 {
     font-size: 1.5rem
 }
 .back-btn {
@@ -1106,6 +1112,7 @@ html {
 
 
     /* "PROJECTS": LAPTOPS */
+    .proj-sub h1 { font-size: 1.5rem; }
     .project-card-row {
         display: flex;
         flex-direction: column;
@@ -1256,9 +1263,6 @@ html {
 
 
     /* "PROJECTS": TABLETS */
-    .tooltip h1 {
-        font-size: 1.5rem
-    }
     .project-card img {
         width: 50rem;
         margin-top: 2rem;

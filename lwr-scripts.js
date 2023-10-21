@@ -181,13 +181,22 @@
     let galleryBtnAitp = document.getElementById("aitp-gallery-btn");
     let skillsBtnAitp = document.getElementById("aitp-skills-btn");
 
-    // Close all menus
-    function closeAllMenus() {
-        galleryAitp.style.display = "none";
-        galleryBtnAitp.classList.remove("active");
-
-        skillsAitp.style.display = "none";
-        skillsBtnAitp.classList.remove("active");
+    // Toggle all menus
+    function toggleAllMenusAitp() {
+        if ((galleryAitp.style.display == "flex" || skillsAitp.style.display == "flex")) {
+            galleryAitp.style.display = "none";
+            galleryBtnAitp.classList.remove("active");
+    
+            skillsAitp.style.display = "none";
+            skillsBtnAitp.classList.remove("active");
+        }
+        else {
+            galleryAitp.style.display = "flex";
+            galleryBtnAitp.classList.add("active");
+    
+            skillsAitp.style.display = "flex";
+            skillsBtnAitp.classList.add("active");
+        }        
     }
 
     // Resume card gallery
