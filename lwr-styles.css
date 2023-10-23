@@ -780,9 +780,8 @@ html {
     box-shadow: 0rem 0rem 3rem rgba(162, 242, 99, 0.25);
 }
 .proj-card-empty {
-    background-color: #292929;
-    color: white;
     opacity: 0;
+    max-height: 20rem !important;
     cursor: default;
 }
 .proj-sub {
