@@ -456,13 +456,16 @@ html {
     border-radius: 1rem;
     margin-left: 1rem;
     padding: 0.75rem 2.5rem;
+    transition: box-shadow 0.2s ease;
     cursor: pointer;
 }
 .pdf-btn img {
     max-width: 2.25rem;
 }
 .pdf-btn:hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5);
+    /* box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5); */
+    box-shadow: 0 0 1rem rgba(239, 71, 101, 0.75);
+    transition: box-shadow 0.2s ease;
 }
 .resume-card-btn-ctnr {
     display: flex;
@@ -473,13 +476,21 @@ html {
     border-radius: 1rem;
     margin-left: 1rem;
     padding: 0.75rem 2.25rem;
+    transition: box-shadow 0.2s ease;
     cursor: pointer;
-}
-.card-btn.active {
-    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.4);
 }
 .card-btn:hover {
     background: var(--button-hvr-color);
+    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.2);
+    transition: box-shadow 0.2s ease;
+}
+.card-btn.active {
+    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.4);
+    transition: box-shadow 0.2s ease;
+}
+.card-btn.active:hover {
+    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.4);
+    transition: box-shadow 0.2s ease;
 }
 .card-btn img {
     max-width: 2.25rem !important;
@@ -969,6 +980,9 @@ html {
         padding: 0; 
         width: 100%;
     }
+    .menu-button:hover {
+        background: none;
+    }
     .theme-button-ctnr {
         width: 100%;
         min-width: 40px;
@@ -980,6 +994,9 @@ html {
         padding: 0;
         width: 100%;
     }
+    .theme-button:hover {
+        background: none;
+    }
     .menu-button-content {
         flex-direction: column;
         padding: 1rem 0;
@@ -989,12 +1006,12 @@ html {
         max-height: 25px;
         padding: 0;
         margin-right: 0;
-        opacity: 0.75;
+        opacity: 0.5;
     }
     .menu-button-content h2 {
         font-size: 1.25rem;
         margin: 0;
-        opacity: 0.6;
+        opacity: 0.5;
     }
     .display-right {
         flex: 8; /* ratio to nav menu (1:8) */
@@ -1183,12 +1200,6 @@ html {
         background: var(--mobile-nav-color);
         border-radius: 2rem 2rem 0rem 0rem;
         box-shadow: -20px 0px 30px rgba(100, 100, 100, 0.75);
-    }
-    .menu-button:hover {
-        background: var(--mobile-button-hvr-color);
-    }
-    .theme-button:hover {
-        background: var(--mobile-button-hvr-color);
     }
 
 
