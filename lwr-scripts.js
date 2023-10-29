@@ -1,29 +1,29 @@
 // ACTIVATE DARK MODE
 
-    // declare local storage
+    // Declare local storage
     let darkMode = localStorage.getItem("darkMode");
 
-    // declare theme button + content
+    // Declare theme button + content
     var themeBtn = document.getElementById("theme-btn");
     var themeIcon = document.getElementById("theme-icon");
     var themeText = document.getElementById("theme-text");
 
-    // declare nav icons
+    // Declare nav icons
     var aboutmeIcon = document.getElementById("aboutme-icon");
     var resumeIcon = document.getElementById("resume-icon");
     var projectsIcon = document.getElementById("projects-icon");
 
-    // declare contact icons
+    // Declare contact icons
     var phoneIcon = document.getElementById("phone-icon");
     var emailIcon = document.getElementById("email-icon");
     var linkedinIcon = document.getElementById("linkedin-icon");
 
-    // declare resume icons
+    // Declare resume icons
     var galleryBtnIconAitp = document.getElementById("aitp-gallery-btn-icon");
     var skillsBtnIconAitp = document.getElementById("aitp-skills-btn-icon");
 
 
-    // functions for enabling and disabling darkMode
+    // Functions for enabling and disabling darkMode
     const enableDarkMode = () => {
         // add class darkmode to the body
         document.body.classList.add("dark-theme");
@@ -42,33 +42,34 @@
     }
 
 
-    // check darkMode state on load (keeps on refresh)
-    if(darkMode === "enabled") {
+    // Check darkMode state on load (keeps on refresh)
+    if (darkMode === "enabled") {
         enableDarkMode();
 
-        // set nav icons
-        aboutmeIcon.src = "assets/icons/nav-icons/dark-theme/user-icon.png";
-        resumeIcon.src = "assets/icons/nav-icons/dark-theme/resume-icon.png";
-        projectsIcon.src = "assets/icons/nav-icons/dark-theme/project-icon.png";
-        themeIcon.src = "assets/icons/nav-icons/dark-theme/sun-icon.png";
+        // Set nav icons
+        aboutmeIcon.classList.add('filter-white');
+        resumeIcon.classList.add('filter-white');
+        projectsIcon.classList.add('filter-white');
+        themeIcon.src = "assets/icons/nav-icons/sun.svg";
+        themeIcon.classList.add('filter-white');
         themeText.innerHTML = "Light mode";
 
         // if page is... then change contact icons
-        if(window.location.href === "https://www.loganwiggins.com/") {
-            phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon-min.png";
-            emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
-            linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
+        if (window.location.href === "https://www.loganwiggins.com/") {
+            phoneIcon.classList.add('filter-white');
+            emailIcon.classList.add('filter-white');
+            linkedinIcon.classList.add('filter-white');
         }   
         // if page is... then change contact icons
-        if(window.location.href === "https://loganwiggins.com/index?") {
-            phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon-min.png";
-            emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
-            linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
+        if (window.location.href === "https://loganwiggins.com/index?") {
+            phoneIcon.classList.add('filter-white');
+            emailIcon.classList.add('filter-white');
+            linkedinIcon.classList.add('filter-white');
         }  
         // if page is... then change contact icons
-        if(window.location.href === "https://loganwiggins.com/resume?") {
-            galleryBtnIconAitp.src = "assets/icons/resume-icons/buttons/dark-theme/icon-gallery-min.png";
-            skillsBtnIconAitp.src = "assets/icons/resume-icons/buttons/dark-theme/icon-skills-min.png";
+        if (window.location.href === "https://loganwiggins.com/resume?") {
+            galleryBtnIconAitp.classList.add('filter-white');
+            skillsBtnIconAitp.classList.add('filter-white');
         }     
     }
 
@@ -78,60 +79,62 @@
         darkMode = localStorage.getItem("darkMode");
 
         // if-else on click
-        if(darkMode !== "enabled") {
+        if (darkMode !== "enabled") {
             enableDarkMode();
 
             // set nav icons
-            aboutmeIcon.src = "assets/icons/nav-icons/dark-theme/user-icon.png";
-            resumeIcon.src = "assets/icons/nav-icons/dark-theme/resume-icon.png";
-            projectsIcon.src = "assets/icons/nav-icons/dark-theme/project-icon.png";
-            themeIcon.src = "assets/icons/nav-icons/dark-theme/sun-icon.png";
+            aboutmeIcon.classList.add('filter-white');
+            resumeIcon.classList.add('filter-white');
+            projectsIcon.classList.add('filter-white');
+            themeIcon.src = "assets/icons/nav-icons/sun.svg";
+            themeIcon.classList.add('filter-white');
             themeText.innerHTML = "Light mode";
 
            // if page is... then change contact icons
-            if(window.location.href === "https://www.loganwiggins.com/") {
-                phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon-min.png";
-                emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
-                linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
+            if (window.location.href === "https://www.loganwiggins.com/") {
+                phoneIcon.classList.add('filter-white');
+                emailIcon.classList.add('filter-white');
+                linkedinIcon.classList.add('filter-white');
             }   
             // if page is... then change contact icons
-            if(window.location.href === "https://loganwiggins.com/index?") {
-                phoneIcon.src = "assets/icons/contact-icons/dark-theme/phone-icon-min.png";
-                emailIcon.src = "assets/icons/contact-icons/dark-theme/email-icon-min.png";
-                linkedinIcon.src = "assets/icons/contact-icons/dark-theme/linkedin-icon-min.png";
+            if (window.location.href === "https://loganwiggins.com/index?") {
+                phoneIcon.classList.add('filter-white');
+                emailIcon.classList.add('filter-white');
+                linkedinIcon.classList.add('filter-white');
             }
             // if page is... then change contact icons
-            if(window.location.href === "https://loganwiggins.com/resume?") {
-                galleryBtnIconAitp.src = "assets/icons/resume-icons/buttons/dark-theme/icon-gallery-min.png";
-                skillsBtnIconAitp.src = "assets/icons/resume-icons/buttons/dark-theme/icon-skills-min.png";
+            if (window.location.href === "https://loganwiggins.com/resume?") {
+                galleryBtnIconAitp.classList.add('filter-white');
+                skillsBtnIconAitp.classList.add('filter-white');
             }    
         }
         else {
             disableDarkMode();
 
-            // set nav icons
-            aboutmeIcon.src = "assets/icons/nav-icons/user-icon.png";
-            resumeIcon.src = "assets/icons/nav-icons/resume-icon.png";
-            projectsIcon.src = "assets/icons/nav-icons/project-icon.png";
-            themeIcon.src = "assets/icons/nav-icons/moon-icon.png";
+            // Set nav icons
+            aboutmeIcon.classList.remove('filter-white');
+            resumeIcon.classList.remove('filter-white');
+            projectsIcon.classList.remove('filter-white');
+            themeIcon.src = "assets/icons/nav-icons/moon.svg";
+            themeIcon.classList.remove('filter-white');
             themeText.innerHTML = "Dark mode";
 
-            // if page is index.html, then change contact icons
-            if(window.location.href === "https://www.loganwiggins.com/") {
-                phoneIcon.src = "assets/icons/contact-icons/phone-icon-min.png";
-                emailIcon.src = "assets/icons/contact-icons/email-icon-min.png";
-                linkedinIcon.src = "assets/icons/contact-icons/linkedin-icon-min.png";
+            // If page is index.html, then change contact icons
+            if (window.location.href === "https://www.loganwiggins.com/") {
+                phoneIcon.classList.remove('filter-white');
+                emailIcon.classList.remove('filter-white');
+                linkedinIcon.classList.remove('filter-white');
             }            
-            // if page is index.html, then change contact icons
-            if(window.location.href === "https://loganwiggins.com/index?") {
-                phoneIcon.src = "assets/icons/contact-icons/phone-icon-min.png";
-                emailIcon.src = "assets/icons/contact-icons/email-icon-min.png";
-                linkedinIcon.src = "assets/icons/contact-icons/linkedin-icon-min.png";
+            // If page is index.html, then change contact icons
+            if (window.location.href === "https://loganwiggins.com/index?") {
+                phoneIcon.classList.remove('filter-white');
+                emailIcon.classList.remove('filter-white');
+                linkedinIcon.classList.remove('filter-white');
             }
-            // if page is... then change contact icons
-            if(window.location.href === "https://loganwiggins.com/resume?") {
-                galleryBtnIconAitp.src = "assets/icons/resume-icons/buttons/icon-gallery-min.png";
-                skillsBtnIconAitp.src = "assets/icons/resume-icons/buttons/icon-skills-min.png";
+            // If page is... then change contact icons
+            if (window.location.href === "https://loganwiggins.com/resume?") {
+                galleryBtnIconAitp.classList.remove('filter-white');
+                skillsBtnIconAitp.classList.remove('filter-white');
             }    
         }
     }

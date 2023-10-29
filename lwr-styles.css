@@ -54,59 +54,20 @@ a:active {
     --primary-color: rgb(0,0,0);
     --secondary-color: rgb(255,255,255);
     --accent-color: rgb(96, 81, 254);
-    --window-color: linear-gradient(
-        to right bottom, 
-        rgba(0,0,0, 0.7),
-        rgba(0,0,0, 0.6)
-    );
-    --nav-color: linear-gradient(
-        to right bottom, 
-        rgba(0,0,0, 0.7),
-        rgba(0,0,0, 0.5)
-    );
-    --button-color: linear-gradient(
-        to left top, 
-        rgba(0,0,0, 0.6),
-        rgba(0,0,0, 1.0)
-    );
-    --button-hvr-color: linear-gradient(
-        to left top, 
-        rgba(0,0,0, 0.0),
-        rgba(0,0,0, 1)
-    );
-    --card-color: linear-gradient(
-        to left top, 
-        rgba(0,0,0, 0.6),
-        rgba(0,0,0, 0.3)
-    );
-    --infocard-color: linear-gradient(
-        to right bottom, 
-        rgba(0,0,0, 0.7),
-        rgba(0,0,0, 0.5)
-    );
-    --resume-card-skills: linear-gradient(
-        to top, 
-        rgba(0,0,0, 0.5),
-        rgba(0,0,0, 0.4),
-        rgba(0,0,0, 0)
-    );
-    --mobile-nav-color: linear-gradient(
-        to right bottom, 
-        rgba(0,0,0, 0.7),
-        rgba(0,0,0, 0.5)
-    );
+    --window-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.6));
+    --nav-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
+    --button-color: linear-gradient(to left top, rgba(0,0,0, 0.6), rgba(0,0,0, 1.0));
+    --button-hvr-color: linear-gradient(to left top, rgba(0,0,0, 0.0), rgba(0,0,0, 1));
+    --card-color: linear-gradient(to left top, rgba(0,0,0, 0.6), rgba(0,0,0, 0.3));
+    --infocard-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
+    --resume-card-skills: linear-gradient(to top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.4),rgba(0,0,0, 0));
+    --mobile-nav-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
     --mobile-infocard-color: rgba(0,0,0, 0.7);
-    --mobile-button-color: linear-gradient(
-        to right bottom, 
-        rgba(0,0,0, 0.5),
-        rgba(0,0,0, 0.4)
-    );
-    --mobile-button-hvr-color: linear-gradient(
-        to right bottom, 
-        rgba(0,0,0, 0.6),
-        rgba(0,0,0, 0.5)
-    );
+    --mobile-button-color: linear-gradient(to right bottom, rgba(0,0,0, 0.5), rgba(0,0,0, 0.4));
+    --mobile-button-hvr-color: linear-gradient(to right bottom, rgba(0,0,0, 0.6), rgba(0,0,0, 0.5));
 }
+.filter-white { filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%); }
+.filter-accent { filter: invert(26%) sepia(94%) saturate(2660%) hue-rotate(238deg) brightness(103%) contrast(99%); }
 
 /* MAIN COMPONENTS */
 /* ------------------------------ */
@@ -422,12 +383,14 @@ html {
     box-shadow: 0 0 2rem rgba(96, 81, 254, 0.25);
 }
 .index-contact img {
-    max-width: 2.75rem;
+    max-width: 2.25rem;
+    max-height: 2.25rem;
     margin: 0;
     opacity: 0.9;
 }
 .index-contact p {
     margin-left: 1.5rem;
+    text-wrap: nowrap;
 }
 /* Tooltips */
 .index-contact:hover #tooltip {
@@ -451,6 +414,7 @@ html {
 }
 .pdf-btn img {
     max-width: 2.25rem;
+    filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%);
 }
 .pdf-btn:hover {
     /* box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5); */
@@ -1329,7 +1293,8 @@ html {
         font-size: 1.25rem;
     }
     .index-contact img {
-        max-width: 2rem;
+        max-width: 1.75rem;
+        max-height: 1.75rem;
     }
     .index-contact p {
         margin-left: 1rem;
