@@ -55,7 +55,7 @@
         themeText.innerHTML = "Light mode";
 
         // if page is... then change contact icons
-        if (window.location.href === "https://www.loganwiggins.com/") {
+        if (window.location.href === "https://www.loganwiggins.com") {
             phoneIcon.classList.add('filter-white');
             emailIcon.classList.add('filter-white');
             linkedinIcon.classList.add('filter-white');
@@ -91,7 +91,7 @@
             themeText.innerHTML = "Light mode";
 
            // if page is... then change contact icons
-            if (window.location.href === "https://www.loganwiggins.com/") {
+            if (window.location.href === "https://www.loganwiggins.com") {
                 phoneIcon.classList.add('filter-white');
                 emailIcon.classList.add('filter-white');
                 linkedinIcon.classList.add('filter-white');
@@ -120,7 +120,7 @@
             themeText.innerHTML = "Dark mode";
 
             // If page is index.html, then change contact icons
-            if (window.location.href === "https://www.loganwiggins.com/") {
+            if (window.location.href === "https://www.loganwiggins.com") {
                 phoneIcon.classList.remove('filter-white');
                 emailIcon.classList.remove('filter-white');
                 linkedinIcon.classList.remove('filter-white');
