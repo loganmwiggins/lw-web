@@ -684,6 +684,18 @@ html {
 
 
 /* "PROJECTS" PAGE */
+.project-detail h1 {
+    margin: 0;
+}
+.project-detail h2 {
+    margin: 0;
+}
+.project-detail p {
+    opacity: 1;
+    font-size: 1.85rem;
+    margin-bottom: 0;
+}
+
 .project-card-row {
     display: flex;
     flex-direction: row;
