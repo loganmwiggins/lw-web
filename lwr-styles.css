@@ -1024,7 +1024,7 @@ html {
         margin-top: 2rem;
     }
     .index-contact-ctnr {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
         background: var(--infocard-color);
         width: 65%;
@@ -1032,12 +1032,15 @@ html {
         border-radius: 2rem;
     }
     .index-contact {
+        width: 25%;
         font-size: 1.75rem;
         margin: 0.5rem 0rem;
     }
     .index-contact img {
         margin: 1.5rem 0rem;
     }
+    .index-contact p { display: none; }
+
     /* Tooltips */
     .index-contact:hover #tooltip {
         display: none;
