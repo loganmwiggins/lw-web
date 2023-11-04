@@ -432,6 +432,9 @@ html {
     box-shadow: 0 0 1rem rgba(239, 71, 101, 0.75);
     transition: box-shadow 0.2s ease;
 }
+.pdf-btn:active {
+    box-shadow: none;
+}
 .resume-card-btn-ctnr {
     display: flex;
 }
@@ -957,8 +960,11 @@ html {
         padding: 0; 
         width: 100%;
     }
-    .menu-button:hover {
-        background: none;
+    .menu-button:hover,
+    .theme-button:hover { 
+        background: none; 
+        .menu-button-content img { opacity: 0.75; }
+        .menu-button-content h2 { opacity: 0.75; }
     }
     .theme-button-ctnr {
         width: 100%;
@@ -970,9 +976,6 @@ html {
         margin: 0 0.75rem;
         padding: 0;
         width: 100%;
-    }
-    .theme-button:hover {
-        background: none;
     }
     .menu-button-content {
         flex-direction: column;
@@ -1056,6 +1059,9 @@ html {
     .pdf-btn {
         margin-left: 0;
         padding: 0.75rem 3rem;
+    }
+    .pdf-btn:hover {
+        box-shadow: none;
     }
     .resume-card-btn-ctnr {
         margin-top: 1rem;
