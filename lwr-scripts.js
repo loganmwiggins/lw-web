@@ -12,6 +12,7 @@
     var aboutmeIcon = document.getElementById("aboutme-icon");
     var resumeIcon = document.getElementById("resume-icon");
     var projectsIcon = document.getElementById("projects-icon");
+    var collapseIcon = document.getElementById("collapse-icon");
 
     // Declare contact icons
     var phoneIcon = document.getElementById("phone-icon");
@@ -50,6 +51,7 @@
         aboutmeIcon.classList.add('filter-white');
         resumeIcon.classList.add('filter-white');
         projectsIcon.classList.add('filter-white');
+        collapseIcon.classList.add('filter-white');
         themeIcon.src = "assets/icons/nav-icons/sun.svg";
         themeIcon.classList.add('filter-white');
         themeText.innerHTML = "Light mode";
@@ -86,6 +88,7 @@
             aboutmeIcon.classList.add('filter-white');
             resumeIcon.classList.add('filter-white');
             projectsIcon.classList.add('filter-white');
+            collapseIcon.classList.add('filter-white');
             themeIcon.src = "assets/icons/nav-icons/sun.svg";
             themeIcon.classList.add('filter-white');
             themeText.innerHTML = "Light mode";
@@ -115,6 +118,7 @@
             aboutmeIcon.classList.remove('filter-white');
             resumeIcon.classList.remove('filter-white');
             projectsIcon.classList.remove('filter-white');
+            collapseIcon.classList.remove('filter-white');
             themeIcon.src = "assets/icons/nav-icons/moon.svg";
             themeIcon.classList.remove('filter-white');
             themeText.innerHTML = "Dark mode";
@@ -303,57 +307,40 @@
 
 
 
-// DATE VARS
+// COLLAPSIBLE NAV
 
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    var yyyy = today.getFullYear();
+    let nav = document.getElementById("navigation");
+    var screenWidth = window.innerWidth;
 
-    switch(mm) {
-        case '1':
-            mm = "January";
-            break;
-        case '2':
-            mm = "February";
-            break;
-        case '3':
-            mm = "March";
-            break;
-        case '4':
-            mm = "April";
-            break;
-        case '5':
-            mm = "May";
-            break;
-        case '6':
-            mm = "June";
-            break;
-        case '7':
-            mm = "July";
-            break;
-        case '8':
-            mm = "August";
-            break;
-        case '9':
-            mm = "September";
-            break;
-        case '10':
-            mm = "October";
-            break;
-        case '11':
-            mm = "November";
-            break;
-        case '12':
-            mm = "December";
-            break;
+    // Declare local storage
+    let navStatus = localStorage.getItem("navStatus");
+
+    // Functions for expanding and collapsing navStatus
+    const collapseNav = () => {
+        nav.classList.add("collapsed"); 
+        localStorage.setItem("navStatus", "collapsed"); // update navStatus in the local storage
+        navStatus = localStorage.getItem("navStatus");  // update navStatus variable
+    }
+    const expandNav = () => {
+        nav.classList.remove("collapsed"); 
+        localStorage.setItem("navStatus", "expanded"); // update navStatus in the local storage
+        navStatus = localStorage.getItem("navStatus");  // update navStatus variable
     }
 
-    today = mm + ' ' + dd + ', ' + yyyy;
+    // Check navStatus state on load (keeps on refresh)
+    if (navStatus === "collapsed") {
+        collapseNav();
 
-    window.onload = function setNavDate() {
-        let dateStr = document.getElementById("date");
-        dateStr.innerHTML = today;
+        if (screenWidth <= 1200) {
+            nav.classList.remove("collapsed");
+            navStatus = "expanded";
+        }
+    }
+
+    function toggleNav() {
+        navStatus = localStorage.getItem("navStatus");  // check navStatus state on button click
+        if (navStatus == "expanded") { collapseNav(); }
+        else { expandNav(); } 
     }
 
 // --------------------

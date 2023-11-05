@@ -36,7 +36,7 @@
 
     <section class="dynamic-window">
         <!-- Window LEFT -->
-        <div class="nav-menu">
+        <div class="nav-menu" id="navigation">
             <!-- "Home" button-->
             <form action="https://loganwiggins.com/index?">
                 <button class="menu-button" id="active-nav">
@@ -75,7 +75,9 @@
             </div>
             <!-- Bottom nav -->
             <div class="bottom-nav-ctnr">
-                <p id="date"></p>
+                <button class="collapse-btn" onclick="toggleNav()">
+                    <img src="assets/icons/nav-icons/collapse.svg" id="collapse-icon">
+                </button>
             </div>
         </div>
 

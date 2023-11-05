@@ -203,6 +203,20 @@ html {
     border-radius: 2rem;
     padding-top: 3rem;
     position: relative;
+    transition: flex 0.2s ease;
+}
+.nav-menu.collapsed {
+    flex: 0.25 !important;
+    transition: flex 0.2s ease;
+
+    .menu-button, .theme-button { width: 50%; }
+    .menu-button-content { justify-content: center; }
+    .menu-button-content h2 { display: none; }
+    .menu-button-content img { margin-right: 0; }
+    .collapse-btn img { 
+        transform: rotate(180deg); 
+        transition: transform 0.2s ease-in-out;
+    }
 }
 .menu-button {
     background: var(--button-color);
@@ -254,6 +268,7 @@ html {
     .menu-button-content img { opacity: 1; }
     .menu-button-content h2 { opacity: 1; }
 }
+#theme-text { white-space: nowrap; }
 .bottom-nav-ctnr {
     width: 100%;
     position: absolute;
@@ -263,9 +278,22 @@ html {
     align-items: center;
     font-size: 1.5rem;
 }
-#date {
-    opacity: 0.5;
-    color: var(--secondary-color);
+.collapse-btn {
+    background: var(--button-color);
+    border: none;
+    border-radius: 1rem;
+    padding: .75rem 1rem .5rem 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.collapse-btn:hover {
+    background: var(--button-hvr-color);
+}
+.collapse-btn img {
+    max-width: 25px;
+    max-height: 25px;
+    opacity: .5;
+    transition: transform 0.2s ease-in-out;
 }
 
 
@@ -1318,6 +1346,7 @@ html {
     }
     .index-contact {
         font-size: 1.25rem;
+        padding: 0;
     }
     .index-contact img {
         max-width: 1.75rem;
