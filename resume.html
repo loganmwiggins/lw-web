@@ -105,7 +105,7 @@
                     </div>
                     <!-- Organizations -->
                     <p>Organizations</p>
-                    <div class="resume-card" onclick="toggleAllMenusAitp()">
+                    <div class="resume-card" onclick="toggleSkillsAitp()">
                         <img src="assets/icons/resume-icons/logo_aitp-min.png" draggable="false">
                         <div class="resume-card-text">
                             <h1>Association of IT Professionals</h1>
@@ -113,15 +113,7 @@
                             <p>Mar 2023 - Present</p>
                             <p>Tallahassee, FL</p>
                         </div>
-                        <div class="divider"></div>
-                        <div class="resume-card-btn-ctnr">
-                            <button id="aitp-gallery-btn" class="card-btn" onclick="toggleGalleryAitp(); event.stopPropagation();">
-                                <img id="aitp-gallery-btn-icon" src="assets/icons/resume-icons/buttons/gallery.svg" draggable="false">
-                            </button>
-                            <button id="aitp-skills-btn" class="card-btn" onclick="toggleSkillsAitp(); event.stopPropagation();">
-                                <img id="aitp-skills-btn-icon" src="assets/icons/resume-icons/buttons/skills.svg" draggable="false">
-                            </button>
-                        </div>
+                        <p class="skills-arrow" id="skills-arrow-aitp">▼</p>
                     </div>
                     <div class="resume-card-skills" id="skills-aitp">
                         <h3>Skills Utilized:</h3>
@@ -134,14 +126,6 @@
                             <p>Logo Design</p>
                         </div>
                     </div>
-                    <div class="resume-card-gallery" id="gallery-aitp">
-                        <div class="card-pics">
-                            <img src="assets/images/resume-card-gallery/aitp/fall-23-exec-board-min.png">
-                            <img src="assets/images/resume-card-gallery/aitp/IMG_9759-min.jpg">
-                            <img src="assets/images/resume-card-gallery/aitp/IMG_9764-min.jpg">
-                            <img src="assets/images/resume-card-gallery/aitp/IMG_0891-min.JPG">
-                        </div>
-                    </div>
                     <!-- Work Experience -->
                     <p>Work Experience</p>
                     <div class="resume-card" onclick="toggleSkillsPcg()">
@@ -152,7 +136,7 @@
                             <p>May 2023 - Present</p>
                             <p>Tallahassee, FL</p>
                         </div>
-                        <p id="skills-arrow-pcg">▼</p>
+                        <p class="skills-arrow" id="skills-arrow-pcg">▼</p>
                     </div>
                     <div class="resume-card-skills" id="skills-pcg">
                         <h3>Skills Utilized:</h3>
@@ -187,7 +171,7 @@
                             <p>Dec 2021 - Nov 2022</p>
                             <p>Tallahassee, FL</p>
                         </div>
-                        <p id="skills-arrow-cot">▼</p>
+                        <p class="skills-arrow" id="skills-arrow-cot">▼</p>
                     </div>
                     <div class="resume-card-skills" id="skills-cot">
                         <h3>Skills Utilized:</h3>
@@ -214,7 +198,7 @@
                             <p>Feb 2023 - May 2023</p>
                             <p>Tallahassee, FL</p>
                         </div>
-                        <p id="skills-arrow-223">▼</p>
+                        <p class="skills-arrow" id="skills-arrow-223">▼</p>
                     </div>
                     <div class="resume-card-skills" id="skills-223">
                         <h3>Skills Utilized:</h3>
@@ -234,7 +218,7 @@
                             <p>Feb 2021 - Apr 2021</p>
                             <p>Tallahassee, FL</p>
                         </div>
-                        <p id="skills-arrow-st">▼</p>
+                        <p class="skills-arrow" id="skills-arrow-st">▼</p>
                     </div>
                     <div class="resume-card-skills" id="skills-st">
                         <h3>Skills Utilized:</h3>
@@ -257,7 +241,7 @@
                             <p>Aug 2016 - May 2017</p>
                             <p>Palm Beach Gardens, FL</p>
                         </div>
-                        <p id="skills-arrow-pub">▼</p>
+                        <p class="skills-arrow" id="skills-arrow-pub">▼</p>
                     </div>
                     <div class="resume-card-skills" id="skills-pub">
                         <h3>Skills Utilized:</h3>
@@ -274,7 +258,7 @@
                             <p>Apr 2016 - Aug 2016</p>
                             <p>Palm Beach Gardens, FL</p>
                         </div>
-                        <p id="skills-arrow-tt">▼</p>
+                        <p class="skills-arrow" id="skills-arrow-tt">▼</p>
                     </div>
                     <div class="resume-card-skills" id="skills-tt">
                         <h3>Skills Utilized:</h3>
@@ -531,4 +515,5 @@
     </section>
 
     <script type="text/javascript" src="scripts/global-scripts.js"></script>
+    <script type="text/javascript" src="scripts/resume-scripts.js"></script>
 </html>

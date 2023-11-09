@@ -68,6 +68,7 @@ a:active {
 }
 .filter-white { filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%); }
 .filter-accent { filter: invert(26%) sepia(94%) saturate(2660%) hue-rotate(238deg) brightness(103%) contrast(99%); }
+.rotate { transform: rotate(180deg); transition: transform 0.2s ease; }
 
 /* MAIN COMPONENTS */
 /* ------------------------------ */
@@ -439,9 +440,7 @@ html {
 
 /* "RESUME" PAGE */
 /* Buttons */
-.pdf-btn-ctnr {
-    display: flex;
-}
+.pdf-btn-ctnr { display: flex; }
 .pdf-btn {
     background: linear-gradient(to bottom right, #EF4765, #ff79d7);
     border: none;
@@ -460,12 +459,8 @@ html {
     box-shadow: 0 0 1rem rgba(239, 71, 101, 0.75);
     transition: box-shadow 0.2s ease;
 }
-.pdf-btn:active {
-    box-shadow: none;
-}
-.resume-card-btn-ctnr {
-    display: flex;
-}
+.pdf-btn:active { box-shadow: none; }
+.resume-card-btn-ctnr { display: flex; }
 .card-btn {
     background: var(--button-color);
     border: none;
@@ -480,14 +475,6 @@ html {
     box-shadow: 0 0 2rem rgba(96, 81, 254, 0.2);
     transition: box-shadow 0.2s ease;
 }
-.card-btn.active {
-    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.4);
-    transition: box-shadow 0.2s ease;
-}
-.card-btn.active:hover {
-    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.4);
-    transition: box-shadow 0.2s ease;
-}
 .card-btn img {
     max-width: 2.25rem !important;
     max-height: 2.25rem !important;
@@ -499,10 +486,6 @@ html {
     display: block;
     margin-left: 5rem;
 }
-/* .card-btn:hover #tooltip {
-    display: block;
-    margin: 3.5rem 5rem 0 0;
-} */
 /* Cards */
 .resume-card {
     display: flex;
@@ -573,29 +556,15 @@ html {
     scale: 102%;
     transition: scale 0.2s;
 }
-#skills-pcg p {
-    background: #c3ed9b;
-}
-#skills-cot p {
-    background: #93beff;
-    /* color: #33457e; */
-}
-#skills-aitp p {
-    background: #f2b2a8;
-    /* color: #692013; */
-}
-#skills-223 p {
-    background: #d6d6d6;
-}
-#skills-st p {
-    background: #faaeff;
-}
-#skills-pub p {
-    background: #73e97d;
-}
-#skills-tt p {
-    background: #93beff;
-}
+.skills-arrow { transition: transform 0.2s ease; }
+#skills-pcg p { background: #c3ed9b; }
+#skills-cot p { background: #93beff; /* color: #33457e; */ }
+#skills-aitp p { background: #f2b2a8; /* color: #692013; */ }
+#skills-223 p { background: #d6d6d6; }
+#skills-st p { background: #faaeff; }
+#skills-pub p { background: #73e97d; }
+#skills-tt p { background: #93beff; }
+
 /* Resume card gallery */
 .resume-card-gallery {
     display: none;
@@ -626,14 +595,6 @@ html {
     object-fit: cover;
     margin: 0 1rem 1rem 0;
 }
-
-/* .divider {
-    background-color: var(--secondary-color);
-    opacity: 0.1;
-    width: 100%;
-    height: 2px;
-    margin: 1rem 0rem;
-} */
 
 /* Skill cards section */
 .skill-card-row {
@@ -1022,12 +983,8 @@ html {
         font-size: 1.25rem;
         opacity: 0.5;
     }
-    .display-right {
-        flex: 8; /* ratio to nav menu (1:8) */
-    }
-    .bottom-nav-ctnr {
-        display: none;
-    }
+    .display-right { flex: 8; } /* ratio to nav menu (1:8) */
+    .bottom-nav-ctnr { display: none; } /* hides nav toggle */
 
 
     /* "HOME": LAPTOPS */
@@ -1092,17 +1049,13 @@ html {
         margin-left: 0;
         padding: 0.75rem 3rem;
     }
-    .pdf-btn:hover {
-        box-shadow: none;
-    }
+    .pdf-btn:hover { box-shadow: none; }
     .resume-card-btn-ctnr {
         margin-top: 1rem;
         width: 100%;
         justify-content: right;
     }
-    .card-btn img {
-        margin-bottom: 0 !important;
-    }
+    .card-btn img { margin-bottom: 0 !important; }
     /* Tooltips */
     .pdf-btn:hover #tooltip {
         display: none;
@@ -1152,25 +1105,15 @@ html {
         margin-top: 2rem;
         transform: translate(-20rem, 0rem);
     }
-    .proj-card-empty {
-        padding: 0;
-    }
-    .back-btn {
-        margin: 1rem 0rem;
-    }
+    .proj-card-empty { padding: 0; }
+    .back-btn { margin: 1rem 0rem; }
     .carousel-imgs {
         max-width: 100%;
         box-shadow: 6px 6px 20px rgba(122,122,122,0.3);
     }
-    .proj-info-card-row {
-        flex-direction: column;
-    }
-    .proj-info-card {
-        margin: 0.5rem 0rem;
-    }
-    .proj-info-card img {
-        width: 75%;
-    }
+    .proj-info-card-row { flex-direction: column; }
+    .proj-info-card { margin: 0.5rem 0rem; }
+    .proj-info-card img { width: 75%; }
 }
 
 
@@ -1288,12 +1231,8 @@ html {
         margin-top: 2rem;
         transform: translate(-15rem, 0rem);
     }
-    .proj-info-card {
-        background: var(--mobile-button-color);
-    }
-    .proj-info-card img {
-        width: 100%;
-    }
+    .proj-info-card { background: var(--mobile-button-color); }
+    .proj-info-card img { width: 100%; }
 }
 
 
@@ -1310,37 +1249,22 @@ html {
 @media (max-width: 500px) {
 
     /* "ALL": MOBILE */
-    .title-card-left h1 { /*for non index title cards*/
-        font-size: 2.25rem;
-    }
+    .title-card-left h1 { font-size: 2.25rem; } /*for non index title cards*/
     .info-card {
         background: var(--mobile-infocard-color);
         margin: 0.5rem 0rem;
         width: 70%;
     }
-    .info-card h1 {
-        font-size: 1.5rem;
-    }
-    .info-card p {
-        font-size: 1.25rem;
-    }
+    .info-card h1 { font-size: 1.5rem; }
+    .info-card p { font-size: 1.25rem; }
 
     /* "NAV": MOBILE */
-    #theme-text {
-        white-space: nowrap;
-    }
-
+    #theme-text { white-space: nowrap; }
 
     /* "HOME": MOBILE */
-    .title-card {
-        margin: 4rem 0.5rem 0.5rem 0.5rem;
-    }
-    .index-title-text h1 {
-        font-size: 2.25rem;
-    }
-    .index-title-text p {
-        font-size: 1.25rem;
-    }
+    .title-card { margin: 4rem 0.5rem 0.5rem 0.5rem; }
+    .index-title-text h1 { font-size: 2.25rem; }
+    .index-title-text p { font-size: 1.25rem; }
     .role {
         font-size: 1.25rem;
         width: 100%;
@@ -1374,16 +1298,12 @@ html {
     }
     
 
-
     /* "PROJECTS": MOBILE */
-    .tooltip h1 {
-        font-size: 1.25rem
-    }
+    .tooltip h1 { font-size: 1.25rem }
     .project-card img {
         width: 50rem;
         margin-top: 2rem;
         transform: translate(-35rem, 0rem);
-        /* display: none; */
     }
     .back-btn {
         font-size: 1.25rem;
