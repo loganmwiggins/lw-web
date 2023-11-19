@@ -675,6 +675,7 @@ html {
 
 
 /* "PROJECTS" PAGE */
+.project-detail { padding: 3rem 4rem; }
 .project-detail h1 { 
     margin: 0; 
     font-size: 2.5rem;
@@ -685,29 +686,39 @@ html {
 }
 .project-detail p {
     opacity: 1;
-    font-size: 1.85rem;
+    font-size: 2rem;
     margin-bottom: 0;
 }
 .languages-row {
     display: flex;
-    justify-content: space-between;
-    width: 88%;
-    margin: 1rem 0;
+    flex-flow: wrap;
+
+    /* disable dragging + selecting  */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 .language-card {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: var(--infocard-color);
     border-radius: 2rem;
     padding: 0 4rem;
-    margin: 0 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 .language-card img { 
     max-width: 3rem;
     margin-right: 1.5rem;
 }
-.language-card p { font-size: 2rem; }
+.language-card p { 
+    font-size: 2rem; 
+    opacity: 1;
+}
 .project-card-row {
     display: flex;
     flex-direction: row;
@@ -916,7 +927,6 @@ html {
     .info-card {
         width: 65%;
         font-size: 1.2rem;
-
         padding: 2rem 4rem;
         margin: 1rem;
     }
@@ -978,15 +988,9 @@ html {
 
 
     /* "HOME": LAPTOPS */
-    .index-title-text {
-        margin: 0rem 2rem;
-    }
-    .index-title-text h1 {
-        font-size: 3rem;
-    }
-    .index-title-text p {
-        font-size: 1.5rem;
-    }
+    .index-title-text { margin: 0rem 2rem; }
+    .index-title-text h1 { font-size: 3rem; }
+    .index-title-text p { font-size: 1.5rem; }
     .index-info-card {
         width: 65%;
         font-size: 1.2rem;
@@ -1041,9 +1045,7 @@ html {
     }
     .card-btn img { margin-bottom: 0 !important; }
     /* Tooltips */
-    .pdf-btn:hover #tooltip {
-        display: none;
-    }
+    .pdf-btn:hover #tooltip { display: none; }
     .resume-card {
         display: flex;
         flex-direction: column;
@@ -1054,9 +1056,7 @@ html {
         border-radius: 2rem;
         padding: 3rem 3rem;
     }
-    .resume-card img {
-        margin: 0rem 0rem 2rem 0rem;
-    }
+    .resume-card img { margin: 0rem 0rem 2rem 0rem; }
     .resume-card-text h1 {
         margin: 0rem 0rem 1rem 0rem;
         font-size: 2rem;
@@ -1065,9 +1065,7 @@ html {
         margin: 0.5rem 0rem;
         font-size: 1.5rem;
     }
-    .skill-card-row {
-        flex-direction: column;
-    }
+    .skill-card-row { flex-direction: column; }
     .skill-card {
         padding: 2rem 3rem;
         margin: 0.5rem 0rem;
@@ -1075,15 +1073,16 @@ html {
 
 
     /* "PROJECTS": LAPTOPS */
-    .languages-row {
-        width: 74%;
-        margin: 1rem 0;
-    }
+    .project-detail { padding: 3rem 4rem; }
+    .project-detail h1 { font-size: 2.5rem; }
+    .project-detail h2 { font-size: 2rem; }
+    .project-detail p { font-size: 2rem; }
     .language-card {
         padding: 0 2.5rem;
-        margin: 0 .5rem;
+        margin-right: 1rem;
     }
     .language-card img { max-width: 2.5rem; }
+    .language-card p { font-size: 2rem; }
     .proj-sub h1 { font-size: 1.5rem; }
     .project-card-row {
         display: flex;
@@ -1136,6 +1135,9 @@ html {
         margin: 0.5rem 0rem;
         width: 70%;
         background: var(--mobile-infocard-color);
+    }
+    .info-card h1 {
+        font-size: 1.75rem;
     }
     
 
@@ -1197,20 +1199,16 @@ html {
 
 
     /* "PROJECTS": TABLETS */
-    .languages-row {
-        width: 80%;
-        margin: 1rem 0;
-        /* flex-direction: column; */
-    }
+    .project-detail h1 { font-size: 2.25rem; }
+    .project-detail h2 { font-size: 1.75rem; }
+    .project-detail p { font-size: 1.75rem; }
     .language-card {
-        background: var(--mobile-infocard-color);
-        margin: 0.5rem;
+        background: var(--mobile-button-color);
+        margin-right: 1rem;
+        margin-bottom: 1rem;
     }
-    .language-card img {
-        /* display: none; */
-        margin: 1rem;
-    }
-    .language-card p { display: none; }
+    .language-card img {  margin: 0 1rem; }
+    .language-card p { font-size: 1.75rem; }
     .project-card img {
         width: 50rem;
         margin-top: 2rem;
@@ -1276,6 +1274,17 @@ html {
     
 
     /* "PROJECTS": MOBILE */
+    .project-detail h1 { font-size: 1.75rem; }
+    .project-detail h2 { font-size: 1.5rem; }
+    .project-detail p { font-size: 1.5rem; }
+    .language-card { 
+        margin-right: 0.75rem; 
+        margin-bottom: 0.75rem;
+        border-radius: 1.5rem;
+    }
+    .language-card img { margin: 1rem; max-width: 2.25rem; }
+    .language-card p { font-size: 1.5rem; }
+
     .tooltip h1 { font-size: 1.25rem }
     .project-card img {
         width: 50rem;
