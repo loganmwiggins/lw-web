@@ -1172,7 +1172,10 @@ html {
         justify-content: center;
     }
     .skill-card { background: var(--mobile-button-color); }
-    .course-card { background: var(--mobile-button-color); }
+    .course-card { 
+        width: 100%;
+        background: var(--mobile-button-color); 
+    }
     .resume-card-skills h3 {
         font-size: 1.25rem;
         margin: 10px 10px 10px 0;
