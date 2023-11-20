@@ -552,14 +552,11 @@ html {
     scale: 100%;
     cursor: default;
 }
-.resume-card-skills p:hover {
-    scale: 102%;
-    transition: scale 0.2s;
-}
 .skills-arrow { transition: transform 0.2s ease; }
+#skills-fsu p { background: #631c2c; color: #fff; }
+#skills-aitp p { background: #f2b2a8; /* color: #692013; */ }
 #skills-pcg p { background: #c3ed9b; }
 #skills-cot p { background: #93beff; /* color: #33457e; */ }
-#skills-aitp p { background: #f2b2a8; /* color: #692013; */ }
 #skills-223 p { background: #d6d6d6; }
 #skills-st p { background: #faaeff; }
 #skills-pub p { background: #73e97d; }

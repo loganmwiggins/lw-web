@@ -12,6 +12,7 @@
 
 // RESUME CARD
 
+    let skillsArrowFsu = document.getElementById("skills-arrow-fsu");
     let skillsArrowAitp = document.getElementById("skills-arrow-aitp");
     let skillsArrowPcg = document.getElementById("skills-arrow-pcg");
     let skillsArrowCot = document.getElementById("skills-arrow-cot");
@@ -20,6 +21,7 @@
     let skillsArrowPub = document.getElementById("skills-arrow-pub");
     let skillsArrowTt = document.getElementById("skills-arrow-tt");
 
+    let skillsFsu = document.getElementById("skills-fsu");
     let skillsAitp = document.getElementById("skills-aitp");
     let skillsPcg = document.getElementById("skills-pcg");
     let skillsCot = document.getElementById("skills-cot");
@@ -28,6 +30,16 @@
     let skillsPub = document.getElementById("skills-pub");
     let skillsTt = document.getElementById("skills-tt");
 
+    function toggleSkillsFsu() {
+        if (skillsFsu.style.display == "flex") {
+            skillsFsu.style.display = "none";
+            skillsArrowFsu.classList.remove("rotate");
+        }
+        else {
+            skillsFsu.style.display = "flex";
+            skillsArrowFsu.classList.add("rotate");
+        }
+    }
     function toggleSkillsAitp() {
         if (skillsAitp.style.display == "flex") {
             skillsAitp.style.display = "none";
