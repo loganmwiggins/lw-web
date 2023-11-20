@@ -18,11 +18,7 @@
     var phoneIcon = document.getElementById("phone-icon");
     var emailIcon = document.getElementById("email-icon");
     var linkedinIcon = document.getElementById("linkedin-icon");
-
-    // Declare resume icons
-    var galleryBtnIconAitp = document.getElementById("aitp-gallery-btn-icon");
-    var skillsBtnIconAitp = document.getElementById("aitp-skills-btn-icon");
-
+    
 
     // Functions for enabling and disabling darkMode
     const enableDarkMode = () => {
@@ -68,11 +64,6 @@
             emailIcon.classList.add('filter-white');
             linkedinIcon.classList.add('filter-white');
         }  
-        // if page is... then change contact icons
-        if (window.location.href === "https://loganwiggins.com/resume?") {
-            galleryBtnIconAitp.classList.add('filter-white');
-            skillsBtnIconAitp.classList.add('filter-white');
-        }     
     }
 
 
@@ -104,12 +95,7 @@
                 phoneIcon.classList.add('filter-white');
                 emailIcon.classList.add('filter-white');
                 linkedinIcon.classList.add('filter-white');
-            }
-            // if page is... then change contact icons
-            if (window.location.href === "https://loganwiggins.com/resume?") {
-                galleryBtnIconAitp.classList.add('filter-white');
-                skillsBtnIconAitp.classList.add('filter-white');
-            }    
+            } 
         }
         else {
             disableDarkMode();
@@ -135,11 +121,6 @@
                 emailIcon.classList.remove('filter-white');
                 linkedinIcon.classList.remove('filter-white');
             }
-            // If page is... then change contact icons
-            if (window.location.href === "https://loganwiggins.com/resume?") {
-                galleryBtnIconAitp.classList.remove('filter-white');
-                skillsBtnIconAitp.classList.remove('filter-white');
-            }    
         }
     }
 
