@@ -4,38 +4,32 @@
     let darkMode = localStorage.getItem("darkMode");
 
     // Declare theme button + content
-    var themeBtn = document.getElementById("theme-btn");
-    var themeIcon = document.getElementById("theme-icon");
-    var themeText = document.getElementById("theme-text");
+    let themeBtn = document.getElementById("theme-btn");
+    let themeIcon = document.getElementById("theme-icon");
+    let themeText = document.getElementById("theme-text");
 
     // Declare nav icons
-    var aboutmeIcon = document.getElementById("aboutme-icon");
-    var resumeIcon = document.getElementById("resume-icon");
-    var projectsIcon = document.getElementById("projects-icon");
-    var collapseIcon = document.getElementById("collapse-icon");
+    let aboutmeIcon = document.getElementById("aboutme-icon");
+    let resumeIcon = document.getElementById("resume-icon");
+    let projectsIcon = document.getElementById("projects-icon");
+    let collapseIcon = document.getElementById("collapse-icon");
 
     // Declare contact icons
-    var phoneIcon = document.getElementById("phone-icon");
-    var emailIcon = document.getElementById("email-icon");
-    var linkedinIcon = document.getElementById("linkedin-icon");
+    let phoneIcon = document.getElementById("phone-icon");
+    let emailIcon = document.getElementById("email-icon");
+    let linkedinIcon = document.getElementById("linkedin-icon");
 
 
     // Functions for enabling and disabling darkMode
     const enableDarkMode = () => {
-        // add class darkmode to the body
-        document.body.classList.add("dark-theme");
-        // update darkMode in the local storage
-        localStorage.setItem("darkMode", "enabled");
-        // update darkMode variable
-        darkMode = localStorage.getItem("darkMode");
+        document.body.classList.add("dark-theme");      // add class darkmode to the body
+        localStorage.setItem("darkMode", "enabled");    // update darkMode in the local storage
+        darkMode = localStorage.getItem("darkMode");    // update darkMode variable
     }
     const disableDarkMode = () => {
-        // remove class darkmode to the body
-        document.body.classList.remove("dark-theme");
-        // update darkMode in the local storage
-        localStorage.setItem("darkMode", "disabled");
-        // update darkMode variable
-        darkMode = localStorage.getItem("darkMode");
+        document.body.classList.remove("dark-theme");   // remove class darkmode to the body
+        localStorage.setItem("darkMode", "disabled");   // update darkMode in the local storage
+        darkMode = localStorage.getItem("darkMode");    // update darkMode variable
     }
 
 
@@ -52,7 +46,7 @@
         themeIcon.classList.add('filter-white');
         themeText.innerHTML = "Light mode";
 
-        // If page is... then change contact icons
+        // If page is index, then change contact icons
         if (window.location.href === "https://www.loganwiggins.com") {
             phoneIcon.classList.add('filter-white');
             emailIcon.classList.add('filter-white');
@@ -77,10 +71,10 @@
 
 
     themeBtn.onclick = function() {
-        // check darkMode state on click
+        // Check darkMode state on nav button click
         darkMode = localStorage.getItem("darkMode");
 
-        // if-else on click
+        // If-else on click
         if (darkMode !== "enabled") {
             enableDarkMode();
 
@@ -93,7 +87,7 @@
             themeIcon.classList.add('filter-white');
             themeText.innerHTML = "Light mode";
 
-            // If page is... then change contact icons
+            // If page is index, then change contact icons
             if (window.location.href === "https://www.loganwiggins.com") {
                 phoneIcon.classList.add('filter-white');
                 emailIcon.classList.add('filter-white');
@@ -127,7 +121,7 @@
             themeIcon.classList.remove('filter-white');
             themeText.innerHTML = "Dark mode";
 
-            // If page is ... then change contact icons
+            // If page is index, then change contact icons
             if (window.location.href === "https://loganwiggins.com") {
                 phoneIcon.classList.remove('filter-white');
                 emailIcon.classList.remove('filter-white');

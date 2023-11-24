@@ -156,11 +156,9 @@ html {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-.display-right::-webkit-scrollbar {
-    /* hides scrollbar but keeps function 
-        for Chrome, Safari, Opera */
-    display: none;
-} 
+/* hides scrollbar but keeps function for Chrome, Safari, Opera */
+.display-right::-webkit-scrollbar { display: none; } 
+
 @keyframes fadeInAnimation {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -379,15 +377,9 @@ html {
     -ms-user-select: none;
 }
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 .index-card a {
     display: inline;
@@ -433,9 +425,7 @@ html {
     text-wrap: nowrap;
 }
 /* Tooltips */
-.index-contact:hover #tooltip {
-    display: block;
-}
+.index-contact:hover #tooltip { display: block; }
 
 
 /* "RESUME" PAGE */
@@ -821,9 +811,7 @@ html {
     transition: box-shadow .1s ease-in-out;
     align-items: center;
 }
-.back-btn:hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5);
-}
+.back-btn:hover { box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5); }
 .carousel-ctnr {
     display: flex;
     flex-direction: column;
@@ -1133,9 +1121,7 @@ html {
         width: 70%;
         background: var(--mobile-infocard-color);
     }
-    .info-card h1 {
-        font-size: 1.75rem;
-    }
+    .info-card h1 { font-size: 1.75rem; }
     
 
     /* "NAV": TABLETS */
