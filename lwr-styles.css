@@ -523,6 +523,18 @@ html {
     margin-bottom: -4rem;
     background: var(--resume-card-skills);
     border-radius: 0 0 2rem 2rem;
+    opacity: 1;
+    animation: openResumeCard 0.25s;
+}
+@keyframes openResumeCard {
+    0% { 
+        opacity: 0; 
+        translate: 0 -15rem;
+    }
+    100% { 
+        opacity: 1;
+        translate: 0 -4rem;
+    }
 }
 .resume-card-skills h3 {
     font-size: 1.5rem;
@@ -543,44 +555,23 @@ html {
     cursor: default;
 }
 .skills-arrow { transition: transform 0.2s ease; }
-#skills-fsu p { background: #631c2c; color: #fff; }
+#skills-fsu p { 
+    background: #631c2c; 
+    color: #fff; 
+    opacity: .8;
+}
 #skills-aitp p { background: #f2b2a8; /* color: #692013; */ }
 #skills-pcg p { background: #c3ed9b; }
-#skills-cot p { background: #93beff; /* color: #33457e; */ }
+#skills-cot p { 
+    background: #154086; 
+    color: #fff;
+    /* color: #33457e; */ 
+    opacity: .8;
+}
 #skills-223 p { background: #d6d6d6; }
 #skills-st p { background: #faaeff; }
 #skills-pub p { background: #73e97d; }
 #skills-tt p { background: #93beff; }
-
-/* Resume card gallery */
-.resume-card-gallery {
-    display: none;
-    flex-direction: column;
-    translate: 0 -4rem;
-    padding: 3rem 3rem 1rem 3rem;
-    margin-bottom: -4rem;
-    background: var(--resume-card-skills);
-    border-radius: 0 0 2rem 2rem;
-}
-.resume-card-gallery h3 {
-    font-size: 1.5rem;
-    margin: 10px 10px 10px 0;
-    opacity: 0.8;
-}
-.card-pics {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    margin-top: 2rem;
-}
-.card-pics::-webkit-scrollbar { display: none; }
-.card-pics img {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 1rem;
-    object-fit: cover;
-    margin: 0 1rem 1rem 0;
-}
 
 /* Skill cards section */
 .skill-card-row {
@@ -1162,20 +1153,12 @@ html {
         width: 100%;
         background: var(--mobile-button-color); 
     }
-    .resume-card-skills h3 {
-        font-size: 1.25rem;
-        margin: 10px 10px 10px 0;
-        opacity: 0.8;
-    }
-    .resume-card-skills p {
+    .resume-card-skills h3 { margin: 10px 10px 10px 0; }
+    .rcs p {
         font-size: 1.5rem;
-        /* background: rgb(250, 174, 255); */
-        color: black;
-        padding: 0.25rem 1.25rem;
+        padding: 0.5rem 1.25rem;
         margin: 0.75rem 0.5rem 0.75rem 0;
         border-radius: 2rem;
-        scale: 100%;
-        cursor: default;
     }
     .resume-card-gallery h3 {
         font-size: 1.25rem;
@@ -1257,6 +1240,11 @@ html {
         max-height: 8rem;
     }
     .pdf-btn-ctnr { margin-top: 1rem; }
+    .resume-card-skills h3 { font-size: 1.25rem; }
+    .rcs p {
+        margin: 0.5rem 0.5rem 0.5rem 0;
+        border-radius: 1.75rem;
+    }
     
 
     /* "PROJECTS": MOBILE */
