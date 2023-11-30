@@ -683,7 +683,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--infocard-color);
+    background: var(--button-color);
     border-radius: 2rem;
     padding: 0 4rem;
     margin-right: 1rem;
