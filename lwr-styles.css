@@ -524,7 +524,7 @@ html {
     background: var(--resume-card-skills);
     border-radius: 0 0 2rem 2rem;
     opacity: 1;
-    animation: openResumeCard 0.25s;
+    animation: openResumeCard 0.5s;
 }
 @keyframes openResumeCard {
     0% { 
@@ -561,6 +561,7 @@ html {
     opacity: .8;
 }
 #skills-aitp p { background: #f2b2a8; /* color: #692013; */ }
+#skills-stars p { background: rgb(142, 224, 245); }
 #skills-pcg p { background: #c3ed9b; }
 #skills-cot p { 
     background: #154086; 
@@ -587,7 +588,7 @@ html {
     color: var(--secondary-color);
     border-radius: 2rem;
     padding: 2rem 3rem;
-    margin: 1rem 0.5rem;
+    margin: 0.5rem;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;

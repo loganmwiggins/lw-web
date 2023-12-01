@@ -14,6 +14,7 @@
 
     let skillsArrowFsu = document.getElementById("skills-arrow-fsu");
     let skillsArrowAitp = document.getElementById("skills-arrow-aitp");
+    let skillsArrowStars = document.getElementById("skills-arrow-stars");
     let skillsArrowPcg = document.getElementById("skills-arrow-pcg");
     let skillsArrowCot = document.getElementById("skills-arrow-cot");
     let skillsArrow223 = document.getElementById("skills-arrow-223");
@@ -23,6 +24,7 @@
 
     let skillsFsu = document.getElementById("skills-fsu");
     let skillsAitp = document.getElementById("skills-aitp");
+    let skillsStars = document.getElementById("skills-stars");
     let skillsPcg = document.getElementById("skills-pcg");
     let skillsCot = document.getElementById("skills-cot");
     let skills223 = document.getElementById("skills-223");
@@ -48,6 +50,16 @@
         else {
             skillsAitp.style.display = "flex";
             skillsArrowAitp.classList.add("rotate");
+        }
+    }
+    function toggleSkillsStars() {
+        if (skillsStars.style.display == "flex") {
+            skillsStars.style.display = "none";
+            skillsArrowStars.classList.remove("rotate");
+        }
+        else {
+            skillsStars.style.display = "flex";
+            skillsArrowStars.classList.add("rotate");
         }
     }
     function toggleSkillsPcg() {
