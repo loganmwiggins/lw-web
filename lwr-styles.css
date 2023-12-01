@@ -878,6 +878,32 @@ html {
 .half-row h1 { margin: 0; }
 .half-row p { margin: 2rem 0rem 0.5rem 0rem; }
 
+/* Project Details */
+.su-card-ctnr {
+    display: flex;
+    flex-flow: wrap;
+    padding-bottom: 2rem;
+}
+.su-card {
+    display: flex;
+    font-family: "Poppins-Regular";
+    background: var(--button-color);
+    color: var(--secondary-color);
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+    margin: 1rem 0.5rem 0rem;
+
+    /* disable dragging + selecting  */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.su-card h1 {
+    margin: 0;
+    font-size: 2rem;
+}
 
 
 
@@ -1185,6 +1211,10 @@ html {
     }
     .proj-info-card { background: var(--mobile-button-color); }
     .proj-info-card img { width: 100%; }
+    .su-card { 
+        width: 100%;
+        background: var(--mobile-button-color); 
+    }
 }
 
 
