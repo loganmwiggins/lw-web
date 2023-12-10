@@ -738,6 +738,11 @@ html {
     transform: translate(-10rem);
     box-shadow: 0rem 0rem 3rem rgba(255, 255, 255, 0.25);
 }
+.gd-img {
+    margin-top: 0rem !important;
+    transform: translate(20rem, -8rem) !important;
+    width: 20rem !important;
+}
 .proj-card-lw {
     background-color: var(--accent-color);
     color: white;
@@ -1099,6 +1104,11 @@ html {
         width: 65rem;
         margin-top: 2rem;
         transform: translate(-20rem, 0rem);
+    }
+    .gd-img {
+        margin-top: 0rem !important;
+        transform: translate(0) !important;
+        width: 20rem !important;
     }
     .proj-card-empty { padding: 0; }
     .back-btn { margin: 1rem 0rem; }

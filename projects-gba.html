@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Logan M. Wiggins">
+        <meta name="description" content="Logan Wiggins, Software Developer. I enjoy finding different ways to apply my computer skills, and I am passionate about discovering innovative solutions with software. Click here to view my digital portfolio.">
+        <title>Logan Wiggins | Projects</title>
+        <!-- Links -->
+        <link rel="stylesheet" href="lwr-styles.css">
+        <link rel="icon" type="image/x-icon" href="assets/icons/favicon/my-favicon-3.ico">
+        <link rel="canonical" href="https://loganwiggins.com/projects-induserv?">
+        <!-- Google Analytics tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB5MERRJGY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-ZB5MERRJGY');
+        </script>
+    </head>  
+
+    <video autoplay muted loop class="bg-video">
+        <source src="assets/animated-bg-1mb.mp4" type="video/mp4">
+    </video>
+
+    <section class="dynamic-window">
+        <!-- NAVIGATION PANE -->
+        <div class="nav-menu" id="navigation">
+            <!-- "Home" button-->
+            <form action="https://loganwiggins.com/index?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/user.svg" id="aboutme-icon" draggable="false">
+                        <h2>Home</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Resume" button-->
+            <form action="https://loganwiggins.com/resume?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/resume.svg" id="resume-icon" draggable="false">
+                        <h2>Resume</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Projects" button-->
+            <form action="https://loganwiggins.com/projects?">
+                <button class="menu-button" id="active-nav">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/projects-filled.svg" id="projects-icon" draggable="false">
+                        <h2>Projects</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Light/Dark" button -->
+            <div class="theme-button-ctnr">
+                <button class="theme-button" id="theme-btn">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/moon.svg" id="theme-icon" draggable="false">
+                        <h2 id="theme-text">Dark Mode</h2>
+                    </div>
+                </button>
+            </div>
+            <!-- Bottom nav -->
+            <div class="bottom-nav-ctnr">
+                <button class="collapse-btn" onclick="toggleNav()">
+                    <img src="assets/icons/nav-icons/collapse.svg" id="collapse-icon">
+                </button>
+            </div>
+        </div>
+
+
+        <!-- MAIN CONTENT PANE -->
+        <!-- ----------------- -->
+        <div class="display-right">
+            <div class="display-body">
+                <div class="title-card">
+                    <div class="title-card-left">
+                        <h1>Project Details</h1>
+                    </div>
+                    <div class="title-card-right">
+                        <form action="https://loganwiggins.com/projects?">
+                            <button class="back-btn">Back to All Projects</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="info-card project-detail">
+                    <div class="proj-detail-head">
+                        <h1>GBA Fall '23 Shirt Design</h1>
+                    </div>
+                    <p>
+                        For this project, I was commissioned to create two t-shirt designs for an FSU business fraternity. At the end of the day, they would select one t-shirt to represent their group within the fraternity and use my design to print shirts for their members.
+                    </p>
+                </div>
+     
+                <div class="info-card">
+                    <div class="proj-info-card-row">
+                        <div class="half-row">
+                            <p>Designs</p>
+                            <div class="proj-info-card">
+                                <h1>
+                                    I started by meeting with the client to get a feel for what they were looking to put on the shirts. After communicating with the client, I learned that they wanted two mock-ups for shirts that were a play on the cigarette brands, Camel and Malboro. Using Photoshop, I was able to produce front and back designs for two different shirt concepts. 
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj-info-card-row">
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-malboro-front-min.png" draggable="false">
+                        </div>
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-malboro-back-min.png" draggable="false">
+                        </div>
+                    </div>
+                    <div class="proj-info-card-row">
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-camel-front-min.png" draggable="false">
+                        </div>
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-camel-back-min.png" draggable="false">
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="proj-info-card-row">
+                        <div class="half-row">
+                            <p>Mock-ups</p>
+                            <div class="proj-info-card">
+                                <h1>
+                                    While creating the designs, the client told me that he would show the designs to the group's members to have them vote to choose one of the designs. Because of this I chose to create mock-ups for the client to make it easier for them to visualize the final product.
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj-info-card-row">
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-malboro-mockup-front-min.png" draggable="false">
+                        </div>
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-malboro-mockup-back-min.png" draggable="false">
+                        </div>
+                    </div>
+                    <div class="proj-info-card-row">
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-camel-mockup-front-min.png" draggable="false">
+                        </div>
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-camel-mockup-back-min.png" draggable="false">
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="proj-info-card-row">
+                        <div class="half-row">
+                            <p>Final Product</p>
+                            <div class="proj-info-card">
+                                <h1>
+                                    Finally, the group voted on the Malboro-inspired design, and they sent it off to a T-shirt manufacturer to print the shirts. Below is a physical copy of the shirt with my final design.
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj-info-card-row">
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-final-front-min.png" draggable="false">
+                        </div>
+                        <div class="proj-info-card proj-img-ctnr">
+                            <img src="assets/projects/gba/gba-final-back-min.png" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="scripts/global-scripts.js"></script>
+</html>
