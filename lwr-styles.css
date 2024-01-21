@@ -428,6 +428,8 @@ html {
 /* Buttons */
 .pdf-btn-ctnr { display: flex; }
 .pdf-btn {
+    display: flex;
+    align-items: center;
     background: linear-gradient(to bottom right, #EF4765, #ff79d7);
     border: none;
     border-radius: 1rem;
@@ -437,8 +439,15 @@ html {
     cursor: pointer;
 
     img {
-        max-width: 2.25rem;
+        max-width: 2rem;
+        margin-right: 1rem;
         filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%);
+    }
+    p {
+        font-family: "Poppins-Medium";
+        font-size: 1.75rem;
+        color: white;
+        margin: 0;
     }
 }
 .pdf-btn:hover {
@@ -466,11 +475,6 @@ html {
     max-height: 2.25rem !important;
     margin-right: 0 !important;
     opacity: 0.75;
-}
-/* Tooltips */
-.pdf-btn-ctnr:hover #tooltip {
-    display: block;
-    margin-left: 5rem;
 }
 /* Cards */
 .resume-card {
@@ -566,7 +570,6 @@ html {
 #skills-cot p { 
     background: #154086; 
     color: #fff;
-    /* color: #33457e; */ 
     opacity: .8;
 }
 #skills-223 p { background: #d6d6d6; }
@@ -1020,15 +1023,13 @@ html {
         margin-left: 0;
         padding: 0.75rem 3rem;
     }
-    .pdf-btn:hover { box-shadow: none; }
     .resume-card-btn-ctnr {
         margin-top: 1rem;
         width: 100%;
         justify-content: right;
     }
     .card-btn img { margin-bottom: 0 !important; }
-    /* Tooltips */
-    .pdf-btn:hover #tooltip { display: none; }
+    
     .resume-card {
         display: flex;
         flex-direction: column;
@@ -1081,11 +1082,12 @@ html {
     .project-card {        
         margin: 1rem 0;
         height: 20px;
-    }
-    .project-card img {
-        width: 65rem;
-        margin-top: 2rem;
-        transform: translate(-20rem, 0);
+
+        img {
+            width: 65rem;
+            margin-top: 2rem;
+            transform: translate(-20rem, 0);
+        }
     }
     .gd-img {
         margin-top: 0 !important;
@@ -1167,12 +1169,12 @@ html {
 
 
     /* "RESUME": TABLETS */
-    .resume-card { background: var(--mobile-button-color); }
-    .resume-card-btn-ctnr {
-        margin-top: 1rem;
-        width: 100%;
-        justify-content: center;
+    .pdf-btn {
+        img { max-width: 1.75rem; }
+        p { font-size: 1.5rem; }
     }
+    .pdf-btn:hover { box-shadow: none; }
+    .resume-card { background: var(--mobile-button-color); }
     .skill-card { background: var(--mobile-button-color); }
     .course-card { 
         width: 100%;
@@ -1268,7 +1270,10 @@ html {
 
 
     /* "RESUME": MOBILE */
-    .pdf-btn img { max-width: 2rem; }
+    .pdf-btn {
+        img { max-width: 1.5rem; }
+        p { font-size: 1.25rem; }
+    }
     .resume-card img {
         max-width: 8rem;
         max-height: 8rem;
