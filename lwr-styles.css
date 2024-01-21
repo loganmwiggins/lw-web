@@ -288,16 +288,12 @@ html {
         opacity: .5;
         transition: transform 0.2s ease-in-out;
     }
-    
 }
-.collapse-btn:hover {
-    background: var(--button-hvr-color);
-}
+.collapse-btn:hover { background: var(--button-hvr-color); }
 
 /* "HOME" PAGE */
 .title-card {
     display: flex;
-    flex-direction: row;
     align-items: center;
     background: var(--infocard-color);
     width: 80%;
@@ -306,22 +302,23 @@ html {
     border-radius: 2rem;
     font-size: 1.5rem;
 }
-.title-card-left {
+.title-card-left {  /*for non index title cards*/
     flex: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.title-card-left img {
-    max-width: 14rem;
-    border-radius: 20rem;
-    box-shadow: 6px 6px 20px rgba(122,122,122,0.3);
-}
-.title-card-left h1 { /*for non index title cards*/
-    font-family: "Poppins-Bold";
-    font-size: 4rem;
-    opacity: 0.9;
-    margin: 0;
+
+    img {
+        max-width: 14rem;
+        border-radius: 20rem;
+        box-shadow: 6px 6px 20px rgba(122,122,122,0.3);
+    }
+    h1 { 
+        font-family: "Poppins-Bold";
+        font-size: 4rem;
+        opacity: 0.9;
+        margin: 0;
+    }
 }
 .index-title-text {
     display: flex;
@@ -335,20 +332,21 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-.index-title-text h1 {
-    font-family: "Poppins-Bold";
-    font-size: 4rem;
-    opacity: 0.9;
-    margin: 0;
-}
-.index-title-text p {
-    color: var(--secondary-color);
-    opacity: 0.5;
-    font-size: 1.75rem;
-    font-weight: 600;
-    padding: 0;
-    margin: 0;
+
+    h1 {
+        font-family: "Poppins-Bold";
+        font-size: 4rem;
+        opacity: 0.9;
+        margin: 0;
+    }
+    p {
+        color: var(--secondary-color);
+        opacity: 0.5;
+        font-size: 1.75rem;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+    }
 }
 .title-card-right {
     flex: 1;
@@ -906,7 +904,14 @@ html {
         left: 2rem;
         right: 2rem;
     }
-    .title-card-left { text-align: center; }
+    .title-card {
+        flex-direction: column;
+        width: 65%;
+    }
+    .title-card-left { 
+        text-align: center; 
+        img { max-width: 10rem; }
+    }
     .info-card {
         width: 65%;
         font-size: 1.2rem;
@@ -926,10 +931,11 @@ html {
         justify-content: center;
         padding-top: 0;
         box-shadow: -20px 0px 30px rgba(122,122,122,0.5);
-    }
-    .nav-menu form {
-        width: 100%;
-        margin: .5rem; /*space btwn btns */
+
+        form {
+            width: 100%;
+            margin: .5rem; /*space btwn btns */
+        }
     }
     .menu-button {
         background: none;
@@ -984,11 +990,6 @@ html {
         padding: 2rem 4rem;
         margin: 1rem;
     }
-    .title-card {
-        flex-direction: column;
-        width: 65%;
-    }
-    .title-card-left img { max-width: 10rem; }
     .role {
         width: 100%;
         padding: 0 4rem;
@@ -1134,6 +1135,7 @@ html {
         margin: .5rem 0;
         width: 70%;
         background: var(--mobile-infocard-color);
+
         h1 { font-size: 1.75rem; }
     }
     
@@ -1261,10 +1263,7 @@ html {
         font-size: 1.25rem;
         padding: 0;
 
-        img {
-            max-width: 1.75rem;
-            max-height: 1.75rem;
-        }
+        img { max-width: 1.75rem; max-height: 1.75rem; }
         p { margin-left: 1rem; }
     }
 
@@ -1274,10 +1273,7 @@ html {
         img { max-width: 1.5rem; }
         p { font-size: 1.25rem; }
     }
-    .resume-card img {
-        max-width: 8rem;
-        max-height: 8rem;
-    }
+    .resume-card img { max-width: 8rem; max-height: 8rem; }
     .pdf-btn-ctnr { margin-top: 1rem; }
     .resume-card-skills h3 { font-size: 1.25rem; }
     .rcs p {
