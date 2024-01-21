@@ -96,10 +96,10 @@ html {
     z-index: 5;
     top: -100%;
     transition: top 0.3s;
-    padding: 0.5rem 3rem;
+    padding: .5rem 3rem;
     background-color: black;
     color: white;
-    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.25);
+    box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +118,7 @@ html {
 
     background: #242424;
     color: #fff;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     margin-left: 28px;
     padding: 10px;
     font-size: 1.25rem;
@@ -184,7 +184,7 @@ html {
 }
 .info-card p {
     opacity: 0.75;
-    margin: 1.5rem 0rem;
+    margin: 1.5rem 0;
     font-size: 1.75rem;
 }
 
@@ -222,7 +222,7 @@ html {
     color: var(--secondary-color);
     font-family: "Poppins-Regular";
     cursor: pointer;
-    margin: 1rem 0rem;
+    margin: 1rem 0;
     padding: 1.5rem 3rem;
     width: 80%;
     border-radius: 2rem;
@@ -233,7 +233,7 @@ html {
     color: var(--secondary-color);
     font-family: "Poppins-Regular";
     cursor: pointer;
-    margin: 1rem 0rem;
+    margin: 1rem 0;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5rem 3rem;
@@ -323,13 +323,13 @@ html {
     font-family: "Poppins-Bold";
     font-size: 4rem;
     opacity: 0.9;
-    margin: 0rem;
+    margin: 0;
 }
 .index-title-text {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin: 0rem 4rem;
+    margin: 0 4rem;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;
@@ -342,15 +342,15 @@ html {
     font-family: "Poppins-Bold";
     font-size: 4rem;
     opacity: 0.9;
-    margin: 0rem;
+    margin: 0;
 }
 .index-title-text p {
     color: var(--secondary-color);
     opacity: 0.5;
     font-size: 1.75rem;
     font-weight: 600;
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0;
+    margin: 0;
 }
 .title-card-right {
     flex: 1;
@@ -365,7 +365,7 @@ html {
     animation: gradient 3s ease-in-out infinite;
     color: white;
     font-size: 1.5rem;
-    padding: 0rem;
+    padding: 0;
     border-radius: 2rem;
     width: 75%;
 
@@ -388,14 +388,12 @@ html {
 }
 .index-contact-ctnr {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     background: var(--infocard-color);
     width: 80%;
     margin: 1rem;
     padding: 2rem 4rem;
     border-radius: 2rem;
-    font-size: 1.5rem;
 }
 .index-contact {
     display: flex;
@@ -407,25 +405,25 @@ html {
     color: var(--secondary-color);
     border: none;
     border-radius: 2rem;
-    padding: 0rem 3rem;
+    margin: 0 1rem;
+    padding: 0 3rem;
     cursor: pointer;
+
+    img {
+        max-width: 2.25rem;
+        max-height: 2.25rem;
+        margin: 0;
+        opacity: 0.9;
+    }
+    p {
+        margin-left: 1.5rem;
+        text-wrap: nowrap;
+    }
 }
-.index-contact:hover {
-    color: var(--accent-color);
-    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.25);
+.index-contact:hover { 
+    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.25); 
+    #tooltip { display: block; }
 }
-.index-contact img {
-    max-width: 2.25rem;
-    max-height: 2.25rem;
-    margin: 0;
-    opacity: 0.9;
-}
-.index-contact p {
-    margin-left: 1.5rem;
-    text-wrap: nowrap;
-}
-/* Tooltips */
-.index-contact:hover #tooltip { display: block; }
 
 
 /* "RESUME" PAGE */
@@ -439,13 +437,13 @@ html {
     padding: 0.75rem 2.5rem;
     transition: box-shadow 0.2s ease;
     cursor: pointer;
-}
-.pdf-btn img {
-    max-width: 2.25rem;
-    filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%);
+
+    img {
+        max-width: 2.25rem;
+        filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%);
+    }
 }
 .pdf-btn:hover {
-    /* box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5); */
     box-shadow: 0 0 1rem rgba(239, 71, 101, 0.75);
     transition: box-shadow 0.2s ease;
 }
@@ -485,7 +483,7 @@ html {
     color: var(--secondary-color);
     border-radius: 2rem;
     padding: 2rem 3rem;
-    margin: 1.5rem 0rem;
+    margin: 1.5rem 0;
     cursor: pointer;
 
     /* disable dragging + selecting  */
@@ -505,14 +503,15 @@ html {
     flex: 3;
     display: flex;
     flex-direction: column;
-}
-.resume-card-text h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-.resume-card-text p {
-    margin: 0rem 0rem;
-    font-size: 1.5rem;
+
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
 }
 /* Resume card skills */
 .resume-card-skills {
@@ -548,8 +547,8 @@ html {
 .rcs p {
     font-size: 1.5rem;
     color: black;
-    padding: 0.25rem 1.5rem;
-    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: .25rem 1.5rem;
+    margin: .5rem .5rem .5rem 0;
     border-radius: 2rem;
     scale: 100%;
     cursor: default;
@@ -588,7 +587,7 @@ html {
     color: var(--secondary-color);
     border-radius: 2rem;
     padding: 2rem 3rem;
-    margin: 0.5rem;
+    margin: .5rem;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;
@@ -608,7 +607,7 @@ html {
 .skill-level {
     display: flex;
     align-items: center;
-    margin: 1rem 0rem;
+    margin: 1rem 0;
 }
 .skill-bar {
     height: 1rem;
@@ -634,7 +633,7 @@ html {
     color: var(--secondary-color);
     border-radius: 2rem;
     padding: 2rem 3rem;
-    margin: 1rem 0.5rem 0rem;
+    margin: 1rem .5rem 0;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;
@@ -709,37 +708,37 @@ html {
     text-align: left;
     height: 20rem;
     scale: 100%;
-    transition: scale 0.25s;
-    
+    transition: scale .25s;
     font-family: "Poppins-Regular";
     border: none;
     border-radius: 2rem;
     padding: 2rem 3rem;
     margin: 1rem 1rem;
     overflow: hidden;
-    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
+
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    img {
+        width: 40rem;
+        margin-top: 2rem;
+        transform: translate(-10rem);
+        box-shadow: 0 0 3rem rgba(255, 255, 255, 0.25);
+    }
 }
 .project-card:hover {
     scale: 102%;
-    transition: scale 0.25s;
-}
-.project-card h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-.project-card p {
-    margin: 0;
-    font-size: 1.5rem;
-}
-.project-card img {
-    width: 40rem;
-    margin-top: 2rem;
-    transform: translate(-10rem);
-    box-shadow: 0rem 0rem 3rem rgba(255, 255, 255, 0.25);
+    transition: scale .25s;
 }
 .gd-img {
-    margin-top: 0rem !important;
+    margin-top: 0 !important;
     transform: translate(20rem, -8rem) !important;
     width: 20rem !important;
 }
@@ -751,9 +750,7 @@ html {
     background-color: white;
     color: black;
     cursor: not-allowed;
-}
-.proj-card-wn img {
-    box-shadow: 0rem 0rem 3rem rgba(84, 58, 193, 0.35);
+    img { box-shadow: 0 0 3rem rgba(84, 58, 193, 0.35); }
 }
 .proj-card-iso {
     background-color: rgb(40, 40, 255);
@@ -762,14 +759,14 @@ html {
 .proj-card-he {
     background-color: #faf2e1;
     color: #1c1c1c;
+    img { box-shadow: 0 0 3rem rgba(255, 193, 99, 0.65); }
 }
-.proj-card-he img { box-shadow: 0rem 0rem 3rem rgba(255, 193, 99, 0.65); }
 .proj-card-ex {
     background-color: #292929;
     color: white;
     cursor: not-allowed;
+    img { box-shadow: 0 0 3rem rgba(162, 242, 99, 0.25); }
 }
-.proj-card-ex img { box-shadow: 0rem 0rem 3rem rgba(162, 242, 99, 0.25); }
 .proj-card-empty {
     opacity: 0;
     max-height: 20rem !important;
@@ -792,8 +789,9 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+
+    h1 { font-size: 1.5rem }
 }
-.proj-sub h1 { font-size: 1.5rem }
 .back-btn {
     background: linear-gradient(to bottom right, #EF4765, #ff79d7);
     border: none;
@@ -833,17 +831,19 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+
+    button {
+        background: none;
+        background-color: none;
+        border: none;
+        cursor: pointer;
+        margin: 2rem;
+        opacity: 0.75;
+    }
+    button:hover { opacity: 1; }
+    img { max-width: 2.5rem; }
+
 }
-.carousel-ctrl button {
-    background: none;
-    background-color: none;
-    border: none;
-    cursor: pointer;
-    margin: 2rem;
-    opacity: 0.75;
-}
-.carousel-ctrl button:hover { opacity: 1; }
-.carousel-ctrl img { max-width: 2.5rem; }
 .info-card a { transition: color 0.2s ease-in-out; }
 .info-card a:hover {
     color: var(--accent-color);
@@ -862,7 +862,7 @@ html {
     color: var(--secondary-color);
     border-radius: 2rem;
     padding: 2rem 3rem;
-    margin: 1rem 0.5rem;
+    margin: 1rem .5rem;
 }
 .proj-info-card h1 { font-size: 2rem; }
 .proj-info-card p { font-size: 1.5rem; }
@@ -873,7 +873,7 @@ html {
 .proj-img-ctnr {
     justify-content: center;
     align-items: center;
-    margin-top: 0rem;
+    margin-top: 0;
     margin-bottom: 2rem;
 }
 .half-row {
@@ -882,7 +882,7 @@ html {
     flex-direction: column;
 }
 .half-row h1 { margin: 0; }
-.half-row p { margin: 2rem 0rem 0.5rem 0rem; }
+.half-row p { margin: 2rem 0 .5rem 0; }
 
 /* Project Details */
 .su-card-ctnr {
@@ -897,7 +897,7 @@ html {
     color: var(--secondary-color);
     border-radius: 2rem;
     padding: 2rem 3rem;
-    margin: 1rem 0.5rem 0rem;
+    margin: 1rem .5rem 0;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;
@@ -948,12 +948,12 @@ html {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding-top: 0rem;
+        padding-top: 0;
         box-shadow: -20px 0px 30px rgba(122,122,122,0.5);
     }
     .nav-menu form {
         width: 100%;
-        margin: 0.5rem; /*space btwn btns */
+        margin: .5rem; /*space btwn btns */
     }
     .menu-button {
         background: none;
@@ -970,7 +970,7 @@ html {
     .theme-button-ctnr {
         width: 100%;
         min-width: 40px;
-        margin: 0 2rem 0 0.5rem; /* space btwn btns */
+        margin: 0 2rem 0 .5rem; /* space btwn btns */
     }
     .theme-button {
         background: none;
@@ -996,7 +996,7 @@ html {
 
 
     /* "HOME": LAPTOPS */
-    .index-title-text { margin: 0rem 2rem; }
+    .index-title-text { margin: 0 2rem; }
     .index-title-text h1 { font-size: 3rem; }
     .index-title-text p { font-size: 1.5rem; }
     .index-info-card {
@@ -1012,7 +1012,7 @@ html {
     .title-card-left img { max-width: 10rem; }
     .role {
         width: 100%;
-        padding: 0rem 4rem;
+        padding: 0 4rem;
         margin-top: 2rem;
     }
     .index-contact-ctnr {
@@ -1024,21 +1024,20 @@ html {
         border-radius: 2rem;
     }
     .index-contact {
-        width: 25%;
+        flex: 1;
         font-size: 1.75rem;
-        margin: 0.5rem 0rem;
-    }
-    .index-contact img { margin: 1.5rem 0rem; }
-    .index-contact p { display: none; }
+        margin: 0 .5rem;
 
-    /* Tooltips */
+        img { margin: 1.5rem 0; }
+        p { display: none; }
+    }
     .index-contact:hover #tooltip { display: none; }
     
 
     /* "RESUME": LAPTOPS */
     /* Buttons */
     .pdf-btn-ctnr {
-        margin: 1rem 0rem;
+        margin: 1rem 0;
         text-align: center;
     }
     .pdf-btn {
@@ -1063,62 +1062,71 @@ html {
         color: var(--secondary-color);
         border-radius: 2rem;
         padding: 3rem 3rem;
+
+        img { margin: 0 0 2rem 0; }
     }
-    .resume-card img { margin: 0rem 0rem 2rem 0rem; }
-    .resume-card-text h1 {
-        margin: 0rem 0rem 1rem 0rem;
-        font-size: 2rem;
-    }
-    .resume-card-text p {
-        margin: 0.5rem 0rem;
-        font-size: 1.5rem;
+    .resume-card-text {
+        h1 {
+            margin: 0 0 1rem 0;
+            font-size: 2rem;
+        }
+        p {
+            margin: .5rem 0;
+            font-size: 1.5rem;
+        }
     }
     .skill-card-row { flex-direction: column; }
     .skill-card {
         padding: 2rem 3rem;
-        margin: 0.5rem 0rem;
+        margin: .5rem 0;
     }
 
 
     /* "PROJECTS": LAPTOPS */
-    .project-detail { padding: 3rem 4rem; }
-    .project-detail h1 { font-size: 2.5rem; }
-    .project-detail h2 { font-size: 2rem; }
-    .project-detail p { font-size: 2rem; }
+    .project-detail { 
+        padding: 3rem 4rem; 
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        p { font-size: 2rem; }
+    }
     .language-card {
         padding: 0 2.5rem;
         margin-right: 1rem;
+
+        img { max-width: 2.5rem; }
+        p { font-size: 2rem; }
     }
-    .language-card img { max-width: 2.5rem; }
-    .language-card p { font-size: 2rem; }
     .proj-sub h1 { font-size: 1.5rem; }
     .project-card-row {
         display: flex;
         flex-direction: column;
     }
     .project-card {        
-        margin: 1rem 0rem;
+        margin: 1rem 0;
         height: 20px;
     }
     .project-card img {
         width: 65rem;
         margin-top: 2rem;
-        transform: translate(-20rem, 0rem);
+        transform: translate(-20rem, 0);
     }
     .gd-img {
-        margin-top: 0rem !important;
+        margin-top: 0 !important;
         transform: translate(0) !important;
         width: 20rem !important;
     }
     .proj-card-empty { padding: 0; }
-    .back-btn { margin: 1rem 0rem; }
+    .back-btn { margin: 1rem 0; }
     .carousel-imgs {
         max-width: 100%;
         box-shadow: 6px 6px 20px rgba(122,122,122,0.3);
     }
     .proj-info-card-row { flex-direction: column; }
-    .proj-info-card { margin: 0.5rem 0rem; }
-    .proj-info-card img { width: 75%; }
+    .proj-info-card { 
+        margin: .5rem 0; 
+        img { width: 75%; }
+    }
 }
 
 
@@ -1137,7 +1145,7 @@ html {
     /* "ALL": TABLETS */
     .dynamic-window {
         background: none;
-        border-radius: 0rem;
+        border-radius: 0;
         top: 0;
         bottom: 0;
         left: 0; 
@@ -1145,17 +1153,17 @@ html {
     }
     .title-card-left h1 { font-size: 3rem; }    /*for non index title cards*/
     .info-card {
-        margin: 0.5rem 0rem;
+        margin: .5rem 0;
         width: 70%;
         background: var(--mobile-infocard-color);
+        h1 { font-size: 1.75rem; }
     }
-    .info-card h1 { font-size: 1.75rem; }
     
 
     /* "NAV": TABLETS */
     .nav-menu {
         background: var(--mobile-nav-color);
-        border-radius: 2rem 2rem 0rem 0rem;
+        border-radius: 2rem 2rem 0 0;
         box-shadow: -20px 0px 30px rgba(100, 100, 100, 0.75);
     }
 
@@ -1165,11 +1173,15 @@ html {
         width: 70%;
         background: var(--mobile-infocard-color);
     }
-    .title-card-left { flex-direction: column; }
-    .title-card-left img { margin-bottom: 1.5rem; }
-    .index-title-text { text-align: center; }
-    .index-title-text h1 { font-size: 3rem; }
-    .index-title-text p { font-size: 1.5rem; }
+    .title-card-left { 
+        flex-direction: column; 
+        img { margin-bottom: 1.5rem; }
+    }
+    .index-title-text { 
+        text-align: center; 
+        h1 { font-size: 3rem; }
+        p { font-size: 1.5rem; }
+    }
     .index-contact-ctnr {
         width: 70%;
         background: var(--mobile-infocard-color);
@@ -1193,8 +1205,8 @@ html {
     .resume-card-skills h3 { margin: 10px 10px 10px 0; }
     .rcs p {
         font-size: 1.5rem;
-        padding: 0.5rem 1.25rem;
-        margin: 0.75rem 0.5rem 0.75rem 0;
+        padding: .5rem 1.25rem;
+        margin: 0.75rem .5rem 0.75rem 0;
         border-radius: 2rem;
     }
     .resume-card-gallery h3 {
@@ -1205,20 +1217,23 @@ html {
 
 
     /* "PROJECTS": TABLETS */
-    .project-detail h1 { font-size: 2.25rem; }
-    .project-detail h2 { font-size: 1.75rem; }
-    .project-detail p { font-size: 1.75rem; }
+    .project-detail {
+        h1 { font-size: 2.25rem; }
+        h2 { font-size: 1.75rem; }
+        p { font-size: 1.75rem; }
+    }
     .language-card {
         background: var(--mobile-button-color);
         margin-right: 1rem;
         margin-bottom: 1rem;
+
+        img {  margin: 0 1rem; }
+        p { font-size: 1.75rem; }
     }
-    .language-card img {  margin: 0 1rem; }
-    .language-card p { font-size: 1.75rem; }
     .project-card img {
         width: 50rem;
         margin-top: 2rem;
-        transform: translate(-15rem, 0rem);
+        transform: translate(-15rem, 0);
     }
     .proj-info-card { background: var(--mobile-button-color); }
     .proj-info-card img { width: 100%; }
@@ -1245,33 +1260,35 @@ html {
     .title-card-left h1 { font-size: 2.25rem; } /*for non index title cards*/
     .info-card {
         background: var(--mobile-infocard-color);
-        margin: 0.5rem 0rem;
+        margin: .5rem 0;
         width: 70%;
+
+        h1 { font-size: 1.5rem; }
+        p { font-size: 1.25rem; }
     }
-    .info-card h1 { font-size: 1.5rem; }
-    .info-card p { font-size: 1.25rem; }
 
     /* "NAV": MOBILE */
     #theme-text { white-space: nowrap; }
 
     /* "HOME": MOBILE */
-    .title-card { margin: 4rem 0.5rem 0.5rem 0.5rem; }
+    .title-card { margin: 4rem .5rem .5rem .5rem; }
     .index-title-text h1 { font-size: 2.25rem; }
     .index-title-text p { font-size: 1.25rem; }
     .role {
         font-size: 1.25rem;
         width: 100%;
     }
-    .index-contact-ctnr { margin: 0.5rem 0rem; }
+    .index-contact-ctnr { margin: .5rem 0; }
     .index-contact {
         font-size: 1.25rem;
         padding: 0;
+
+        img {
+            max-width: 1.75rem;
+            max-height: 1.75rem;
+        }
+        p { margin-left: 1rem; }
     }
-    .index-contact img {
-        max-width: 1.75rem;
-        max-height: 1.75rem;
-    }
-    .index-contact p { margin-left: 1rem; }
 
 
     /* "RESUME": MOBILE */
@@ -1283,31 +1300,35 @@ html {
     .pdf-btn-ctnr { margin-top: 1rem; }
     .resume-card-skills h3 { font-size: 1.25rem; }
     .rcs p {
-        margin: 0.5rem 0.5rem 0.5rem 0;
+        margin: .5rem .5rem .5rem 0;
         border-radius: 1.75rem;
     }
     
 
     /* "PROJECTS": MOBILE */
-    .project-detail h1 { font-size: 1.75rem; }
-    .project-detail h2 { font-size: 1.5rem; }
-    .project-detail p { font-size: 1.5rem; }
+    .project-detail {
+        h1 { font-size: 1.75rem; }
+        h2 { font-size: 1.5rem; }
+        p { font-size: 1.5rem; }
+    }    
+    
     .language-card { 
         margin-right: 0.75rem; 
         margin-bottom: 0.75rem;
         border-radius: 1.5rem;
+
+        img { margin: 1rem; max-width: 2.25rem; }
+        p { font-size: 1.5rem; }
     }
-    .language-card img { margin: 1rem; max-width: 2.25rem; }
-    .language-card p { font-size: 1.5rem; }
 
     .tooltip h1 { font-size: 1.25rem }
     .project-card img {
         width: 50rem;
         margin-top: 2rem;
-        transform: translate(-35rem, 0rem);
+        transform: translate(-35rem, 0);
     }
     .back-btn {
         font-size: 1.25rem;
-        margin: 1rem 0rem 0rem 0rem;
+        margin: 1rem 0 0 0;
     }
 }   

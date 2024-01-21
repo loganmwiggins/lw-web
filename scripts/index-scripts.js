@@ -25,5 +25,8 @@
     function openLinkedin() {
         window.open("https://www.linkedin.com/in/loganwiggins/");
     }
+    function openGitHub() {
+        window.open("https://github.com/loganmwiggins");
+    }
 
 // --------------------
