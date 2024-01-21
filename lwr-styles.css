@@ -105,17 +105,14 @@ html {
     justify-content: center;
     font-size: 1.5rem;
     border-radius: 2rem;
-}
-.copy-message img {
-    max-width: 2rem;
-    margin-left: 1rem;
+
+    img { max-width: 2rem; margin-left: 1rem; }
 }
 .copy-message.active { top: 1rem; }
 #tooltip {
     display: none;
     position: absolute;
     z-index: 1000;
-
     background: #242424;
     color: #fff;
     border-radius: .5rem;
@@ -144,9 +141,7 @@ html {
     flex: 3; /* ratio to nav bar (1:3) */
     display: flex;
     flex-direction: column;
-
     color: var(--secondary-color);
-
     overflow-y: auto;
     -ms-overflow-style: none;  /* hides scroll in IE and Edge */
     scrollbar-width: none;  /* hides scroll in Firefox */
@@ -177,15 +172,16 @@ html {
     border-radius: 2rem;
     padding: 2rem 4rem;
     margin: 1rem;
-}
-.info-card h1 {
-    margin-bottom: 1.5rem;
-    font-size: 2.25rem;
-}
-.info-card p {
-    opacity: 0.75;
-    margin: 1.5rem 0;
-    font-size: 1.75rem;
+
+    h1 {
+        margin-bottom: 1.5rem;
+        font-size: 2.25rem;
+    }
+    p {
+        opacity: 0.75;
+        margin: 1.5rem 0;
+        font-size: 1.75rem;
+    }
 }
 
 
@@ -251,16 +247,17 @@ html {
     display: flex;
     align-items: center;
     opacity: 0.8;
-}
-.menu-button-content img {
-    max-width: 25px;
-    max-height: 25px;
-    margin-right: 2rem;
-    opacity: 0.75;
-}
-.menu-button-content h2 { 
-    margin: 0; 
-    opacity: 0.75;
+
+    img {
+        max-width: 25px;
+        max-height: 25px;
+        margin-right: 2rem;
+        opacity: 0.75;
+    }
+    h2 { 
+        margin: 0; 
+        opacity: 0.75;
+    }
 }
 #active-nav {
     color: var(--secondary-color);
@@ -284,17 +281,18 @@ html {
     padding: .75rem 1rem .5rem 1rem;
     margin-bottom: 2rem;
     cursor: pointer;
+
+    img {
+        max-width: 25px;
+        max-height: 25px;
+        opacity: .5;
+        transition: transform 0.2s ease-in-out;
+    }
+    
 }
 .collapse-btn:hover {
     background: var(--button-hvr-color);
 }
-.collapse-btn img {
-    max-width: 25px;
-    max-height: 25px;
-    opacity: .5;
-    transition: transform 0.2s ease-in-out;
-}
-
 
 /* "HOME" PAGE */
 .title-card {
@@ -492,12 +490,13 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-.resume-card img {
-    flex: 1;
-    max-width: 10rem;
-    max-height: 10rem;
-    margin-right: 3rem;
+
+    img {
+        flex: 1;
+        max-width: 10rem;
+        max-height: 10rem;
+        margin-right: 3rem;
+    }
 }
 .resume-card-text {
     flex: 3;
@@ -524,6 +523,12 @@ html {
     border-radius: 0 0 2rem 2rem;
     opacity: 1;
     animation: openResumeCard 0.5s;
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 10px 10px 10px 0;
+        opacity: 0.8;
+    }
 }
 @keyframes openResumeCard {
     0% { 
@@ -535,23 +540,19 @@ html {
         translate: 0 -4rem;
     }
 }
-.resume-card-skills h3 {
-    font-size: 1.5rem;
-    margin: 10px 10px 10px 0;
-    opacity: 0.8;
-}
 .rcs {
     display: flex;
     flex-flow: wrap;
-}
-.rcs p {
-    font-size: 1.5rem;
-    color: black;
-    padding: .25rem 1.5rem;
-    margin: .5rem .5rem .5rem 0;
-    border-radius: 2rem;
-    scale: 100%;
-    cursor: default;
+
+    p {
+        font-size: 1.5rem;
+        color: black;
+        padding: .25rem 1.5rem;
+        margin: .5rem .5rem .5rem 0;
+        border-radius: 2rem;
+        scale: 100%;
+        cursor: default;
+    }
 }
 .skills-arrow { transition: transform 0.2s ease; }
 #skills-fsu p { 
@@ -595,14 +596,15 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-.skill-card h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-.skill-card p {
-    margin: 0;
-    font-size: 1.5rem;
+
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
 }
 .skill-level {
     display: flex;
@@ -641,31 +643,35 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-.course-card h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-.course-card p {
-    margin: 0;
-    font-size: 1.5rem;
+
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
 }
 
 
 /* "PROJECTS" PAGE */
-.project-detail { padding: 3rem 4rem; }
-.project-detail h1 { 
-    margin: 0; 
-    font-size: 2.5rem;
-}
-.project-detail h2 { 
-    margin: 0; 
-    font-size: 2rem;
-}
-.project-detail p {
-    opacity: 1;
-    font-size: 2rem;
-    margin-bottom: 0;
+.project-detail { 
+    padding: 3rem 4rem; 
+
+    h1 { 
+        margin: 0; 
+        font-size: 2.5rem;
+    }
+    h2 { 
+        margin: 0; 
+        font-size: 2rem;
+    }
+    p {
+        opacity: 1;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
 }
 .languages-row {
     display: flex;
@@ -688,14 +694,15 @@ html {
     padding: 0 4rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-}
-.language-card img { 
-    max-width: 3rem;
-    margin-right: 1.5rem;
-}
-.language-card p { 
-    font-size: 2rem; 
-    opacity: 1;
+
+    img { 
+        max-width: 3rem;
+        margin-right: 1.5rem;
+    }
+    p { 
+        font-size: 2rem; 
+        opacity: 1;
+    }
 }
 .project-card-row {
     display: flex;
@@ -807,43 +814,7 @@ html {
     align-items: center;
 }
 .back-btn:hover { box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5); }
-.carousel-ctnr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.carousel-imgs {
-    max-width: 95%;
-    margin-top: 2rem;
-    box-shadow: 6px 6px 20px rgba(122,122,122,0.3);
-}
-.carousel-ctrl {
-    display: flex;
-    align-items: center;
-    font-family: "Poppins-Regular";
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
 
-    /* disable dragging + selecting  */
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-
-    button {
-        background: none;
-        background-color: none;
-        border: none;
-        cursor: pointer;
-        margin: 2rem;
-        opacity: 0.75;
-    }
-    button:hover { opacity: 1; }
-    img { max-width: 2.5rem; }
-
-}
 .info-card a { transition: color 0.2s ease-in-out; }
 .info-card a:hover {
     color: var(--accent-color);
@@ -863,12 +834,13 @@ html {
     border-radius: 2rem;
     padding: 2rem 3rem;
     margin: 1rem .5rem;
-}
-.proj-info-card h1 { font-size: 2rem; }
-.proj-info-card p { font-size: 1.5rem; }
-.proj-info-card img {
-    width: 50%;
-    border-radius: 1rem;
+
+    h1 { font-size: 2rem; }
+    p { font-size: 1.5rem; }
+    img {
+        width: 50%;
+        border-radius: 1rem;
+    }
 }
 .proj-img-ctnr {
     justify-content: center;
@@ -880,9 +852,10 @@ html {
     flex: 1;
     display: flex;
     flex-direction: column;
+
+    h1 { margin: 0; }
+    p { margin: 2rem 0 .5rem 0; }
 }
-.half-row h1 { margin: 0; }
-.half-row p { margin: 2rem 0 .5rem 0; }
 
 /* Project Details */
 .su-card-ctnr {
@@ -905,13 +878,12 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-.su-card h1 {
-    margin: 0;
-    font-size: 2rem;
-}
 
-
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+}
 
 
 
@@ -937,9 +909,10 @@ html {
         font-size: 1.2rem;
         padding: 2rem 4rem;
         margin: 1rem;
+
+        h1 { font-size: 2rem; }
+        p { font-size: 1.5rem; }
     }
-    .info-card h1 { font-size: 2rem; }
-    .info-card p { font-size: 1.5rem; }
 
 
     /* NAV: LAPTOPS */
@@ -981,24 +954,27 @@ html {
     .menu-button-content {
         flex-direction: column;
         padding: 1rem 0;
-    }
-    .menu-button-content img {
-        padding: 0;
-        margin-right: 0;
-        opacity: 0.5;
-    }
-    .menu-button-content h2 {
-        font-size: 1.25rem;
-        opacity: 0.5;
+
+        img {
+            padding: 0;
+            margin-right: 0;
+            opacity: 0.5;
+        }
+        h2 {
+            font-size: 1.25rem;
+            opacity: 0.5;
+        }
     }
     .display-right { flex: 8; } /* ratio to nav menu (1:8) */
     .bottom-nav-ctnr { display: none; } /* hides nav toggle */
 
 
     /* "HOME": LAPTOPS */
-    .index-title-text { margin: 0 2rem; }
-    .index-title-text h1 { font-size: 3rem; }
-    .index-title-text p { font-size: 1.5rem; }
+    .index-title-text { 
+        margin: 0 2rem; 
+        h1 { font-size: 3rem; }
+        p { font-size: 1.5rem; }
+    }
     .index-info-card {
         width: 65%;
         font-size: 1.2rem;
