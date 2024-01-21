@@ -619,6 +619,7 @@ html {
 }
 .filled { background-color: var(--accent-color); }
 .filled-pink { background-color: #EF4765; }
+.filled-teal { background-color: rgb(71, 174, 235); }
 .empty {
     background-color: var(--secondary-color);
     opacity: 0.25;
