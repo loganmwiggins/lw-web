@@ -9,8 +9,8 @@
     function openProjectISO() {
         window.open("https://www.loganwiggins.com/projects-induserv?", "_self");
     }
-    function openProjectGBA() {
-        window.open("https://www.loganwiggins.com/projects-gba?", "_self");
-    }
+    // function openProjectGBA() {
+    //     window.open("https://www.loganwiggins.com/projects-gba?", "_self");
+    // }
 
 // --------------------
