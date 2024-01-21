@@ -1,5 +1,3 @@
-console.log(window.location.href);
-
 // DARK MODE
 
     // Declare local storage
