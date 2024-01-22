@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Logan M. Wiggins">
+        <meta name="description" content="Logan Wiggins, Software Developer. I enjoy finding different ways to apply my computer skills, and I am passionate about discovering innovative solutions with software. Click here to view my digital portfolio.">
+        <title>Logan Wiggins | Projects</title>
+        <!-- Links -->
+        <link rel="stylesheet" href="lwr-styles.css">
+        <link rel="icon" type="image/x-icon" href="assets/icons/favicon/my-favicon-3.ico">
+        <link rel="canonical" href="https://loganwiggins.com/projects-loganwiggins?">
+        <!-- Google Analytics tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB5MERRJGY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-ZB5MERRJGY');
+        </script>
+    </head>  
+
+    <video autoplay muted loop class="bg-video">
+        <source src="assets/animated-bg-1mb.mp4" type="video/mp4">
+    </video>
+
+    <section class="dynamic-window">
+        <!-- NAVIGATION PANE -->
+        <div class="nav-menu" id="navigation">
+            <!-- "Home" button-->
+            <form action="https://loganwiggins.com/index?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/user.svg" id="aboutme-icon" draggable="false">
+                        <h2>Home</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Resume" button-->
+            <form action="https://loganwiggins.com/resume?">
+                <button class="menu-button">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/resume.svg" id="resume-icon" draggable="false">
+                        <h2>Resume</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Projects" button-->
+            <form action="https://loganwiggins.com/projects?">
+                <button class="menu-button" id="active-nav">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/projects-filled.svg" id="projects-icon" draggable="false">
+                        <h2>Projects</h2>
+                    </div>
+                </button>
+            </form>
+            <!-- "Light/Dark" button -->
+            <div class="theme-button-ctnr">
+                <button class="theme-button" id="theme-btn">
+                    <div class="menu-button-content">
+                        <img src="assets/icons/nav-icons/moon.svg" id="theme-icon" draggable="false">
+                        <h2 id="theme-text">Dark Mode</h2>
+                    </div>
+                </button>
+            </div>
+            <!-- Bottom nav -->
+            <div class="bottom-nav-ctnr">
+                <button class="collapse-btn" onclick="toggleNav()">
+                    <img src="assets/icons/nav-icons/collapse.svg" id="collapse-icon">
+                </button>
+            </div>
+        </div>
+
+
+
+        <!-- MAIN CONTENT PANE -->
+        <!-- ----------------- -->
+        <div class="display-right">
+            <div class="display-body">
+                <div class="title-card">
+                    <div class="title-card-left">
+                        <h1>Project Details</h1>
+                    </div>
+                    <div class="title-card-right">
+                        <form action="https://loganwiggins.com/projects?">
+                            <button class="back-btn">Back to All Projects</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="info-card project-detail">
+                    <div class="proj-detail-head">
+                        <h1>IntConvert</h1>
+                        <h2><a href="https://www.wigginsnet.com/int-convert" target="_blank">www.wigginsnet.com/int-convert</a></h2>
+                    </div>
+                    <p>
+                        Solo web development project. IntConvert was developed with the goal of creating a simple, intuitive, and well-designed application for converting integers with different bases. As a result, with this app, users are able to easily make accurate conversions between the binary, octal, decimal, and hexadecimal number systems.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <p>External Links</p>
+                    <div class="ext-links-row">
+                        <div class="ext-link" onclick="openIC()">
+                            <img src="assets/icons/project-icons/intconvert-logo.png" draggable="false">
+                            <p>IntConvert</p>
+                        </div>
+                        <div class="ext-link" onclick="openICGitHub()">
+                            <img src="assets/icons/project-icons/github-color.svg" draggable="false">
+                            <p>GitHub</p>
+                        </div>
+                        <div class="ext-link" onclick="openICYouTube()">
+                            <img src="assets/icons/project-icons/youtube.svg" draggable="false">
+                            <p>YouTube Demo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <p>Languages Used</p>
+                    <div class="lang-bar">
+                        <div 
+                            style="width: 66.8%; 
+                            background-color: #ef4765;
+                            border-radius: 2rem 0 0 2rem;"
+                        ></div>
+                        <div 
+                            style="width: 20.9%; 
+                            background-color: #47aeeb;"
+                        ></div>
+                        <div 
+                            style="width: 12.3%; 
+                            background-color: #6051fe;
+                            border-radius: 0 2rem 2rem 0;"
+                        ></div>
+                    </div>
+                    <div class="languages-ctnr">
+                        <div class="language">
+                            <div class="lang-indicator" style="background-color: #ef4765;"></div>
+                            <p><b>JavaScript</b> (66.8%)</p>
+                        </div>
+                        <div class="language">
+                            <div class="lang-indicator" style="background-color: #47aeeb;"></div>
+                            <p><b>CSS</b> (20.9%)</p>
+                        </div>
+                        <div class="language">
+                            <div class="lang-indicator" style="background-color: #6051fe;"></div>
+                            <p><b>HTML</b> (12.3%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <p>Notable Features</p>                 
+                    <div class="su-card-ctnr">
+                        <div class="su-card"><h1>UI / UX design</h1></div>
+                        <div class="su-card"><h1>Responsive design (CSS media queries)</h1></div>
+                        <div class="su-card"><h1>CSS animation</h1></div>
+                        <div class="su-card"><h1>Self-made conversion functions</h1></div>
+                        <div class="su-card"><h1>DOM manipulation with JavaScript</h1></div>
+                        <div class="su-card"><h1>Dark/light theme feature</h1></div>
+                        <div class="su-card"><h1>Website optimization</h1></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="scripts/global-scripts.js"></script>
+    <script type="text/javascript" src="scripts/projects-scripts.js"></script>
+</html>

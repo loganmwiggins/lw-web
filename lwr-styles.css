@@ -619,7 +619,7 @@ html {
 }
 .filled { background-color: var(--accent-color); }
 .filled-pink { background-color: #EF4765; }
-.filled-teal { background-color: rgb(71, 174, 235); }
+.filled-teal { background-color: #47aeeb; }
 .empty {
     background-color: var(--secondary-color);
     opacity: 0.25;
@@ -675,6 +675,39 @@ html {
         margin-bottom: 0;
     }
 }
+.ext-links-row {
+    display: flex;
+    flex-flow: wrap;
+
+    /* disable dragging + selecting  */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.ext-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--button-color);
+    border-radius: 2rem;
+    padding: 0 4rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    img { 
+        max-width: 3rem;
+        margin-right: 1.5rem;
+    }
+    p { 
+        font-size: 2rem; 
+        opacity: 1;
+    }
+}
+.ext-link:hover { box-shadow: 0 0 2rem rgba(96, 81, 254, 0.25); }
 .languages-row {
     display: flex;
     flex-flow: wrap;
@@ -705,6 +738,34 @@ html {
         font-size: 2rem; 
         opacity: 1;
     }
+}
+.lang-bar {
+    display: flex;
+    width: 100%;
+    height: 1rem;
+    background-color: grey;
+    border-radius: 2rem;
+}
+.languages-ctnr {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0 2rem 0;
+}
+.language {
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+
+    p { 
+        margin: 0; 
+        font-size: 1.5rem;
+    }
+}
+.lang-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 10rem;
+    margin-right: .5rem;
 }
 .project-card-row {
     display: flex;
@@ -763,23 +824,19 @@ html {
 }
 .proj-card-iso {
     background-color: rgb(40, 40, 255);
-    color: white;
+    background-color: white;
+    color: black;
+    img { box-shadow: 0 0 3rem rgba(40, 40, 255, 0.35); }
 }
 .proj-card-he {
     background-color: #faf2e1;
     color: #1c1c1c;
     img { box-shadow: 0 0 3rem rgba(255, 193, 99, 0.65); }
 }
-.proj-card-ex {
-    background-color: #292929;
+.proj-card-ic {
+    background-color: #fa3768;
     color: white;
-    cursor: not-allowed;
-    img { box-shadow: 0 0 3rem rgba(162, 242, 99, 0.25); }
-}
-.proj-card-empty {
-    opacity: 0;
-    max-height: 20rem !important;
-    cursor: default;
+    img { box-shadow: 0 0 3rem rgba(255, 255, 255, 0.5); }
 }
 .proj-sub {
     position: absolute;
