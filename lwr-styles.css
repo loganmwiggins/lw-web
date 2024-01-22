@@ -691,6 +691,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     background: var(--button-color);
     border-radius: 2rem;
     padding: 0 4rem;
