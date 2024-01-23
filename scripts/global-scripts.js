@@ -105,7 +105,7 @@
                 githubIcon.classList.add('filter-white');
             } 
         }
-        else if (siteThemeVar === "dark") {
+        else {
             disableDarkMode();
 
             // Set nav icons to black
