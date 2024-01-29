@@ -1310,11 +1310,16 @@ html {
 
     /* "HOME": MOBILE */
     .title-card { margin: 4rem .5rem .5rem .5rem; }
-    .index-title-text h1 { font-size: 2.25rem; }
-    .index-title-text p { font-size: 1.25rem; }
+    .index-title-text {
+        margin: 0;
+
+        h1 { font-size: 2.25rem; }
+        p { font-size: 1.25rem; }
+    }
     .role {
         font-size: 1.25rem;
         width: 100%;
+        border-radius: 1.5rem;
     }
     .index-contact-ctnr { margin: .5rem 0; }
     .index-contact {
