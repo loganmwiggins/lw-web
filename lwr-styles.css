@@ -1237,8 +1237,14 @@ html {
         p { font-size: 1.5rem; }
     }
     .pdf-btn:hover { box-shadow: none; }
-    .resume-card { background: var(--mobile-button-color); }
-    .skill-card { background: var(--mobile-button-color); }
+    .resume-card { 
+        background: var(--mobile-button-color); 
+        .skills-arrow { margin: 1rem 0 0 0; }
+    }
+    .skill-card { 
+        background: var(--mobile-button-color); 
+        p { margin-top: 0; }
+    }
     .course-card { 
         width: 100%;
         background: var(--mobile-button-color); 
@@ -1247,7 +1253,7 @@ html {
     .rcs p {
         font-size: 1.5rem;
         padding: .5rem 1.25rem;
-        margin: 0.75rem .5rem 0.75rem 0;
+        margin: 0.75rem .5rem 0 0;
         border-radius: 2rem;
     }
     .resume-card-gallery h3 {
@@ -1334,7 +1340,20 @@ html {
         img { max-width: 1.5rem; }
         p { font-size: 1.25rem; }
     }
-    .resume-card img { max-width: 8rem; max-height: 8rem; }
+    .resume-card {
+        img {
+            max-width: 6rem;
+            max-width: 6rem;
+            margin-bottom: 1rem;
+        }
+        .skills-arrow {
+            margin: 0;
+            margin-top: 1rem;
+        }
+    }
+    .resume-card-text {
+        p { margin: .25rem 0; }
+    }
     .pdf-btn-ctnr { margin-top: 1rem; }
     .resume-card-skills h3 { font-size: 1.25rem; }
     .rcs p {
