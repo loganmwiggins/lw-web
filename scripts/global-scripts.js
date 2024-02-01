@@ -28,7 +28,7 @@
         siteThemeVar = localStorage.getItem("siteTheme");
     }
     const disableDarkMode = () => {
-        document.body.classList.remove("dark-theme");   // remove class darkmode to the body
+        document.body.classList.remove("dark-theme");
         localStorage.setItem("siteTheme", "light");
         siteThemeVar = localStorage.getItem("siteTheme");
     }
@@ -54,13 +54,13 @@
             linkedinIcon.classList.add('filter-white');
             githubIcon.classList.add('filter-white');
         }
-        if (window.location.href === "https://loganwiggins.com/") {
+        if (window.location.href === "https://www.loganwiggins.com/") {
             phoneIcon.classList.add('filter-white');
             emailIcon.classList.add('filter-white');
             linkedinIcon.classList.add('filter-white');
             githubIcon.classList.add('filter-white');
         }
-        if (window.location.href === "https://loganwiggins.com/index?") {
+        if (window.location.href === "https://www.loganwiggins.com/index?") {
             phoneIcon.classList.add('filter-white');
             emailIcon.classList.add('filter-white');
             linkedinIcon.classList.add('filter-white');
@@ -86,19 +86,19 @@
             themeText.innerHTML = "Light mode";
 
             // If page is index, then change contact icons
-            if (window.location.href === "https://www.loganwiggins.com/") {
-                phoneIcon.classList.add('filter-white');
-                emailIcon.classList.add('filter-white');
-                linkedinIcon.classList.add('filter-white');
-                githubIcon.classList.add('filter-white');
-            }
             if (window.location.href === "https://loganwiggins.com/") {
                 phoneIcon.classList.add('filter-white');
                 emailIcon.classList.add('filter-white');
                 linkedinIcon.classList.add('filter-white');
                 githubIcon.classList.add('filter-white');
             }
-            if (window.location.href === "https://loganwiggins.com/index?") {
+            if (window.location.href === "https://www.loganwiggins.com/") {
+                phoneIcon.classList.add('filter-white');
+                emailIcon.classList.add('filter-white');
+                linkedinIcon.classList.add('filter-white');
+                githubIcon.classList.add('filter-white');
+            }
+            if (window.location.href === "https://www.loganwiggins.com/index?") {
                 phoneIcon.classList.add('filter-white');
                 emailIcon.classList.add('filter-white');
                 linkedinIcon.classList.add('filter-white');
@@ -118,19 +118,19 @@
             themeText.innerHTML = "Dark mode";
 
             // If page is index, then change contact icons
-            if (window.location.href === "https://www.loganwiggins.com/") {
-                phoneIcon.classList.remove('filter-white');
-                emailIcon.classList.remove('filter-white');
-                linkedinIcon.classList.remove('filter-white');
-                githubIcon.classList.remove('filter-white');
-            }
             if (window.location.href === "https://loganwiggins.com/") {
                 phoneIcon.classList.remove('filter-white');
                 emailIcon.classList.remove('filter-white');
                 linkedinIcon.classList.remove('filter-white');
                 githubIcon.classList.remove('filter-white');
             }
-            if (window.location.href === "https://loganwiggins.com/index?") {
+            if (window.location.href === "https://www.loganwiggins.com/") {
+                phoneIcon.classList.remove('filter-white');
+                emailIcon.classList.remove('filter-white');
+                linkedinIcon.classList.remove('filter-white');
+                githubIcon.classList.remove('filter-white');
+            }
+            if (window.location.href === "https://www.loganwiggins.com/index?") {
                 phoneIcon.classList.remove('filter-white');
                 emailIcon.classList.remove('filter-white');
                 linkedinIcon.classList.remove('filter-white');
