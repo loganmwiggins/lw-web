@@ -1089,23 +1089,26 @@ html {
     
     .resume-card {
         display: flex;
-        flex-direction: column;
-        text-align: center;
         font-family: "Poppins-Regular";
         background: var(--button-color);
         color: var(--secondary-color);
         border-radius: 2rem;
-        padding: 3rem 3rem;
 
-        img { margin: 0 0 2rem 0; }
+        img { 
+            max-width: 8rem;
+            max-height: 8rem;
+            margin-right: 2rem;
+        }
     }
     .resume-card-text {
+        padding-right: 1.5rem;
+
         h1 {
-            margin: 0 0 1rem 0;
+            margin: 0;
             font-size: 2rem;
         }
         p {
-            margin: .5rem 0;
+            margin: 0;
             font-size: 1.5rem;
         }
     }
@@ -1232,14 +1235,22 @@ html {
 
     /* "RESUME": TABLETS */
     .pdf-btn {
+        padding: 1rem 3rem;
         img { max-width: 1.75rem; }
         p { font-size: 1.5rem; }
     }
     .pdf-btn:hover { box-shadow: none; }
     .resume-card { 
         background: var(--mobile-button-color); 
+
+        img { 
+            max-width: 6rem;
+            max-height: 6rem;
+            margin-right: 2rem; 
+        }
         .skills-arrow { margin: 1rem 0 0 0; }
     }
+    .resume-card-text { text-align: left; }
     .skill-card { 
         background: var(--mobile-button-color); 
         p { margin-top: 0; }
@@ -1351,17 +1362,17 @@ html {
         p { font-size: 1.25rem; }
     }
     .resume-card {
-        img {
-            max-width: 6rem;
-            max-width: 6rem;
-            margin-bottom: 1rem;
-        }
+        flex-direction: column;
+
+        img { margin: 0 0 1rem 0; }
         .skills-arrow {
             margin: 0;
             margin-top: 1rem;
         }
     }
     .resume-card-text {
+        text-align: center;
+        padding: 0;
         p { margin: .25rem 0; }
     }
     .pdf-btn-ctnr { margin-top: 1rem; }
