@@ -1279,6 +1279,8 @@ html {
         width: 100%;
         background: var(--mobile-button-color); 
     }
+    .ext-link { background: var(--mobile-button-color); }
+    .ext-link:hover { box-shadow: none; }
 }
 
 
