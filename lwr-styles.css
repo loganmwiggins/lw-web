@@ -349,11 +349,11 @@ html {
     justify-content: center;
     background: linear-gradient(to right bottom, rgb(96, 81, 254), rgb(218, 130, 240));
     background-size: 150% 150%;
-    animation: gradient 3s ease-in-out infinite;
+    animation: gradient 2.5s ease-in-out infinite;
     color: white;
     font-size: 1.5rem;
     padding: 0;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     width: 75%;
 
     /* disable dragging + selecting  */
@@ -1047,7 +1047,6 @@ html {
         width: 100%;
         padding: 0 4rem;
         margin-top: 2rem;
-        border-radius: 1.5rem;
 
         p { margin: 1rem; }
     }
@@ -1323,11 +1322,7 @@ html {
         h1 { font-size: 2.25rem; }
         p { font-size: 1.25rem; }
     }
-    .role {
-        font-size: 1.25rem;
-        width: 100%;
-        border-radius: 1.5rem;
-    }
+    .role { font-size: 1.25rem; }
     .index-contact-ctnr { margin: .5rem 0; }
     .index-contact {
         font-size: 1.25rem;
