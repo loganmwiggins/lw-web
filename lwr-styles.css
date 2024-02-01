@@ -443,27 +443,7 @@ html {
     transition: box-shadow 0.2s ease;
 }
 .pdf-btn:active { box-shadow: none; }
-.resume-card-btn-ctnr { display: flex; }
-.card-btn {
-    background: var(--button-color);
-    border: none;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    padding: 0.75rem 2.25rem;
-    transition: box-shadow 0.2s ease;
-    cursor: pointer;
-}
-.card-btn:hover {
-    background: var(--button-hvr-color);
-    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.2);
-    transition: box-shadow 0.2s ease;
-}
-.card-btn img {
-    max-width: 2.25rem !important;
-    max-height: 2.25rem !important;
-    margin-right: 0 !important;
-    opacity: 0.75;
-}
+
 /* Cards */
 .resume-card {
     display: flex;
@@ -1085,7 +1065,6 @@ html {
         width: 100%;
         justify-content: right;
     }
-    .card-btn img { margin-bottom: 0 !important; }
     
     .resume-card {
         display: flex;
@@ -1159,10 +1138,6 @@ html {
         width: 20rem !important;
     }
     .proj-card-empty { padding: 0; }
-    .carousel-imgs {
-        max-width: 100%;
-        box-shadow: 6px 6px 20px rgba(122,122,122,0.3);
-    }
     .proj-info-card-row { flex-direction: column; }
     .proj-info-card { 
         margin: .5rem 0; 
@@ -1236,6 +1211,7 @@ html {
     /* "RESUME": TABLETS */
     .pdf-btn {
         padding: 1rem 3rem;
+        
         img { max-width: 1.75rem; }
         p { font-size: 1.5rem; }
     }

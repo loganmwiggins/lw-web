@@ -12,4 +12,3 @@ I began working on this website back in November of 2022 with no prior experienc
 - Light/dark mode toggle
 - Resume card skills dropdown
 - Custom tooltips
-- Project carousels
