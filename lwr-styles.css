@@ -956,14 +956,6 @@ html {
         left: 2rem;
         right: 2rem;
     }
-    .title-card {
-        flex-direction: column;
-        width: 65%;
-    }
-    .title-card-left { 
-        text-align: center; 
-        img { max-width: 10rem; }
-    }
     .info-card {
         width: 65%;
         font-size: 1.2rem;
@@ -974,6 +966,15 @@ html {
         p { font-size: 1.5rem; }
     }
 
+    /* HOME: LAPTOPS */
+    .title-card {
+        flex-direction: column;
+        width: 65%;
+    }
+    .title-card-left { 
+        text-align: center; 
+        img { max-width: 10rem; }
+    }
 
     /* NAV: LAPTOPS */
     .nav-menu {
@@ -1046,6 +1047,9 @@ html {
         width: 100%;
         padding: 0 4rem;
         margin-top: 2rem;
+        border-radius: 1.5rem;
+
+        p { margin: 1rem; }
     }
     .index-contact-ctnr {
         flex-direction: row;
@@ -1174,6 +1178,7 @@ html {
 @media (max-width: 800px) {
 
     /* "ALL": TABLETS */
+    .hide-on-tablet { display: none; }
     .dynamic-window {
         background: none;
         border-radius: 0;
@@ -1182,7 +1187,6 @@ html {
         left: 0; 
         right: 0; 
     }
-    .title-card-left h1 { font-size: 3rem; }    /*for non index title cards*/
     .info-card {
         margin: .5rem 0;
         width: 70%;
@@ -1205,12 +1209,12 @@ html {
         width: 70%;
         background: var(--mobile-infocard-color);
     }
-    .title-card-left { 
-        flex-direction: column; 
-        img { margin-bottom: 1.5rem; }
+    .title-card-left {
+        img { max-width: 8rem; }
     }
     .index-title-text { 
-        text-align: center; 
+        text-align: left; 
+
         h1 { font-size: 3rem; }
         p { font-size: 1.5rem; }
     }
@@ -1295,7 +1299,7 @@ html {
 @media (max-width: 500px) {
 
     /* "ALL": MOBILE */
-    .title-card-left h1 { font-size: 2.25rem; } /*for non index title cards*/
+    .hide-on-mobile { display: none; }
     .info-card {
         background: var(--mobile-infocard-color);
         margin: .5rem 0;
@@ -1310,8 +1314,11 @@ html {
 
     /* "HOME": MOBILE */
     .title-card { margin: 4rem .5rem .5rem .5rem; }
+    .title-card-left {
+        img { max-width: 7rem; }
+    }
     .index-title-text {
-        margin: 0;
+        margin: 0 0 0 2rem;
 
         h1 { font-size: 2.25rem; }
         p { font-size: 1.25rem; }
