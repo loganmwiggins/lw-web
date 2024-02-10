@@ -30,41 +30,34 @@
         <!-- NAVIGATION PANE -->
         <div class="nav-menu" id="navigation">
             <!-- "Home" button-->
-            <form action="https://www.loganwiggins.com/index?">
-                <button class="menu-button">
-                    <div class="menu-button-content">
-                        <img src="assets/icons/nav-icons/user.svg" id="aboutme-icon" draggable="false">
-                        <h2>Home</h2>
-                    </div>
-                </button>
-            </form>
+            <button type="button" class="menu-button" onclick="routeToHome()">
+                <div class="menu-button-content">
+                    <img src="assets/icons/nav-icons/user.svg" id="aboutme-icon" draggable="false">
+                    <h2>Home</h2>
+                </div>
+            </button>
             <!-- "Resume" button-->
-            <form action="https://www.loganwiggins.com/resume?">
-                <button class="menu-button">
-                    <div class="menu-button-content">
-                        <img src="assets/icons/nav-icons/resume.svg" id="resume-icon" draggable="false">
-                        <h2>Resume</h2>
-                    </div>
-                </button>
-            </form>
+            <button type="button" class="menu-button" onclick="routeToResume()">
+                <div class="menu-button-content">
+                    <img src="assets/icons/nav-icons/resume.svg" id="resume-icon" draggable="false">
+                    <h2>Resume</h2>
+                </div>
+            </button>
             <!-- "Projects" button-->
-            <form action="https://www.loganwiggins.com/projects?">
-                <button class="menu-button" id="active-nav">
-                    <div class="menu-button-content">
-                        <img src="assets/icons/nav-icons/projects-filled.svg" id="projects-icon" draggable="false">
-                        <h2>Projects</h2>
-                    </div>
-                </button>
-            </form>
-            <!-- "Light/Dark" button -->
-            <div class="theme-button-ctnr">
-                <button class="theme-button" id="theme-btn">
-                    <div class="menu-button-content">
-                        <img src="assets/icons/nav-icons/moon.svg" id="theme-icon" draggable="false">
-                        <h2 id="theme-text">Dark mode</h2>
-                    </div>
-                </button>
-            </div>
+            <button type="button" class="menu-button" id="active-nav" onclick="routeToProjects()">
+                <div class="menu-button-content">
+                    <img src="assets/icons/nav-icons/projects-filled.svg" id="projects-icon" draggable="false">
+                    <h2>Projects</h2>
+                </div>
+            </button>
+            <!-- "Settings" button-->
+            <button type="button" class="menu-button" onclick="toggleSettings()">
+                <div class="menu-button-content">
+                    <img src="assets/icons/nav-icons/options.svg" id="settings-icon" draggable="false">
+                    <h2>Settings</h2>
+                </div>
+            </button>
+
             <!-- Bottom nav -->
             <div class="bottom-nav-ctnr">
                 <button class="collapse-btn" onclick="toggleNav()">
@@ -166,6 +159,26 @@
                         <img src="assets/projects/induserv/iso-flyer-min.jpg" draggable="false">
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Settings window -->
+        <div class="settings-window" id="settings-window">
+            <div class="settings-content">
+                <div class="settings-header">
+                    <h1>Settings</h1>
+                    <p class="settings-close-btn" onclick="toggleSettings()">Close</p>
+                </div>
+                <div class="setting-ctnr">
+                    <p>Theme</p>
+                    <button id="theme-btn">
+                        <img src="assets/icons/nav-icons/moon.svg" draggable="false" id="theme-icon">
+                        <div id="theme-text">Dark mode</div>
+                    </button>
+                </div>
+            </div>
+            <div class="settings-footer">
+                <p>Last Updated: Feb 10 2024</p>
             </div>
         </div>
     </section>

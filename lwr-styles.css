@@ -29,7 +29,8 @@ a:active {
     --primary-color: rgb(255,255,255);
     --secondary-color: rgb(0,0,0);
     --accent-color: rgb(96, 81, 254);
-    --window-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    --window-color: linear-gradient(to right bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.3));
+    --settings-window-color: linear-gradient(to right bottom, rgba(255,255,255, 1), rgba(255,255,255, 0.9));
     --nav-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
     --button-color: linear-gradient(to left top, rgba(255,255,255,0.4), rgba(255,255,255,1.0));
     --button-hvr-color: linear-gradient(to left top, rgba(255,255,255,0.0), rgba(255,255,255,1));
@@ -46,6 +47,7 @@ a:active {
     --secondary-color: rgb(255,255,255);
     --accent-color: rgb(96, 81, 254);
     --window-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.6));
+    --settings-window-color: linear-gradient(to right bottom, rgba(0,0,0, 1), rgba(0,0,0, 0.9));
     --nav-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
     --button-color: linear-gradient(to left top, rgba(0,0,0, 0.6), rgba(0,0,0, 1.0));
     --button-hvr-color: linear-gradient(to left top, rgba(0,0,0, 0.0), rgba(0,0,0, 1));
@@ -210,7 +212,7 @@ html {
     flex: 1; /* ratio to display window (1:3) */
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     overflow: hidden;
     min-height: 8rem;
     border-radius: 2rem;
@@ -308,6 +310,96 @@ html {
     }
 }
 .collapse-btn:hover { background: var(--button-hvr-color); }
+
+.settings-window {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35rem;
+    height: 100%;
+    background: var(--settings-window-color);
+    color: var(--secondary-color);
+    padding: 2rem 4rem;
+    border-radius: 0 2rem 2rem 0;
+    z-index: 3;
+    animation: openSettings 0.5s;
+
+    h1 { 
+        font-size: 2.5rem; 
+        margin: 0;
+    }
+    p { 
+        font-size: 1.75rem; 
+        margin: 0;
+        margin-bottom: .25rem;
+        opacity: .8;
+    }
+}
+.settings-content { width: 100%; }
+.settings-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.settings-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--secondary-color);
+    border-radius: 50rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+.setting-ctnr { 
+    margin: 2rem 0; 
+
+    select {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        font-size: 1.75rem;
+        font-family: "Poppins-Regular";
+        cursor: pointer;
+    }
+    button {
+        display: flex;
+        align-items: center;
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        text-align: left;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        border: 1px solid grey;
+        border-radius: 1rem;
+        font-size: 1.75rem;
+        font-family: "Poppins-Regular";
+        cursor: pointer;
+
+        img { 
+            max-width: 2.25rem; 
+            max-height: 2.25rem; 
+            margin-right: 1rem;
+            opacity: .8;
+        }
+    }
+}
+.settings-footer { margin-bottom: 4rem; }
+
+@keyframes openSettings {
+    0% { 
+        opacity: 0; 
+        translate: 20rem 0;
+    }
+    100% { 
+        opacity: 1;
+        translate: 0;
+    }
+}
+
 
 /* "HOME" PAGE */
 .index-title-text {
@@ -1011,6 +1103,25 @@ html {
     .display-right { flex: 8; } /* ratio to nav menu (1:8) */
     .bottom-nav-ctnr { display: none; } /* hides nav toggle */
 
+    .settings-window {
+        width: 30rem;
+        padding: 2rem 4rem;
+    
+        h1 { font-size: 2.5rem; }
+        p { font-size: 1.75rem; }
+    }
+    .setting-ctnr {
+        button { 
+            font-size: 1.75rem; 
+
+            img { 
+                max-width: 2.25rem; 
+                max-height: 2.25rem; 
+                margin-right: 1rem;
+            }
+        }
+    }
+
 
     /* "HOME": LAPTOPS */
     .index-title-text { 
@@ -1192,6 +1303,28 @@ html {
         box-shadow: -20px 0px 30px rgba(100, 100, 100, 0.75);
     }
 
+    .settings-window {
+        width: 30rem;
+        padding: 2rem 4rem;
+        border-radius: 2rem 0 0 2rem;
+        height: 95%;
+    
+        h1 { font-size: 2.5rem; }
+        p { font-size: 1.75rem; }
+    }
+    .setting-ctnr {
+        button { 
+            font-size: 1.75rem; 
+
+            img { 
+                max-width: 2.25rem; 
+                max-height: 2.25rem; 
+                margin-right: 1rem;
+            }
+        }
+    }
+    .settings-footer { margin-bottom: 0; }
+
 
     /* "HOME": TABLETS */
     .index-title-text { 
@@ -1314,6 +1447,27 @@ html {
 
     /* "NAV": MOBILE */
     #theme-text { white-space: nowrap; }
+
+    .settings-window {
+        width: 25rem;
+        padding: 2rem 4rem;
+        border-radius: 2rem 0 0 2rem;
+        height: 95%;
+    
+        h1 { font-size: 2.5rem; }
+        p { font-size: 1.75rem; }
+    }
+    .setting-ctnr {
+        button { 
+            font-size: 1.75rem; 
+
+            img { 
+                max-width: 2.25rem; 
+                max-height: 2.25rem; 
+                margin-right: 1rem;
+            }
+        }
+    }
 
     /* "HOME": MOBILE */
     

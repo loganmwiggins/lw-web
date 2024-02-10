@@ -1,3 +1,35 @@
+// NAV ROUTING
+
+    function routeToHome() { window.open("https://www.loganwiggins.com/", "_self"); }
+    function routeToResume() { window.open("https://www.loganwiggins.com/resume?", "_self"); }
+    function routeToProjects() { window.open("https://www.loganwiggins.com/projects?", "_self"); }
+
+// --------------------
+
+
+// SETTINGS
+
+    let settingsWindow = document.getElementById("settings-window");
+    let settingsIcon = document.getElementById("settings-icon");
+    let isSettingsOpen = false;
+    settingsWindow.style.display = "none";
+
+    function toggleSettings() {
+        if (settingsWindow.style.display == "none") {
+            settingsWindow.style.display = "flex";
+            settingsIcon.src = "assets/icons/nav-icons/options-filled.svg";
+            settingsIcon.style.opacity = 1;
+        }
+        else {
+            settingsWindow.style.display = "none";
+            settingsIcon.src = "assets/icons/nav-icons/options.svg";
+            settingsIcon.style.opacity = .75;
+        }
+    }
+
+// --------------------
+
+
 // DARK MODE
 
     // Declare local storage
@@ -42,6 +74,7 @@
         aboutmeIcon.classList.add('filter-white');
         resumeIcon.classList.add('filter-white');
         projectsIcon.classList.add('filter-white');
+        settingsIcon.classList.add('filter-white');
         collapseIcon.classList.add('filter-white');
         themeIcon.src = "assets/icons/nav-icons/sun.svg";
         themeIcon.classList.add('filter-white');
@@ -80,6 +113,7 @@
             aboutmeIcon.classList.add('filter-white');
             resumeIcon.classList.add('filter-white');
             projectsIcon.classList.add('filter-white');
+            settingsIcon.classList.add('filter-white');
             collapseIcon.classList.add('filter-white');
             themeIcon.src = "assets/icons/nav-icons/sun.svg";
             themeIcon.classList.add('filter-white');
@@ -112,6 +146,7 @@
             aboutmeIcon.classList.remove('filter-white');
             resumeIcon.classList.remove('filter-white');
             projectsIcon.classList.remove('filter-white');
+            settingsIcon.classList.remove('filter-white');
             collapseIcon.classList.remove('filter-white');
             themeIcon.src = "assets/icons/nav-icons/moon.svg";
             themeIcon.classList.remove('filter-white');
