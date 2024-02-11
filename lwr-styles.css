@@ -110,7 +110,7 @@ html {
     color: #fff;
     border-radius: .5rem;
     margin-left: 28px;
-    padding: 10px;
+    padding: .5rem 1rem;
     font-size: 1.25rem;
     margin-bottom: 12rem;
 }
@@ -260,6 +260,7 @@ html {
 .menu-button:hover,
 .theme-button:hover { 
     background: var(--button-hvr-color); 
+
     .menu-button-content img { opacity: 1; }
     .menu-button-content h2 { opacity: 1; }
 }
