@@ -22,11 +22,8 @@
         showAlert();
         setTimeout(hideAlert, 3000);
     }
-    function openLinkedin() {
-        window.open("https://www.linkedin.com/in/loganwiggins/");
-    }
-    function openGitHub() {
-        window.open("https://github.com/loganmwiggins");
-    }
+    function openLinkedin() { window.open("https://www.linkedin.com/in/loganwiggins/"); }
+    function openGitHub() { window.open("https://github.com/loganmwiggins"); }
+    function openYouTube() { window.open("https://www.youtube.com/@LoganWiggins1"); }
 
 // --------------------

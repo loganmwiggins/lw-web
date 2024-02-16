@@ -11,6 +11,6 @@
 
     function openIC() { window.open("https://www.wigginsnet.com/int-convert", "_blank"); }
     function openICGitHub() { window.open("https://github.com/loganmwiggins/int-convert", "_blank"); }
-    function openICYouTube() { window.open("https://www.youtube.com/watch?v=-jC8TMtv1Ak&ab_channel=LoganWiggins", "_blank"); }
+    function openICYouTube() { window.open("https://www.youtube.com/watch?v=mXop9WOdQak&ab_channel=LoganWiggins", "_blank"); }
 
 // --------------------
