@@ -67,7 +67,7 @@
 
             <!-- Bottom nav -->
             <div class="bottom-nav-ctnr">
-                <button class="collapse-btn" onclick="toggleNav()">
+                <button type="button" class="collapse-btn" onclick="toggleNav()">
                     <img src="assets/icons/nav-icons/collapse.svg" id="collapse-icon">
                 </button>
             </div>
@@ -89,40 +89,45 @@
                     </div>
                 </div>
                 <div class="index-contact-ctnr">
-                    <button id="phone-btn" class="index-contact" value="(561) 701-1496" onclick="copyPhone()">
-                        <span id="tooltip">Copy phone</span>
-                        <img src="assets/icons/contact-icons/phone.svg" id="phone-icon">
-                        <p>(561) 701-1496</p>
-                    </button>
-                    <button id="email-btn" class="index-contact" value="loganmwiggins1@gmail.com" onclick="copyEmail()">
-                        <span id="tooltip">Copy email</span>
-                        <img src="assets/icons/contact-icons/mail.svg" id="email-icon">
-                        <p>loganmwiggins1@gmail.com</p>
-                    </button>
-                    <button class="index-contact" onclick="openLinkedin()">
-                        <span id="tooltip">Open LinkedIn</span>
-                        <img src="assets/icons/contact-icons/linkedin.svg" id="linkedin-icon" alt="LinkedIn">
-                        <p>LinkedIn</p>
-                    </button>
-                    <button class="index-contact" onclick="openGitHub()">
-                        <span id="tooltip">Open GitHub</span>
-                        <img src="assets/icons/contact-icons/github.svg" id="github-icon" alt="GitHub">
-                        <p>GitHub</p>
-                    </button>
-                    <button class="index-contact" onclick="openYouTube()">
-                        <span id="tooltip">Open YouTube</span>
-                        <img src="assets/icons/contact-icons/youtube.svg" id="youtube-icon" alt="YouTube">
-                        <p>YouTube</p>
-                    </button>
+                    <div class="contact-row">
+                        <button id="email-btn" class="index-contact" value="loganmwiggins1@gmail.com" onclick="copyEmail()">
+                            <span id="tooltip">Copy email</span>
+                            <img src="assets/icons/contact-icons/mail.svg" id="email-icon">
+                            <p>loganmwiggins1@gmail.com</p>
+                        </button>
+                        <button id="phone-btn" class="index-contact" value="(561) 701-1496" onclick="copyPhone()">
+                            <span id="tooltip">Copy phone</span>
+                            <img src="assets/icons/contact-icons/phone.svg" id="phone-icon">
+                            <p>(561) 701-1496</p>
+                        </button>
+                    </div>
+                    <div class="contact-row">
+                        <button class="index-contact" onclick="openLinkedin()">
+                            <span id="tooltip">Open LinkedIn</span>
+                            <img src="assets/icons/contact-icons/linkedin.svg" id="linkedin-icon" alt="LinkedIn">
+                            <p>LinkedIn</p>
+                        </button>
+                        <button class="index-contact" onclick="openGitHub()">
+                            <span id="tooltip">Open GitHub</span>
+                            <img src="assets/icons/contact-icons/github.svg" id="github-icon" alt="GitHub">
+                            <p>GitHub</p>
+                        </button>
+                        <button class="index-contact" onclick="openYouTube()">
+                            <span id="tooltip">Open YouTube</span>
+                            <img src="assets/icons/contact-icons/youtube.svg" id="youtube-icon" alt="YouTube">
+                            <p>YouTube</p>
+                        </button>
+                    </div>
                 </div>
                 <div class="info-card">
                     <p>Welcome</p>
                     <h1>
                         Back in 2022, I aimed to create a personal website for myself to demonstrate my 
                         capability in web development and to showcase my experiences. The website you see before you
-                        is the result of that endeavor, but it continues to evolve as I do. Today, I am
+                        is the result of that endeavor, and it continues to evolve as I do. Today, I am
                         continuing to enhance my software development and engineering skills through university courses,
-                        job experiences, internship experiences, and personal projects. 
+                        job experiences, internship experiences, and personal projects. Navigate through the website to 
+                        learn more about my professional experience and projects.
                     </h1>
                 </div>
                 <div class="info-card">
@@ -157,7 +162,7 @@
                 </div>
             </div>
             <div class="settings-footer">
-                <p>Last Updated: Feb 15 2024</p>
+                <p>Last Updated: Feb 18 2024</p>
             </div>
         </div>
     </section>
