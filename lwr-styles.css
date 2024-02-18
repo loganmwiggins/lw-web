@@ -749,6 +749,8 @@ html {
 .ext-links-row {
     display: flex;
     flex-flow: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;
@@ -765,17 +767,17 @@ html {
     white-space: nowrap;
     background: var(--button-color);
     border-radius: 2rem;
-    padding: 0 4rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    padding: 1.5rem 4rem;
     cursor: pointer;
 
     img { 
         max-width: 3rem;
+        max-height: 3rem;
         margin-right: 1.5rem;
     }
     p { 
-        font-size: 2rem; 
+        font-size: 1.75rem; 
+        margin: 0;
         opacity: 1;
     }
 }
@@ -1417,7 +1419,14 @@ html {
         width: 100%;
         background: var(--mobile-button-color); 
     }
-    .ext-link { background: var(--mobile-button-color); }
+    .ext-link { 
+        background: var(--mobile-button-color); 
+        padding: 1rem 3rem;
+        border-radius: 1.5rem;
+
+        img { max-width: 2.5rem; max-height: 2.5rem; }
+        p { font-size: 1.75rem; }
+    }
     .ext-link:hover { box-shadow: none; }
 }
 
@@ -1549,9 +1558,13 @@ html {
         transform: translate(-35rem, 0);
     }
     .back-btn { font-size: 1.25rem; }
+
     .ext-link { 
-        padding: 0 2.5rem;
-        border-radius: 1.5rem; 
+        img { 
+            max-width: 2.25rem; 
+            max-height: 2.25rem; 
+            margin-right: 1.25rem;
+        }
     }
     .su-card { 
         width: 100%;
