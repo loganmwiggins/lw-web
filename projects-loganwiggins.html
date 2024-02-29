@@ -16,7 +16,7 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB5MERRJGY"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){ dataLayer.push(arguments); }
             gtag('js', new Date());
             gtag('config', 'G-ZB5MERRJGY');
         </script>
@@ -27,30 +27,27 @@
     </video>
 
     <section class="dynamic-window">
-        <!-- NAVIGATION PANE -->
+        <!-- NAVIGATION -->
         <div class="nav-menu" id="navigation">
-            <!-- "Home" button-->
+            <!-- Directory -->
             <button type="button" class="menu-button" onclick="routeToHome()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/user.svg" id="aboutme-icon" draggable="false">
                     <h2>Home</h2>
                 </div>
             </button>
-            <!-- "Resume" button-->
             <button type="button" class="menu-button" onclick="routeToResume()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/resume.svg" id="resume-icon" draggable="false">
                     <h2>Resume</h2>
                 </div>
             </button>
-            <!-- "Projects" button-->
             <button type="button" class="menu-button" id="active-nav" onclick="routeToProjects()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/projects-filled.svg" id="projects-icon" draggable="false">
                     <h2>Projects</h2>
                 </div>
             </button>
-            <!-- "Settings" button-->
             <button type="button" class="menu-button" onclick="toggleSettings()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/options.svg" id="settings-icon" draggable="false">
@@ -68,8 +65,7 @@
 
 
 
-        <!-- MAIN CONTENT PANE -->
-        <!-- ----------------- -->
+        <!-- MAIN CONTENT -->
         <div class="display-right">
             <div class="display-body">
                 <div class="title-card">
@@ -86,7 +82,10 @@
                         <h2><a href="https://www.loganwiggins.com" target="_blank">www.loganwiggins.com</a></h2>
                     </div>
                     <p>
-                        Solo web development project. The goal of this project was to design and develop a personal website for myself to promote my professional activity to potential employers. As you can see from this website, I was able to successfully teach myself web development practices while simultaneously creating this product as a personal digital portfolio.
+                        Solo web development project. The goal of this project was to design and develop a personal
+                        website for myself to promote my professional activity to potential employers. As you can see
+                        from this website, I was able to successfully teach myself web development practices while
+                        simultaneously creating this product as a personal digital portfolio.
                     </p>
                 </div>
                 <div class="info-card">
@@ -142,7 +141,7 @@
             </div>
         </div>
 
-        <!-- Settings window -->
+        <!-- SETTINGS MENU -->
         <div class="settings-window" id="settings-window">
             <div class="settings-content">
                 <div class="settings-header">

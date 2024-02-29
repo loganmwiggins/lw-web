@@ -16,7 +16,7 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB5MERRJGY"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){ dataLayer.push(arguments); }
             gtag('js', new Date());
             gtag('config', 'G-ZB5MERRJGY');
         </script>
@@ -34,30 +34,27 @@
     </div>
 
     <section class="dynamic-window">
-        <!-- Window LEFT -->
+        <!-- NAVIGATION -->
         <div class="nav-menu" id="navigation">
-            <!-- "Home" button-->
+            <!-- Directory -->
             <button type="button" class="menu-button" id="active-nav" onclick="routeToHome()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/user-filled.svg" id="aboutme-icon" draggable="false">
                     <h2>Home</h2>
                 </div>
             </button>
-            <!-- "Resume" button-->
             <button type="button" class="menu-button" onclick="routeToResume()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/resume.svg" id="resume-icon" draggable="false">
                     <h2>Resume</h2>
                 </div>
             </button>
-            <!-- "Projects" button-->
             <button type="button" class="menu-button" onclick="routeToProjects()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/projects.svg" id="projects-icon" draggable="false">
                     <h2>Projects</h2>
                 </div>
             </button>
-            <!-- "Settings" button-->
             <button type="button" class="menu-button" onclick="toggleSettings()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/options.svg" id="settings-icon" draggable="false">
@@ -73,7 +70,7 @@
             </div>
         </div>
 
-        <!-- Window RIGHT -->
+        <!-- MAIN CONTENT -->
         <div class="display-right">
             <div class="display-body">
                 <div class="title-card">
@@ -92,29 +89,29 @@
                     <div class="contact-row">
                         <button id="email-btn" class="index-contact" value="loganmwiggins1@gmail.com" onclick="copyEmail()">
                             <span id="tooltip">Copy email</span>
-                            <img src="assets/icons/contact-icons/mail.svg" id="email-icon">
+                            <img src="assets/icons/contact-icons/mail.svg" id="email-icon" draggable="false">
                             <p>loganmwiggins1@gmail.com</p>
                         </button>
                         <button id="phone-btn" class="index-contact" value="(561) 701-1496" onclick="copyPhone()">
                             <span id="tooltip">Copy phone</span>
-                            <img src="assets/icons/contact-icons/phone.svg" id="phone-icon">
+                            <img src="assets/icons/contact-icons/phone.svg" id="phone-icon" draggable="false">
                             <p>(561) 701-1496</p>
                         </button>
                     </div>
                     <div class="contact-row">
                         <button class="index-contact" onclick="openLinkedin()">
                             <span id="tooltip">Open LinkedIn</span>
-                            <img src="assets/icons/contact-icons/linkedin.svg" id="linkedin-icon" alt="LinkedIn">
+                            <img src="assets/icons/contact-icons/linkedin.svg" id="linkedin-icon" draggable="false">
                             <p>LinkedIn</p>
                         </button>
                         <button class="index-contact" onclick="openGitHub()">
                             <span id="tooltip">Open GitHub</span>
-                            <img src="assets/icons/contact-icons/github.svg" id="github-icon" alt="GitHub">
+                            <img src="assets/icons/contact-icons/github.svg" id="github-icon" draggable="false">
                             <p>GitHub</p>
                         </button>
                         <button class="index-contact" onclick="openYouTube()">
                             <span id="tooltip">Open YouTube</span>
-                            <img src="assets/icons/contact-icons/youtube.svg" id="youtube-icon" alt="YouTube">
+                            <img src="assets/icons/contact-icons/youtube.svg" id="youtube-icon" draggable="false">
                             <p>YouTube</p>
                         </button>
                     </div>
@@ -142,7 +139,7 @@
             </div>
         </div>
 
-        <!-- Settings window -->
+        <!-- SETTINGS MENU -->
         <div class="settings-window" id="settings-window">
             <div class="settings-content">
                 <div class="settings-header">

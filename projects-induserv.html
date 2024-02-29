@@ -16,7 +16,7 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB5MERRJGY"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){ dataLayer.push(arguments); }
             gtag('js', new Date());
             gtag('config', 'G-ZB5MERRJGY');
         </script>
@@ -27,30 +27,27 @@
     </video>
 
     <section class="dynamic-window">
-        <!-- NAVIGATION PANE -->
+        <!-- NAVIGATION -->
         <div class="nav-menu" id="navigation">
-            <!-- "Home" button-->
+            <!-- Directory -->
             <button type="button" class="menu-button" onclick="routeToHome()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/user.svg" id="aboutme-icon" draggable="false">
                     <h2>Home</h2>
                 </div>
             </button>
-            <!-- "Resume" button-->
             <button type="button" class="menu-button" onclick="routeToResume()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/resume.svg" id="resume-icon" draggable="false">
                     <h2>Resume</h2>
                 </div>
             </button>
-            <!-- "Projects" button-->
             <button type="button" class="menu-button" id="active-nav" onclick="routeToProjects()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/projects-filled.svg" id="projects-icon" draggable="false">
                     <h2>Projects</h2>
                 </div>
             </button>
-            <!-- "Settings" button-->
             <button type="button" class="menu-button" onclick="toggleSettings()">
                 <div class="menu-button-content">
                     <img src="assets/icons/nav-icons/options.svg" id="settings-icon" draggable="false">
@@ -67,8 +64,7 @@
         </div>
 
 
-        <!-- MAIN CONTENT PANE -->
-        <!-- ----------------- -->
+        <!-- MAIN CONTENT -->
         <div class="display-right">
             <div class="display-body">
                 <div class="title-card">
@@ -96,15 +92,15 @@
                             border-radius: 2rem 0 0 2rem;"
                         ></div>
                         <div 
-                            style="width: 30.5%; 
+                            style="width: 32.2%; 
                             background-color: #6051fe;"
                         ></div>
                         <div 
-                            style="width: 19.5%; 
+                            style="width: 20.6%; 
                             background-color: #ef4765;"
                         ></div>
                         <div 
-                            style="width: 5.5%; 
+                            style="width: 2.7%; 
                             background-color: lightseagreen;
                             border-radius: 0 2rem 2rem 0;"
                         ></div>
@@ -116,15 +112,15 @@
                         </div>
                         <div class="language">
                             <div class="lang-indicator" style="background-color: #6051fe;"></div>
-                            <p><b>HTML</b> (30.5%)</p>
+                            <p><b>HTML</b> (32.2%)</p>
                         </div>
                         <div class="language">
                             <div class="lang-indicator" style="background-color: #ef4765;"></div>
-                            <p><b>JavaScript</b> (19.5%)</p>
+                            <p><b>JavaScript</b> (20.6%)</p>
                         </div>
                         <div class="language">
                             <div class="lang-indicator" style="background-color: lightseagreen;"></div>
-                            <p><b>PHP</b> (5.5%)</p>
+                            <p><b>PHP</b> (2.7%)</p>
                         </div>
                     </div>
                 </div>
@@ -150,7 +146,9 @@
                             <p>More</p>
                             <div class="proj-info-card">
                                 <h1>
-                                    This client was also in need of a graphic design for a door flyer that they planned to print and hang on doors of potential customers. I was able to design, create, and deliver the flyer graphic within 24 hours of the client's request. Take a look below at the final product!
+                                    This client was also in need of a graphic design for a door flyer that they planned to print
+                                    and hang on doors of potential customers. I was able to design, create, and deliver the flyer
+                                    graphic within 24 hours of the client's request. Take a look below at the final product!
                                 </h1>
                             </div>
                         </div>
@@ -162,7 +160,7 @@
             </div>
         </div>
 
-        <!-- Settings window -->
+        <!-- SETTINGS MENU -->
         <div class="settings-window" id="settings-window">
             <div class="settings-content">
                 <div class="settings-header">
@@ -178,7 +176,7 @@
                 </div>
             </div>
             <div class="settings-footer">
-                <p>Last Updated: Feb 15 2024</p>
+                <p>Last Updated: Feb 28 2024</p>
             </div>
         </div>
     </section>
