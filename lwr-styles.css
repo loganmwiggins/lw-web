@@ -192,9 +192,9 @@ html {
     align-items: center;
 
     img {
-        max-width: 14rem;
+        max-width: 13rem;
         border-radius: 20rem;
-        box-shadow: 6px 6px 20px rgba(122,122,122,0.3);
+        box-shadow: .5rem .5rem 2rem rgba(122, 122, 122, .2);
     }
     h1 { 
         font-family: "Poppins-Bold";
