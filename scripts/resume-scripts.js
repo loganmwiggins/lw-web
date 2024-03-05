@@ -1,8 +1,6 @@
 // RESUME BUTTON
 
-    function openResume() {
-        window.open("assets/LoganWiggins_Resume.pdf", "_blank");
-    }
+    function openResume() { window.open("assets/LoganWiggins_Resume.pdf", "_blank"); }
 
 // --------------------
 
@@ -20,7 +18,6 @@
     let skillsArrow223 = document.getElementById("skills-arrow-223");
     let skillsArrowSt = document.getElementById("skills-arrow-st");
     let skillsArrowPub = document.getElementById("skills-arrow-pub");
-    let skillsArrowTt = document.getElementById("skills-arrow-tt");
 
     let skillsFsu = document.getElementById("skills-fsu");
     let skillsAitp = document.getElementById("skills-aitp");
@@ -30,7 +27,6 @@
     let skills223 = document.getElementById("skills-223");
     let skillsSt = document.getElementById("skills-st");
     let skillsPub = document.getElementById("skills-pub");
-    let skillsTt = document.getElementById("skills-tt");
 
     function toggleSkillsFsu() {
         if (skillsFsu.style.display == "flex") {
@@ -110,16 +106,6 @@
         else {
             skillsPub.style.display = "flex";
             skillsArrowPub.classList.add("rotate");
-        }
-    }
-    function toggleSkillsTt() {
-        if (skillsTt.style.display == "flex") {
-            skillsTt.style.display = "none";
-            skillsArrowTt.classList.remove("rotate");
-        }
-        else {
-            skillsTt.style.display = "flex";
-            skillsArrowTt.classList.add("rotate");
         }
     }
 
