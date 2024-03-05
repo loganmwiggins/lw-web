@@ -388,7 +388,10 @@ html {
         }
     }
 }
-.settings-footer { margin-bottom: 4rem; }
+.settings-footer {
+    margin-bottom: 4rem;
+    p { font-size: 1.5rem; }
+}
 
 @keyframes openSettings {
     0% { 
@@ -1127,6 +1130,9 @@ html {
             }
         }
     }
+    .settings-footer {
+        p { font-size: 1.5rem; }
+    }
 
 
     /* "HOME": LAPTOPS */
@@ -1300,13 +1306,8 @@ html {
     }
 
     .settings-window {
-        width: 30rem;
-        padding: 2rem 4rem;
         border-radius: 2rem 0 0 2rem;
         height: 95%;
-    
-        h1 { font-size: 2.5rem; }
-        p { font-size: 1.75rem; }
     }
     .setting-ctnr {
         button { 
@@ -1319,7 +1320,10 @@ html {
             }
         }
     }
-    .settings-footer { margin-bottom: 0; }
+    .settings-footer {
+        margin-bottom: 0;
+        p { font-size: 1.5rem; }
+    }
 
 
     /* "HOME": TABLETS */
@@ -1451,15 +1455,7 @@ html {
     /* "NAV": MOBILE */
     #theme-text { white-space: nowrap; }
 
-    .settings-window {
-        width: 25rem;
-        padding: 2rem 4rem;
-        border-radius: 2rem 0 0 2rem;
-        height: 95%;
-    
-        h1 { font-size: 2.5rem; }
-        p { font-size: 1.75rem; }
-    }
+    .settings-window { width: 25rem; }
     .setting-ctnr {
         button { 
             font-size: 1.75rem; 
@@ -1470,6 +1466,9 @@ html {
                 margin-right: 1rem;
             }
         }
+    }
+    .settings-footer {
+        p { font-size: 1.5rem; }
     }
 
     /* "HOME": MOBILE */
