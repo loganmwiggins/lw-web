@@ -463,10 +463,7 @@ html {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-.index-contact-ctnr {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.index-contact-btn-ctnr {
     background: var(--infocard-color);
     width: 80%;
     margin: 1rem;
@@ -478,7 +475,7 @@ html {
     gap: 1rem;
     width: 100%;
 }
-.index-contact {
+.index-contact-btn {
     flex: 1;
     display: flex;
     align-items: center;
@@ -500,12 +497,8 @@ html {
         margin: 0;
         opacity: 0.9;
     }
-    p {
-        margin: 0 0 0 1.5rem;
-        text-wrap: nowrap;
-    }
 }
-.index-contact:hover { 
+.index-contact-btn:hover { 
     box-shadow: 0 0 2rem rgba(96, 81, 254, 0.25); 
     #tooltip { display: block; }
 }
@@ -1030,6 +1023,7 @@ html {
 @media (max-width: 1200px) {
 
     /* ALL: LAPTOPS */
+    .hide-on-laptop { display: none; }
     .dynamic-window {
         flex-direction: column-reverse;
         top: 1.5rem;
@@ -1153,13 +1147,8 @@ html {
 
         p { margin: 1rem; }
     }
-    .index-contact-ctnr { width: 65%; }
-    .index-contact {
-        font-size: 1.75rem;
-
-        p { display: none; }
-    }
-    .index-contact:hover #tooltip { display: none; }
+    .index-contact-btn-ctnr { width: 65%; }
+    .index-contact-btn { font-size: 1.75rem; }
     
 
     /* "RESUME": LAPTOPS */
@@ -1332,12 +1321,17 @@ html {
         h1 { font-size: 3rem; }
         p { font-size: 1.5rem; }
     }
-    .index-contact-ctnr {
+    .index-contact-btn-ctnr {
         width: 70%;
         background: var(--mobile-infocard-color);
     }
-    .index-contact { background: var(--mobile-button-color); }
-    .index-contact:hover { background: var(--mobile-button-hvr-color); }
+    .index-contact-btn { background: var(--mobile-button-color); }
+    .index-contact-btn:hover {
+        background: var(--mobile-button-hvr-color);
+        box-shadow: none; 
+
+        #tooltip { display: none; }
+    }
 
 
     /* "RESUME": TABLETS */
@@ -1479,8 +1473,8 @@ html {
         p { font-size: 1.25rem; }
     }
     .role { font-size: 1.25rem; }
-    .index-contact-ctnr { margin: .5rem 0; }
-    .index-contact {
+    .index-contact-btn-ctnr { margin: .5rem 0; }
+    .index-contact-btn {
         font-size: 1.25rem;
         padding: 1rem;
         border-radius: 1.5rem;
