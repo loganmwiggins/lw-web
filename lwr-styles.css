@@ -1152,11 +1152,6 @@ html {
     
 
     /* "RESUME": LAPTOPS */
-    /* Buttons */
-    .pdf-btn-ctnr {
-        margin: 1rem 0;
-        text-align: center;
-    }
     .pdf-btn {
         margin-left: 0;
         padding: 0.75rem 3rem;
@@ -1200,6 +1195,7 @@ html {
 
 
     /* "PROJECTS": LAPTOPS */
+    .all-projs-card { margin-top: 4rem !important; }
     .project-detail { 
         padding: 3rem 4rem; 
 
@@ -1376,7 +1372,6 @@ html {
 
 
     /* "PROJECTS": TABLETS */
-    .all-projs-card { margin-top: 4rem !important; }
     .project-detail {
         h1 { font-size: 2.25rem; }
         h2 { font-size: 1.75rem; }
@@ -1508,7 +1503,6 @@ html {
         padding: 0;
         p { margin: .25rem 0; }
     }
-    .pdf-btn-ctnr { margin-top: 1rem; }
     .resume-card-skills h3 { font-size: 1.25rem; }
     .rcs p {
         margin: .5rem .5rem .5rem 0;
