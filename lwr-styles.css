@@ -623,20 +623,40 @@ html {
 .skills-arrow { transition: transform 0.2s ease; }
 #skills-fsu p { 
     background: #811d35; 
+    border: 1px solid #4b111e;
     color: #fff; 
     opacity: .8;
 }
-#skills-aitp p { background: rgb(255, 197, 89); }
-#skills-stars p { background: rgb(130, 230, 255); }
-#skills-pcg p { background: #abee6d; }
+#skills-aitp p {
+    background: #ffc559;
+    border: 1px solid #d1a148;
+}
+#skills-stars p {
+    background: #82e6ff;
+    border: 1px solid #6abed3;
+}
+#skills-pcg p {
+    background: #abee6d;
+    border: 1px solid #88bd56;
+}
 #skills-cot p { 
     background: #0e47a1; 
+    border: 1px solid #0a295c;
     color: #fff;
     opacity: .8;
 }
-#skills-223 p { background: #d6d6d6; }
-#skills-st p { background: #ff94f6; }
-#skills-pub p { background: #73e97d; }
+#skills-223 p {
+    background: #d6d6d6;
+    border: 1px solid #9c9c9c;
+}
+#skills-st p {
+    background: #ff94f6;
+    border: 1px solid #be70b8;
+}
+#skills-pub p {
+    background: #73e97d;
+    border: 1px solid #58b15f;
+}
 
 /* Skill cards section */
 .skill-card-row {
