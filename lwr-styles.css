@@ -865,11 +865,9 @@ html {
     flex-direction: column;
     text-align: left;
     height: 20rem;
-    scale: 100%;
-    transition: scale .25s;
     font-family: "Poppins-Regular";
     border: none;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     padding: 2rem 3rem;
     margin: 1rem 1rem;
     overflow: hidden;
@@ -879,21 +877,25 @@ html {
     h1 {
         margin: 0;
         font-size: 2rem;
+        transition: scale .25s;
     }
     p {
         margin: 0;
         font-size: 1.5rem;
+        transition: scale .25s;
     }
     img {
         width: 40rem;
         margin-top: 2rem;
         transform: translate(-10rem);
         box-shadow: 0 0 3rem rgba(255, 255, 255, 0.25);
+        transition: scale .25s;
     }
 }
 .project-card:hover {
-    scale: 102%;
-    transition: scale .25s;
+    h1 { scale: 105%; transition: scale .25s; }
+    p { scale: 105%; transition: scale .25s; }
+    img { scale: 105%; transition: scale .25s; }
 }
 .gd-img {
     margin-top: 0 !important;
@@ -1239,14 +1241,18 @@ html {
         display: flex;
         flex-direction: column;
     }
-    .project-card {        
+    .project-card {  
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 10rem;
         margin: 1rem 0;
-        height: 20px;
 
+        .project-card-text { width: 100%; }
         img {
-            width: 65rem;
-            margin-top: 2rem;
-            transform: translate(-20rem, 0);
+            width: 15rem;
+            margin-top: 0;
+            transform: translate(0, 0);
+            scale: 175%;
         }
     }
     .gd-img {
@@ -1409,11 +1415,16 @@ html {
         img {  margin: 0 1rem; }
         p { font-size: 1.75rem; }
     }
-    .project-card img {
-        width: 50rem;
-        margin-top: 2rem;
-        transform: translate(-15rem, 0);
+    .project-card {  
+        gap: 0;
+
+        img {
+            width: 15rem;
+            transform: translate(-6rem, 0);
+            scale: 200%;
+        }
     }
+    
     .proj-info-card { background: var(--mobile-button-color); }
     .proj-info-card img { width: 100%; }
     .su-card { 
@@ -1547,10 +1558,13 @@ html {
     }
 
     .tooltip h1 { font-size: 1.25rem }
-    .project-card img {
-        width: 50rem;
-        margin-top: 2rem;
-        transform: translate(-35rem, 0);
+
+    .project-card {  
+        flex-direction: column;
+        img { transform: translate(0, 2.75rem); }
+    }
+    .project-card:hover {
+        img { scale: 200%; }
     }
     .back-btn { font-size: 1.25rem; }
 
