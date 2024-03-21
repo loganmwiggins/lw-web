@@ -574,6 +574,7 @@ html {
     p {
         margin: 0;
         font-size: 1.5rem;
+        opacity: .75;
     }
 }
 /* Resume card skills */
@@ -1208,6 +1209,11 @@ html {
         padding: 1.5rem 3rem;
         margin: .5rem 0;
     }
+    .skill-card,
+    .course-card {
+        h1 { font-size: 2rem; }
+        p { font-size: 1.5rem; }
+    }
 
 
     /* "PROJECTS": LAPTOPS */
@@ -1369,14 +1375,25 @@ html {
         }
         .skills-arrow { margin: 1rem 0 0 0; }
     }
-    .resume-card-text { text-align: left; }
+    .resume-card-text {
+        h1 { font-size: 1.75rem; }
+        p { font-size: 1.5rem; }
+    }
     .skill-card { 
         background: var(--mobile-button-color); 
-        p { margin-top: 0; }
+
+        h1 { font-size: 1.75rem; }
+        p {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
     }
     .course-card { 
         width: 100%;
         background: var(--mobile-button-color); 
+
+        h1 { font-size: 1.75rem; }
+        p { font-size: 1.5rem; }
     }
     .resume-card-skills h3 { margin: 10px 10px 10px 0; }
     .rcs p {
@@ -1489,7 +1506,6 @@ html {
     }
 
     /* "HOME": MOBILE */
-    
     .index-title-text {
         margin: 0 0 0 2rem;
 
@@ -1530,12 +1546,21 @@ html {
     .resume-card-text {
         text-align: center;
         padding: 0;
-        p { margin: .25rem 0; }
+        h1 { font-size: 1.5rem; }
+        p {
+            font-size: 1.25rem;
+            margin: .25rem 0;
+        }
     }
     .resume-card-skills h3 { font-size: 1.25rem; }
     .rcs p {
         margin: .5rem .5rem .5rem 0;
         border-radius: 1.75rem;
+    }
+    .skill-card
+    .course-card {
+        h1 { font-size: 1.5rem; }
+        p { font-size: 1.25rem; }
     }
     
 
