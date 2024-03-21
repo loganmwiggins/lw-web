@@ -166,13 +166,13 @@ html {
     padding: 2rem 4rem;
     margin: 1rem;
 
-    h1 {
-        margin-bottom: 1.5rem;
-        font-size: 2.25rem;
-    }
     p {
-        opacity: 0.75;
-        margin: 1.5rem 0;
+        margin: 0 0 1.5rem 0;
+        font-size: 2rem;
+    }
+    .info-card-label {
+        opacity: 0.6;
+        margin: 1.5rem 0 1rem 0;
         font-size: 1.75rem;
     }
 }
@@ -1059,8 +1059,8 @@ html {
         padding: 2rem 4rem;
         margin: 1rem;
 
-        h1 { font-size: 2rem; }
-        p { font-size: 1.5rem; }
+        p { font-size: 2rem; }
+        .info-card-label { font-size: 1.75rem; }
     }
     .title-card {
         flex-direction: column;
@@ -1153,14 +1153,8 @@ html {
     /* "HOME": LAPTOPS */
     .index-title-text { 
         margin: 0 2rem; 
-        h1 { font-size: 3rem; }
-        p { font-size: 1.5rem; }
-    }
-    .index-info-card {
-        width: 65%;
-        font-size: 1.2rem;
-        padding: 2rem 4rem;
-        margin: 1rem;
+        h1 { font-size: 4rem; }
+        p { font-size: 1.75rem; }
     }
     .role {
         width: 100%;
@@ -1296,7 +1290,8 @@ html {
         width: 70%;
         background: var(--mobile-infocard-color);
 
-        h1 { font-size: 1.75rem; }
+        p { font-size: 1.75rem; }
+        .info-card-label { font-size: 1.5rem; }
     }
     .title-card {
         width: 70%;
@@ -1341,7 +1336,7 @@ html {
         text-align: left; 
 
         h1 { font-size: 3rem; }
-        p { font-size: 1.5rem; }
+        p { font-size: 1.75rem; }
     }
     .index-contact-btn-ctnr {
         width: 70%;
@@ -1425,8 +1420,10 @@ html {
         }
     }
     
-    .proj-info-card { background: var(--mobile-button-color); }
-    .proj-info-card img { width: 100%; }
+    .proj-info-card {
+        background: var(--mobile-button-color);
+        img { width: 100%; }
+    }
     .su-card { 
         width: 100%;
         background: var(--mobile-button-color); 
@@ -1462,8 +1459,9 @@ html {
         margin: .5rem 0;
         width: 70%;
 
-        h1 { font-size: 1.5rem; }
-        p { font-size: 1.25rem; }
+        p { font-size: 1.5rem; }
+        .info-card-label { font-size: 1.25rem; }
+        
     }
     .title-card { margin: 4rem .5rem .5rem .5rem; }
     .title-card-left {
@@ -1496,7 +1494,7 @@ html {
         margin: 0 0 0 2rem;
 
         h1 { font-size: 2.25rem; }
-        p { font-size: 1.25rem; }
+        p { font-size: 1.5rem; }
     }
     .role { font-size: 1.25rem; }
     .index-contact-btn-ctnr { margin: .5rem 0; }
