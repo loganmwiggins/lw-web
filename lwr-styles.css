@@ -660,20 +660,21 @@ html {
 }
 
 /* Skill cards section */
-.skill-card-row {
+.skill-card-ctnr {
     display: flex;
-    flex-direction: row;
+    flex-flow: wrap;
+    gap: 1rem;
 }
 .skill-card {
     flex: 1;
+    min-width: 40%;
     display: flex;
     flex-direction: column;
     font-family: "Poppins-Regular";
     background: var(--button-color);
     color: var(--secondary-color);
     border-radius: 2rem;
-    padding: 2rem 3rem;
-    margin: .5rem;
+    padding: 1.5rem 3rem;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;
@@ -689,8 +690,10 @@ html {
     p {
         margin: 0;
         font-size: 1.5rem;
+        opacity: .75;
     }
 }
+.hidden-skill-card { visibility: hidden !important; }
 .skill-level {
     display: flex;
     align-items: center;
@@ -737,6 +740,7 @@ html {
     p {
         margin: 0;
         font-size: 1.5rem;
+        opacity: .75;
     }
 }
 
@@ -1204,11 +1208,7 @@ html {
             font-size: 1.5rem;
         }
     }
-    .skill-card-row { flex-direction: column; }
-    .skill-card {
-        padding: 1.5rem 3rem;
-        margin: .5rem 0;
-    }
+    .hidden-skill-card { display: none; }
     .skill-card,
     .course-card {
         h1 { font-size: 2rem; }
