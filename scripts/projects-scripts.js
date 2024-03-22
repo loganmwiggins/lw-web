@@ -7,9 +7,13 @@
 
 // --------------------
 
-// INTCONVERT PROJECT
+// PROJECT LINKS
 
-    function openIC() { window.open("https://www.wigginsnet.com/int-convert", "_blank"); }
+    function openLWsite() { window.open("https://www.loganwiggins.com", "_blank"); }
+    function openHEsite() { window.open("https://www.holdeverythingfl.com", "_blank"); }
+    function openISOsite() { window.open("https://www.induserv.online", "_blank"); }
+
+    function openICsite() { window.open("https://www.wigginsnet.com/int-convert", "_blank"); }
     function openICGitHub() { window.open("https://github.com/loganmwiggins/int-convert", "_blank"); }
     function openICYouTube() { window.open("https://www.youtube.com/watch?v=mXop9WOdQak&ab_channel=LoganWiggins", "_blank"); }
 
