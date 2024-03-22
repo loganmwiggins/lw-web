@@ -1467,9 +1467,10 @@ html {
     .title-card { margin: 4rem .5rem .5rem .5rem; }
     .title-card-left {
         img {
-            max-width: 6.5rem;
+            max-width: 7rem;
         }
         h1 { font-size: 2.25rem; }
+        p { white-space: nowrap; }
     }
 
     /* "NAV": MOBILE */
