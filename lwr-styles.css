@@ -608,6 +608,8 @@ html {
 .rcs {
     display: flex;
     flex-flow: wrap;
+    gap: .5rem;
+    margin-bottom: 1rem;
 
     p {
         display: flex;
@@ -615,7 +617,7 @@ html {
         font-size: 1.5rem;
         color: black;
         padding: .25rem 1.5rem;
-        margin: .5rem .5rem .5rem 0;
+        margin: 0;
         border-radius: 2rem;
         scale: 100%;
         cursor: default;
@@ -660,13 +662,13 @@ html {
 }
 #project-skills {
     margin-bottom: 1.5rem;
+    gap: 1rem;
 
     p {
         background: var(--button-color);
         color: var(--secondary-color);
         font-size: 1.75rem;
         border-radius: 1.5rem;
-        margin-right: 1rem;
         padding: 1rem 2rem;
         opacity: 1; 
     }
@@ -766,7 +768,7 @@ html {
     h1 { 
         margin: 0; 
         margin-right: 2rem;
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
     h2 { 
         margin: 0; 
@@ -781,7 +783,7 @@ html {
 .proj-detail-head {
     display: flex;
     align-items: center;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 .ext-links-row {
     width: 100%;
@@ -1194,6 +1196,7 @@ html {
             font-size: 1.5rem;
         }
     }
+    .rcs p { font-size: 1.5rem; }
     .hidden-skill-card { display: none; }
     .skill-card,
     .course-card {
@@ -1207,7 +1210,7 @@ html {
     .project-detail { 
         padding: 3rem 4rem; 
 
-        h1 { font-size: 2.75rem; }
+        h1 { font-size: 2.5rem; }
         h2 { font-size: 2rem; }
         p { font-size: 1.75rem; }
     }
@@ -1230,6 +1233,7 @@ html {
         margin: 1rem 0;
 
         .project-card-text { width: 100%; }
+        p { font-size: 1.5rem; }
         img {
             width: 15rem;
             margin-top: 0;
@@ -1382,12 +1386,7 @@ html {
     .rcs p {
         font-size: 1.5rem;
         padding: .5rem 1.25rem;
-        margin: 0.75rem .5rem 0 0;
         border-radius: 2rem;
-    }
-    .resume-card-gallery h3 {
-        font-size: 1.25rem;
-        margin: 10px 10px 10px 0;
     }
     
 
@@ -1395,7 +1394,7 @@ html {
     /* "PROJECTS": TABLETS */
     .back-btn { font-size: 1.25rem; }
     .project-detail {
-        h1 { font-size: 2.5rem; }
+        h1 { font-size: 2.25rem; }
         h2 { font-size: 1.75rem; }
         p { font-size: 1.5rem; }
     }
@@ -1406,6 +1405,8 @@ html {
     .project-card {  
         gap: 0;
 
+        h1 { font-size: 1.75rem; }
+        p { font-size: 1.5rem; }
         img {
             width: 15rem;
             transform: translate(-6rem, 0);
@@ -1427,9 +1428,14 @@ html {
         p { font-size: 1.5rem; }
     }
     .ext-link:hover { box-shadow: none; }
-    #project-skills p {
-        font-size: 1.5rem;
-        background: var(--mobile-button-color);
+
+    #project-skills {
+        gap: .75rem;
+
+        p {
+            font-size: 1.5rem;
+            background: var(--mobile-button-color);
+        }
     }
     .language p { font-size: 1.5rem; }
 }
@@ -1460,7 +1466,9 @@ html {
     }
     .title-card { margin: 4rem .5rem .5rem .5rem; }
     .title-card-left {
-        img { max-width: 7rem; }
+        img {
+            max-width: 6.5rem;
+        }
         h1 { font-size: 2.25rem; }
     }
 
@@ -1532,10 +1540,10 @@ html {
     }
     .resume-card-skills h3 { font-size: 1.25rem; }
     .rcs p {
-        margin: .5rem .5rem .5rem 0;
+        font-size: 1.25rem;
         border-radius: 1.75rem;
     }
-    .skill-card
+    .skill-card,
     .course-card {
         h1 { font-size: 1.5rem; }
         p { font-size: 1.25rem; }
@@ -1543,8 +1551,8 @@ html {
     
 
     /* "PROJECTS": MOBILE */
-    .project-detail {
-        h1 { font-size: 2rem; }
+    .project-detail {        
+        h1 { font-size: 1.75rem; }
         h2 { font-size: 1.5rem; }
         p { font-size: 1.5rem; }
     }    
@@ -1553,6 +1561,9 @@ html {
 
     .project-card {  
         flex-direction: column;
+
+        h1 { font-size: 1.5rem; }
+        p { font-size: 1.25rem; }
         img { transform: translate(0, 2.75rem); }
     }
     .project-card:hover {
@@ -1573,5 +1584,8 @@ html {
         margin: 0 0 1rem 0;
         padding: 1rem 2.5rem;
         border-radius: 1.5rem;
+    }
+    #project-skills {
+        p { width: 100%; }
     }
 }   
