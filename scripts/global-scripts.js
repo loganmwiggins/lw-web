@@ -213,9 +213,15 @@
     if (navStatusVar === "collapsed") {
         collapseNav();
 
-        if (screenWidth <= 1200) {
+        if (screenWidth <= 800) {
             nav.classList.remove("collapsed");
             navStatusVar = "expanded";
+        }
+    }
+    else {
+        if (screenWidth <= 1200 && screenWidth > 800) {
+            nav.classList.add("collapsed");
+            navStatusVar = "collapsed";
         }
     }
 
