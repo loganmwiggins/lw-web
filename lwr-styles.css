@@ -63,6 +63,25 @@ a:active {
 .filter-accent { filter: invert(26%) sepia(94%) saturate(2660%) hue-rotate(238deg) brightness(103%) contrast(99%); }
 .rotate { transform: rotate(180deg); transition: transform 0.2s ease; }
 
+/* SCROLL ANIMATIONS */
+/* ------------------------------ */
+.scroll-hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-25%);
+
+    transition: all 1s;
+}
+.scroll-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .scroll-hidden { transition: none; }
+}
+
 /* MAIN COMPONENTS */
 /* ------------------------------ */
 html {

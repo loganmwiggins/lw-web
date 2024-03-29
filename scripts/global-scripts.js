@@ -7,7 +7,22 @@
 // --------------------
 
 
-// SETTINGS
+// SCROLL ANIMATIONS
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) { entry.target.classList.add('scroll-show'); }
+            else { entry.target.classList.remove('scroll-show'); }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.scroll-hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+// --------------------
+
+
+// SETTINGS WINDOW TOGGLE
 
     let settingsWindow = document.getElementById("settings-window");
     let settingsIcon = document.getElementById("settings-icon");
