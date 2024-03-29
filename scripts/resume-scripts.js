@@ -5,9 +5,6 @@
 // --------------------
 
 
-
-
-
 // RESUME CARD
 
     let skillsArrowFsu = document.getElementById("skills-arrow-fsu");

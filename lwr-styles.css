@@ -593,9 +593,9 @@ html {
 /* Resume card skills */
 .resume-card-skills {
     display: none;
-    flex-flow: wrap;
+    flex-direction: column;
     translate: 0 -4rem;
-    padding: 3rem 3rem 1.5rem 3rem;
+    padding: 3rem;
     margin-bottom: -4rem;
     background: var(--resume-card-skills);
     border-radius: 0 0 2rem 2rem;
@@ -604,7 +604,7 @@ html {
 
     h3 {
         font-size: 1.5rem;
-        margin: 10px 10px 10px 0;
+        margin: 1rem 1rem 1rem 0;
         opacity: 0.8;
     }
 }
@@ -1360,7 +1360,7 @@ html {
         h1 { font-size: 1.75rem; }
         p { font-size: 1.5rem; }
     }
-    .resume-card-skills h3 { margin: 10px 10px 10px 0; }
+    .resume-card-skills h3 { margin: 1rem 1rem 1rem 0; }
     .rcs p {
         font-size: 1.5rem;
         margin: .75rem .5rem 0 0;
