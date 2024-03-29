@@ -1,3 +1,5 @@
+sessionStorage.setItem("location", "resume");
+
 // RESUME BUTTON
 
     function openResume() { window.open("assets/LoganWiggins_Resume.pdf", "_blank"); }

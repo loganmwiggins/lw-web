@@ -1,3 +1,5 @@
+sessionStorage.setItem("location", "home");
+
 // INDEX CONTACT LINKS
 
     let phoneBtn = document.getElementById("phone-btn");

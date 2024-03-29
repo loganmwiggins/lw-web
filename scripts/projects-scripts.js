@@ -1,3 +1,5 @@
+sessionStorage.setItem("location", "projects");
+
 // "ALL PROJECTS" CARD LINKS
 
     function openProjectLW() { window.open("https://www.loganwiggins.com/projects-loganwiggins?", "_self"); }
