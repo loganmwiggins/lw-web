@@ -15,10 +15,7 @@
 
 /* LINK DECORATION */
 /* ------------------------------ */
-a:link,
-a:visited,
-a:hover,
-a:active {
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: var(--secondary-color);
 }
@@ -42,7 +39,7 @@ a:active {
     --mobile-button-color: linear-gradient(to right bottom, rgba(255,255,255, 0.6), rgba(255,255,255, 0.5));
     --mobile-button-hvr-color: linear-gradient(to right bottom, rgba(255,255,255, 0.7),rgba(255,255,255, 0.6));
 }
-.dark-theme {
+.root-dark {
     --primary-color: rgb(0,0,0);
     --secondary-color: rgb(255,255,255);
     --accent-color: rgb(96, 81, 254);
@@ -59,6 +56,42 @@ a:active {
     --mobile-button-color: linear-gradient(to right bottom, rgba(0,0,0, 0.5), rgba(0,0,0, 0.4));
     --mobile-button-hvr-color: linear-gradient(to right bottom, rgba(0,0,0, 0.6), rgba(0,0,0, 0.5));
 }
+
+.minimal-light {
+    --primary-color: rgb(255,255,255);
+    --secondary-color: rgb(0,0,0);
+    --accent-color: rgb(96, 81, 254);
+    --window-color: lightgrey;
+    --settings-window-color: white;
+    --nav-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    --button-color: linear-gradient(to left top, rgba(255,255,255,0.4), rgba(255,255,255,1.0));
+    --button-hvr-color: linear-gradient(to left top, rgba(255,255,255,0.0), rgba(255,255,255,1));
+    --card-color: linear-gradient(to left top, rgba(255,255,255,0.6), rgba(255,255,255,0.3)); 
+    --infocard-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    --resume-card-skills: linear-gradient(to top, rgba(255,255,255, 0.5), rgba(255,255,255, 0.4),rgba(255,255,255, 0));
+    --mobile-nav-color: linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 0.3));
+    --mobile-infocard-color: rgba(255,255,255, 0.6);
+    --mobile-button-color: linear-gradient(to right bottom, rgba(255,255,255, 0.6), rgba(255,255,255, 0.5));        /*change*/
+    --mobile-button-hvr-color: linear-gradient(to right bottom, rgba(255,255,255, 0.7),rgba(255,255,255, 0.6));     /*change*/
+}
+.minimal-dark {
+    --primary-color: rgb(0,0,0);
+    --secondary-color: rgb(255,255,255);
+    --accent-color: rgb(96, 81, 254);
+    --window-color: rgb(35, 35, 35);
+    --settings-window-color: black;
+    --nav-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
+    --button-color: linear-gradient(to left top, rgba(0,0,0, 0.6), rgba(0,0,0, 1.0));
+    --button-hvr-color: linear-gradient(to left top, rgba(0,0,0, 0.0), rgba(0,0,0, 1));
+    --card-color: linear-gradient(to left top, rgba(0,0,0, 0.6), rgba(0,0,0, 0.3));
+    --infocard-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
+    --resume-card-skills: linear-gradient(to top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.4),rgba(0,0,0, 0));
+    --mobile-nav-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
+    --mobile-infocard-color: rgba(0,0,0, 0.7);
+    --mobile-button-color: linear-gradient(to right bottom, rgba(0,0,0, 0.5), rgba(0,0,0, 0.4));        /*change*/
+    --mobile-button-hvr-color: linear-gradient(to right bottom, rgba(0,0,0, 0.6), rgba(0,0,0, 0.5));    /*change*/
+}
+
 .filter-white { filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%); }
 .filter-accent { filter: invert(26%) sepia(94%) saturate(2660%) hue-rotate(238deg) brightness(103%) contrast(99%); }
 .rotate { transform: rotate(180deg); transition: transform 0.2s ease; }
@@ -70,7 +103,7 @@ a:active {
     filter: blur(3px);
     transform: translateX(-25%);
 
-    transition: all 1s;
+    transition: opacity 1s, filter 1s, transform 1s;
 }
 .scroll-show {
     opacity: 1;
@@ -369,12 +402,15 @@ html {
     cursor: pointer;
 }
 .setting-ctnr { 
-    margin: 2rem 0; 
+    margin: 3rem 0; 
 
     select {
+        background: var(--primary-color);
+        color: var(--secondary-color);
         width: 100%;
         padding: 1rem 1.5rem;
         border-radius: 1rem;
+        outline: none;
         font-size: 1.75rem;
         font-family: "Poppins-Regular";
         cursor: pointer;
@@ -399,6 +435,18 @@ html {
             margin-right: 1rem;
             opacity: .8;
         }
+    }
+}
+.setting-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    img { 
+        max-width: 2.25rem; 
+        max-height: 2.25rem; 
+        margin-right: 1rem;
+        opacity: .8;
     }
 }
 .settings-footer {

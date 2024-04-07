@@ -164,11 +164,20 @@
                     <p class="settings-close-btn" onclick="toggleSettings()">Close</p>
                 </div>
                 <div class="setting-ctnr">
-                    <p>Theme</p>
-                    <button id="theme-btn">
-                        <img src="assets/icons/nav-icons/moon.svg" draggable="false" id="theme-icon">
-                        <div id="theme-text">Dark mode</div>
-                    </button>
+                    <!-- <p>Theme</p> -->
+                    <div class="setting-row">
+                        <img src="assets/icons/nav-icons/sun.svg" draggable="false" id="theme-icon">
+                        <button id="sitecolor-btn">
+                            <div id="theme-text">Light mode</div>
+                        </button>
+                    </div>
+                    <div class="setting-row">
+                        <img src="assets/icons/settings-icons/brush.svg" draggable="false" id="brush-icon">
+                        <select id="theme-select" onchange="changeTheme()">
+                            <option value="glass">Glass</option>
+                            <option value="minimal">Minimal</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="settings-footer">

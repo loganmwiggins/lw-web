@@ -45,15 +45,36 @@
 // --------------------
 
 
-// DARK MODE
+// DEFAULT USER SETTINGS
 
-    // Declare local storage
-    let siteThemeVar = localStorage.getItem("siteTheme");
+    // Color mode
+    if (localStorage.getItem("siteColor") == null) { localStorage.setItem("siteColor", "light"); }
+
+    // Nav collapse
+    if (localStorage.getItem("navStatus") == null) { localStorage.setItem("navStatus", "expanded"); }
+
+    // Theme
+    if (localStorage.getItem("siteTheme") == null
+        && localStorage.getItem("siteTheme") != "glass"
+        && localStorage.getItem("siteTheme") != "minimal")
+    {
+        localStorage.setItem("siteTheme", "glass");
+    }
+
+// --------------------
+
+
+// DARK MODE / LIGHT MODE
+
+    // Get local storage variable
+    let siteColorVar = localStorage.getItem("siteColor");
 
     // Declare theme button + content
-    let themeBtn = document.getElementById("theme-btn");
+    let bgVideo = document.querySelector(".bg-video");
+    let siteColorBtn = document.getElementById("sitecolor-btn");
     let themeIcon = document.getElementById("theme-icon");
     let themeText = document.getElementById("theme-text");
+    let brushIcon = document.getElementById("brush-icon");
 
     // Declare nav icons
     let aboutmeIcon = document.getElementById("aboutme-icon");
@@ -69,22 +90,24 @@
     let youtubeIcon = document.getElementById("youtube-icon");
 
 
-    // Functions for enabling and disabling darkMode
+    // Functions for enabling and disabling dark mode
     const enableDarkMode = () => {
-        document.body.classList.add("dark-theme");
-        localStorage.setItem("siteTheme", "dark");
-        siteThemeVar = localStorage.getItem("siteTheme");
-    }
-    const disableDarkMode = () => {
-        document.body.classList.remove("dark-theme");
-        localStorage.setItem("siteTheme", "light");
-        siteThemeVar = localStorage.getItem("siteTheme");
-    }
+        // Add/remove color set depending on site theme
+        if (localStorage.getItem("siteTheme") == "glass") {
+            document.body.classList.remove("minimal-light");
+            document.body.classList.remove("minimal-dark");
+            document.body.classList.add("root-dark");
+            bgVideo.style.display = "block";
+        }
+        else {
+            document.body.classList.remove("minimal-light");
+            document.body.classList.remove("root-dark");
+            document.body.classList.add("minimal-dark");
+            bgVideo.style.display = "none";
+        }
 
-
-    // Check siteTheme state on load (keeps on refresh)
-    if (siteThemeVar === "dark") {
-        enableDarkMode();
+        localStorage.setItem("siteColor", "dark");
+        siteColorVar = localStorage.getItem("siteColor");
 
         // Set nav icons to white
         aboutmeIcon.classList.add('filter-white');
@@ -92,11 +115,12 @@
         projectsIcon.classList.add('filter-white');
         settingsIcon.classList.add('filter-white');
         collapseIcon.classList.add('filter-white');
-        themeIcon.src = "assets/icons/nav-icons/sun.svg";
+        themeIcon.src = "assets/icons/nav-icons/moon.svg";
         themeIcon.classList.add('filter-white');
-        themeText.innerHTML = "Light mode";
+        brushIcon.classList.add('filter-white');
+        themeText.innerHTML = "Dark mode";
 
-        // If page is index, set contact icons to white
+        // Set index icons to white
         if (sessionStorage.getItem("location") == "home") {
             phoneIcon.classList.add('filter-white');
             emailIcon.classList.add('filter-white');
@@ -104,126 +128,72 @@
             githubIcon.classList.add('filter-white');
             youtubeIcon.classList.add('filter-white');
         }
-        // if (window.location.href === "https://www.loganwiggins.com/") {
-        //     phoneIcon.classList.add('filter-white');
-        //     emailIcon.classList.add('filter-white');
-        //     linkedinIcon.classList.add('filter-white');
-        //     githubIcon.classList.add('filter-white');
-        //     youtubeIcon.classList.add('filter-white');
-        // }
-        // if (window.location.href === "https://www.loganwiggins.com/") {
-        //     phoneIcon.classList.add('filter-white');
-        //     emailIcon.classList.add('filter-white');
-        //     linkedinIcon.classList.add('filter-white');
-        //     githubIcon.classList.add('filter-white');
-        //     youtubeIcon.classList.add('filter-white');
-        // }
-        // if (window.location.href === "https://www.loganwiggins.com/index?") {
-        //     phoneIcon.classList.add('filter-white');
-        //     emailIcon.classList.add('filter-white');
-        //     linkedinIcon.classList.add('filter-white');
-        //     githubIcon.classList.add('filter-white');
-        //     youtubeIcon.classList.add('filter-white');
-        // }  
+    }
+    const disableDarkMode = () => {
+        if (localStorage.getItem("siteTheme") == "glass") {
+            document.body.classList.remove("root-dark");
+            document.body.classList.remove("minimal-dark");
+            document.body.classList.remove("minimal-light");
+            bgVideo.style.display = "block";
+        }
+        else {
+            document.body.classList.remove("root-dark");
+            document.body.classList.remove("minimal-dark");
+            document.body.classList.add("minimal-light");
+            bgVideo.style.display = "none";
+        }
+
+        localStorage.setItem("siteColor", "light");
+        siteColorVar = localStorage.getItem("siteColor");
+
+        // Set nav icons to black
+        aboutmeIcon.classList.remove('filter-white');
+        resumeIcon.classList.remove('filter-white');
+        projectsIcon.classList.remove('filter-white');
+        settingsIcon.classList.remove('filter-white');
+        collapseIcon.classList.remove('filter-white');
+        themeIcon.src = "assets/icons/nav-icons/sun.svg";
+        themeIcon.classList.remove('filter-white');
+        themeText.innerHTML = "Light mode";
+        brushIcon.classList.remove('filter-white');
+
+        // Set index icons to black
+        if (sessionStorage.getItem("location") == "home") {
+            phoneIcon.classList.remove('filter-white');
+            emailIcon.classList.remove('filter-white');
+            linkedinIcon.classList.remove('filter-white');
+            githubIcon.classList.remove('filter-white');
+            youtubeIcon.classList.remove('filter-white');
+        }
     }
 
 
-    themeBtn.onclick = function() {
-        // Check theme on nav button click
-        siteThemeVar = localStorage.getItem("siteTheme");
+    // Check siteColor and siteTheme state on load (keeps on refresh)
+    if (siteColorVar == "dark") { enableDarkMode(); }
+    else { disableDarkMode(); }
 
-        if (siteThemeVar === "light") {
-            enableDarkMode();
-
-            // Set nav icons to white
-            aboutmeIcon.classList.add('filter-white');
-            resumeIcon.classList.add('filter-white');
-            projectsIcon.classList.add('filter-white');
-            settingsIcon.classList.add('filter-white');
-            collapseIcon.classList.add('filter-white');
-            themeIcon.src = "assets/icons/nav-icons/sun.svg";
-            themeIcon.classList.add('filter-white');
-            themeText.innerHTML = "Light mode";
-
-            // If page is index, then change contact icons
-            if (sessionStorage.getItem("location") == "home") {
-                phoneIcon.classList.add('filter-white');
-                emailIcon.classList.add('filter-white');
-                linkedinIcon.classList.add('filter-white');
-                githubIcon.classList.add('filter-white');
-                youtubeIcon.classList.add('filter-white');
-            }
-            // if (window.location.href === "https://loganwiggins.com/") {
-            //     phoneIcon.classList.add('filter-white');
-            //     emailIcon.classList.add('filter-white');
-            //     linkedinIcon.classList.add('filter-white');
-            //     githubIcon.classList.add('filter-white');
-            //     youtubeIcon.classList.add('filter-white');
-            // }
-            // if (window.location.href === "https://www.loganwiggins.com/") {
-            //     phoneIcon.classList.add('filter-white');
-            //     emailIcon.classList.add('filter-white');
-            //     linkedinIcon.classList.add('filter-white');
-            //     githubIcon.classList.add('filter-white');
-            //     youtubeIcon.classList.add('filter-white');
-            // }
-            // if (window.location.href === "https://www.loganwiggins.com/index?") {
-            //     phoneIcon.classList.add('filter-white');
-            //     emailIcon.classList.add('filter-white');
-            //     linkedinIcon.classList.add('filter-white');
-            //     githubIcon.classList.add('filter-white');
-            //     youtubeIcon.classList.add('filter-white');
-            // } 
-        }
-        else {
-            disableDarkMode();
-
-            // Set nav icons to black
-            aboutmeIcon.classList.remove('filter-white');
-            resumeIcon.classList.remove('filter-white');
-            projectsIcon.classList.remove('filter-white');
-            settingsIcon.classList.remove('filter-white');
-            collapseIcon.classList.remove('filter-white');
-            themeIcon.src = "assets/icons/nav-icons/moon.svg";
-            themeIcon.classList.remove('filter-white');
-            themeText.innerHTML = "Dark mode";
-
-            // If page is index, then change contact icons
-            if (sessionStorage.getItem("location") == "home") {
-                phoneIcon.classList.remove('filter-white');
-                emailIcon.classList.remove('filter-white');
-                linkedinIcon.classList.remove('filter-white');
-                githubIcon.classList.remove('filter-white');
-                youtubeIcon.classList.remove('filter-white');
-            }
-            // if (window.location.href === "https://loganwiggins.com/") {
-            //     phoneIcon.classList.remove('filter-white');
-            //     emailIcon.classList.remove('filter-white');
-            //     linkedinIcon.classList.remove('filter-white');
-            //     githubIcon.classList.remove('filter-white');
-            //     youtubeIcon.classList.remove('filter-white');
-            // }
-            // if (window.location.href === "https://www.loganwiggins.com/") {
-            //     phoneIcon.classList.remove('filter-white');
-            //     emailIcon.classList.remove('filter-white');
-            //     linkedinIcon.classList.remove('filter-white');
-            //     githubIcon.classList.remove('filter-white');
-            //     youtubeIcon.classList.remove('filter-white');
-            // }
-            // if (window.location.href === "https://www.loganwiggins.com/index?") {
-            //     phoneIcon.classList.remove('filter-white');
-            //     emailIcon.classList.remove('filter-white');
-            //     linkedinIcon.classList.remove('filter-white');
-            //     githubIcon.classList.remove('filter-white');
-            //     youtubeIcon.classList.remove('filter-white');
-            // }
-        }
+    // On button click
+    siteColorBtn.onclick = function() {
+        if (siteColorVar == "light") { enableDarkMode(); }
+        else { disableDarkMode(); }
     }
 
 // --------------------
 
 
+// THEME SWITCHER
 
+    let themeDropdown = document.getElementById("theme-select");
+    themeDropdown.value = localStorage.getItem("siteTheme");
+
+    function changeTheme() {
+        localStorage.setItem("siteTheme", themeDropdown.value);
+
+        if (siteColorVar == "dark") { enableDarkMode(); }
+        else { disableDarkMode(); }
+    }
+
+// --------------------
 
 
 // COLLAPSIBLE NAV
@@ -263,8 +233,8 @@
 
     // When collapse button is clicked...
     function toggleNav() {
-        navStatus = localStorage.getItem("navStatus");  // check navStatus state on button click
-        if (navStatus == "expanded") { collapseNav(); }
+        navStatusVar = localStorage.getItem("navStatus");  // check navStatus state on button click
+        if (navStatusVar == "expanded") { collapseNav(); }
         else { expandNav(); } 
     }
 
