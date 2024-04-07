@@ -22,6 +22,7 @@ a:link, a:visited, a:hover, a:active {
 
 /* COLOR VARS */
 /* ------------------------------ */
+/* Glass */
 :root {
     --primary-color: rgb(255,255,255);
     --secondary-color: rgb(0,0,0);
@@ -57,6 +58,7 @@ a:link, a:visited, a:hover, a:active {
     --mobile-button-hvr-color: linear-gradient(to right bottom, rgba(0,0,0, 0.6), rgba(0,0,0, 0.5));
 }
 
+/* Minimal */
 .minimal-light {
     --primary-color: rgb(255,255,255);
     --secondary-color: rgb(0,0,0);
@@ -96,8 +98,9 @@ a:link, a:visited, a:hover, a:active {
 .filter-accent { filter: invert(26%) sepia(94%) saturate(2660%) hue-rotate(238deg) brightness(103%) contrast(99%); }
 .rotate { transform: rotate(180deg); transition: transform 0.2s ease; }
 
-/* SCROLL ANIMATIONS */
+/* ANIMATIONS */
 /* ------------------------------ */
+/* Scroll animations */
 .scroll-hidden {
     opacity: 0;
     filter: blur(3px);
@@ -114,6 +117,41 @@ a:link, a:visited, a:hover, a:active {
 @media(prefers-reduced-motion) {
     .scroll-hidden { transition: none; }
 }
+
+/* Other animations */
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes openSettings {
+    0% { 
+        opacity: 0; 
+        translate: 20rem 0;
+    }
+    100% { 
+        opacity: 1;
+        translate: 0;
+    }
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes openResumeCard {
+    0% { 
+        opacity: 0; 
+        translate: 0 -15rem;
+    }
+    100% { 
+        opacity: 1;
+        translate: 0 -4rem;
+    }
+}
+/* ------------------------------ */
 
 /* MAIN COMPONENTS */
 /* ------------------------------ */
@@ -177,7 +215,7 @@ html {
     overflow: hidden;
 }
 .display-right {
-    flex: 4; /* ratio to nav bar (1:3) */
+    flex: 4; /* ratio to nav bar (1:4) */
     display: flex;
     flex-direction: column;
     color: var(--secondary-color);
@@ -193,10 +231,6 @@ html {
 /* hides scrollbar but keeps function for Chrome, Safari, Opera */
 .display-right::-webkit-scrollbar { display: none; } 
 
-@keyframes fadeInAnimation {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
 .display-body {
     display: flex;
     flex-direction: column;
@@ -454,16 +488,7 @@ html {
     p { font-size: 1.5rem; }
 }
 
-@keyframes openSettings {
-    0% { 
-        opacity: 0; 
-        translate: 20rem 0;
-    }
-    100% { 
-        opacity: 1;
-        translate: 0;
-    }
-}
+
 
 
 /* "HOME" PAGE */
@@ -519,11 +544,7 @@ html {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+
 .index-contact-btn-ctnr {
     background: var(--infocard-color);
     width: 80%;
@@ -656,16 +677,7 @@ html {
         opacity: 0.8;
     }
 }
-@keyframes openResumeCard {
-    0% { 
-        opacity: 0; 
-        translate: 0 -15rem;
-    }
-    100% { 
-        opacity: 1;
-        translate: 0 -4rem;
-    }
-}
+
 .rcs {
     display: flex;
     flex-flow: wrap;
