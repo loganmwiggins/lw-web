@@ -96,7 +96,6 @@ a:link, a:visited, a:hover, a:active {
 
 .filter-white { filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%); }
 .filter-accent { filter: invert(26%) sepia(94%) saturate(2660%) hue-rotate(238deg) brightness(103%) contrast(99%); }
-.rotate { transform: rotate(180deg); transition: transform 0.2s ease; }
 
 /* ANIMATIONS */
 /* ------------------------------ */
@@ -119,6 +118,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* Other animations */
+.rotate { transform: rotate(180deg); transition: transform 0.2s ease; }
+
 @keyframes fadeInAnimation {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -261,7 +262,7 @@ html {
     align-items: center;
     background: var(--infocard-color);
     width: 80%;
-    margin: 4rem 1rem 1rem 1rem;
+    margin: 4rem 0 1rem 0;
     padding: 2rem 4rem;
     border-radius: 2rem;
     font-size: 1.5rem;
@@ -325,21 +326,7 @@ html {
     border-radius: 2rem;
     border: none;
 }
-.theme-button {
-    background: var(--button-color);
-    color: var(--secondary-color);
-    font-family: "Poppins-Regular";
-    cursor: pointer;
-    margin: 1rem 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5rem 3rem;
-    width: 80%;
-    border-radius: 2rem;
-    border: none;
-}
-.menu-button:hover,
-.theme-button:hover { 
+.menu-button:hover { 
     background: var(--button-hvr-color); 
 
     .menu-button-content img { opacity: 1; }
@@ -1130,6 +1117,10 @@ html {
 
 
     /* "HOME": LAPTOPS */
+    .index-title-card {
+        flex-direction: column;
+        width: 65%;
+    }
     .index-title-text { 
         margin: 0 2rem; 
         h1 { font-size: 4rem; }
@@ -1276,6 +1267,7 @@ html {
         flex-direction: column;
         width: 70%;
         background: var(--mobile-infocard-color);
+        margin: 4rem 0 .5rem 0;
     }
     .title-card-left {
         text-align: center; 
@@ -1336,7 +1328,6 @@ html {
     }
     
 
-    
     /* "SETTINGS": TABLETS */
     .settings-window {
         border-radius: 2rem 0 0 2rem;
@@ -1369,6 +1360,7 @@ html {
     .index-contact-btn-ctnr {
         width: 70%;
         background: var(--mobile-infocard-color);
+        margin: .5rem 0;
     }
     .index-contact-btn {
         background: var(--mobile-button-color);
@@ -1428,7 +1420,6 @@ html {
         border-radius: 2rem;
     }
     
-
 
     /* "PROJECTS": TABLETS */
     .all-projs-card { margin-top: 4rem !important; }
@@ -1509,6 +1500,7 @@ html {
         p { white-space: nowrap; }
     }
 
+
     /* "NAV": MOBILE */
     #theme-text { white-space: nowrap; }
 
@@ -1533,6 +1525,7 @@ html {
         p { font-size: 1.5rem; }
     }
 
+
     /* "HOME": MOBILE */
     .index-title-text {
         margin: 0 0 0 2rem;
@@ -1541,7 +1534,6 @@ html {
         p { font-size: 1.5rem; }
     }
     .role { font-size: 1.25rem; }
-    .index-contact-btn-ctnr { margin: .5rem 0; }
     .index-contact-btn {
         font-size: 1.25rem;
         padding: 1rem;
