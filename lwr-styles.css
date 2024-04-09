@@ -425,17 +425,6 @@ html {
 .setting-ctnr { 
     margin: 3rem 0; 
 
-    select {
-        background: var(--primary-color);
-        color: var(--secondary-color);
-        width: 100%;
-        padding: 1rem 1.5rem;
-        border-radius: 1rem;
-        outline: none;
-        font-size: 1.75rem;
-        font-family: "Poppins-Regular";
-        cursor: pointer;
-    }
     button {
         display: flex;
         align-items: center;
@@ -456,6 +445,19 @@ html {
             margin-right: 1rem;
             opacity: .8;
         }
+    }
+    select {
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        width: 100%;
+        padding: 1rem 1.5rem;
+        border: 1px solid grey;
+        border-radius: 1rem;
+        outline: none;
+        font-size: 1.75rem;
+        font-family: "Poppins-Regular";
+        cursor: pointer;
+        -webkit-appearance: none;
     }
 }
 .setting-row {
@@ -1110,6 +1112,7 @@ html {
                 margin-right: 1rem;
             }
         }
+        select { font-size: 1.75rem; }
     }
     .settings-footer {
         p { font-size: 1.5rem; }
@@ -1343,6 +1346,7 @@ html {
                 margin-right: 1rem;
             }
         }
+        select { font-size: 1.75rem; }
     }
     .settings-footer {
         margin-bottom: 0;
