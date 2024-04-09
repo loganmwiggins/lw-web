@@ -32,7 +32,7 @@ a:link, a:visited, a:hover, a:active {
     --nav-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
     --button-color: linear-gradient(to left top, rgba(255,255,255,0.4), rgba(255,255,255,1.0));
     --button-hvr-color: linear-gradient(to left top, rgba(255,255,255,0.0), rgba(255,255,255,1));
-    --card-color: linear-gradient(to left top, rgba(255,255,255,0.6), rgba(255,255,255,0.3)); 
+    --button-hvr-shadow: 0 0 2rem rgba(96, 81, 254, 0.25);
     --infocard-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
     --resume-card-skills: linear-gradient(to top, rgba(255,255,255, 0.5), rgba(255,255,255, 0.4),rgba(255,255,255, 0));
     --mobile-nav-color: linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 0.3));
@@ -49,7 +49,7 @@ a:link, a:visited, a:hover, a:active {
     --nav-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
     --button-color: linear-gradient(to left top, rgba(0,0,0, 0.6), rgba(0,0,0, 1.0));
     --button-hvr-color: linear-gradient(to left top, rgba(0,0,0, 0.0), rgba(0,0,0, 1));
-    --card-color: linear-gradient(to left top, rgba(0,0,0, 0.6), rgba(0,0,0, 0.3));
+    --button-hvr-shadow: 0 0 2rem rgba(96, 81, 254, 0.25);
     --infocard-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
     --resume-card-skills: linear-gradient(to top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.4),rgba(0,0,0, 0));
     --mobile-nav-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
@@ -63,35 +63,35 @@ a:link, a:visited, a:hover, a:active {
     --primary-color: rgb(255,255,255);
     --secondary-color: rgb(0,0,0);
     --accent-color: rgb(96, 81, 254);
-    --window-color: lightgrey;
+    --window-color: rgb(230, 230, 230);
     --settings-window-color: white;
-    --nav-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-    --button-color: linear-gradient(to left top, rgba(255,255,255,0.4), rgba(255,255,255,1.0));
-    --button-hvr-color: linear-gradient(to left top, rgba(255,255,255,0.0), rgba(255,255,255,1));
-    --card-color: linear-gradient(to left top, rgba(255,255,255,0.6), rgba(255,255,255,0.3)); 
-    --infocard-color: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-    --resume-card-skills: linear-gradient(to top, rgba(255,255,255, 0.5), rgba(255,255,255, 0.4),rgba(255,255,255, 0));
+    --nav-color: white;
+    --button-color: rgb(238, 240, 243);
+    --button-hvr-color: rgb(225, 228, 233);
+    --button-hvr-shadow: 0 0 2rem rgba(96, 81, 254, 0.5);
+    --infocard-color: white;
+    --resume-card-skills: linear-gradient(to top, rgb(225, 228, 233), rgba(255,255,255, 0));
     --mobile-nav-color: linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 0.3));
-    --mobile-infocard-color: rgba(255,255,255, 0.6);
-    --mobile-button-color: linear-gradient(to right bottom, rgba(255,255,255, 0.6), rgba(255,255,255, 0.5));        /*change*/
-    --mobile-button-hvr-color: linear-gradient(to right bottom, rgba(255,255,255, 0.7),rgba(255,255,255, 0.6));     /*change*/
+    --mobile-infocard-color: white;
+    --mobile-button-color: rgb(238, 240, 243);
+    --mobile-button-hvr-color: rgb(225, 228, 233);
 }
 .minimal-dark {
     --primary-color: rgb(0,0,0);
     --secondary-color: rgb(255,255,255);
     --accent-color: rgb(96, 81, 254);
-    --window-color: rgb(35, 35, 35);
+    --window-color: #1a1a1a;
     --settings-window-color: black;
-    --nav-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
-    --button-color: linear-gradient(to left top, rgba(0,0,0, 0.6), rgba(0,0,0, 1.0));
+    --nav-color: #0f0f0f;
+    --button-color: #252525;
     --button-hvr-color: linear-gradient(to left top, rgba(0,0,0, 0.0), rgba(0,0,0, 1));
-    --card-color: linear-gradient(to left top, rgba(0,0,0, 0.6), rgba(0,0,0, 0.3));
-    --infocard-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
-    --resume-card-skills: linear-gradient(to top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.4),rgba(0,0,0, 0));
+    --button-hvr-shadow: 0 0 2rem rgba(96, 81, 254, 0.25);
+    --infocard-color: #0f0f0f;
+    --resume-card-skills: linear-gradient(to top, rgb(30, 30, 30), rgba(0,0,0, 0));
     --mobile-nav-color: linear-gradient(to right bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.5));
-    --mobile-infocard-color: rgba(0,0,0, 0.7);
-    --mobile-button-color: linear-gradient(to right bottom, rgba(0,0,0, 0.5), rgba(0,0,0, 0.4));        /*change*/
-    --mobile-button-hvr-color: linear-gradient(to right bottom, rgba(0,0,0, 0.6), rgba(0,0,0, 0.5));    /*change*/
+    --mobile-infocard-color: #0f0f0f;
+    --mobile-button-color: #252525;
+    --mobile-button-hvr-color: #202020;
 }
 
 .filter-white { filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%); }
@@ -568,7 +568,7 @@ html {
     }
 }
 .index-contact-btn:hover { 
-    box-shadow: 0 0 2rem rgba(96, 81, 254, 0.25); 
+    box-shadow: var(--button-hvr-shadow); 
     #tooltip { display: block; }
 }
 
@@ -1520,6 +1520,7 @@ html {
                 margin-right: 1rem;
             }
         }
+        select { font-size: 1.5rem; }
     }
     .settings-footer {
         p { font-size: 1.5rem; }
