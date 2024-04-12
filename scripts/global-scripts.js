@@ -55,8 +55,7 @@
 
     // Theme
     if (localStorage.getItem("siteTheme") == null
-        && localStorage.getItem("siteTheme") != "glass"
-        && localStorage.getItem("siteTheme") != "minimal")
+        || (localStorage.getItem("siteTheme") != "glass" && localStorage.getItem("siteTheme") != "minimal"))
     {
         localStorage.setItem("siteTheme", "glass");
     }

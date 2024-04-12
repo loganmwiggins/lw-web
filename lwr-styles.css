@@ -457,7 +457,7 @@ html {
         font-size: 1.75rem;
         font-family: "Poppins-Regular";
         cursor: pointer;
-        -webkit-appearance: none;
+        -webkit-appearance: none;   /* fixes dropdown stying on iOS */
     }
 }
 .setting-row {
