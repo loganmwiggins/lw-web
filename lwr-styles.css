@@ -676,9 +676,6 @@ html {
         color: var(--secondary-color) !important;
         font-size: 1.5rem;
         border: none !important;
-        /* border: 1px solid grey !important; */
-        /* border-radius: 1rem; */
-        /* padding: 1rem 2rem; */
     }
 }
 
