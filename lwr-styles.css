@@ -665,12 +665,26 @@ html {
         margin: 1rem 1rem 1rem 0;
         opacity: 0.8;
     }
+    hr {
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        width: 100%;
+        opacity: .25;
+    }
+    .resume-card-description {
+        background: none !important;
+        color: var(--secondary-color) !important;
+        font-size: 1.5rem;
+        border: none !important;
+        /* border: 1px solid grey !important; */
+        /* border-radius: 1rem; */
+        /* padding: 1rem 2rem; */
+    }
 }
 
 .rcs {
     display: flex;
     flex-flow: wrap;
-    /* margin-bottom: 1rem; */
 
     p {
         display: flex;
