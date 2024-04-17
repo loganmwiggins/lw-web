@@ -82,7 +82,6 @@
     let collapseIcon = document.getElementById("collapse-icon");
 
     // Declare contact icons
-    let phoneIcon = document.getElementById("phone-icon");
     let emailIcon = document.getElementById("email-icon");
     let linkedinIcon = document.getElementById("linkedin-icon");
     let githubIcon = document.getElementById("github-icon");
@@ -121,7 +120,6 @@
 
         // Set index icons to white
         if (sessionStorage.getItem("location") == "home") {
-            phoneIcon.classList.add('filter-white');
             emailIcon.classList.add('filter-white');
             linkedinIcon.classList.add('filter-white');
             githubIcon.classList.add('filter-white');
@@ -158,7 +156,6 @@
 
         // Set index icons to black
         if (sessionStorage.getItem("location") == "home") {
-            phoneIcon.classList.remove('filter-white');
             emailIcon.classList.remove('filter-white');
             linkedinIcon.classList.remove('filter-white');
             githubIcon.classList.remove('filter-white');
