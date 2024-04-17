@@ -292,6 +292,8 @@ html {
     }
 }
 
+.only-show-on-mobile { display: none; }
+
 
 /* NAV BAR */
 /* ------------------------------ */
@@ -655,6 +657,30 @@ html {
         opacity: .75;
     }
 }
+.promo-card-text {
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+}
+.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem;
+
+    .node {
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: grey;
+    }
+    .node-line {
+        width: 2px;
+        height: 7.5rem;
+        background-color: grey;
+    }
+}
+
 /* Resume card skills */
 .resume-card-skills {
     display: none;
@@ -1099,6 +1125,8 @@ html {
 
     /* ALL: LAPTOPS */
     .hide-on-laptop { display: none; }
+    .only-show-on-mobile { display: none; }
+
     .info-card {
         width: 65%;
         font-size: 1.2rem;
@@ -1291,6 +1319,8 @@ html {
 
     /* "ALL": TABLETS */
     .hide-on-tablet { display: none; }
+    .only-show-on-mobile { display: none; }
+
     .dynamic-window {
         flex-direction: column-reverse;
         border-radius: 0;
@@ -1534,6 +1564,7 @@ html {
 
     /* "ALL": MOBILE */
     .hide-on-mobile { display: none; }
+    .only-show-on-mobile { display: block; }
     .info-card {
         background: var(--mobile-infocard-color);
         margin: .5rem 0;
@@ -1625,6 +1656,9 @@ html {
             margin: .25rem 0;
         }
     }
+    .promo-card-text { margin-top: 0; }
+    .promo { display: none; }
+
     .resume-card-skills h3 { font-size: 1.25rem; }
     .rcs p {
         font-size: 1.25rem;
