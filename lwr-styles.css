@@ -240,6 +240,7 @@ html {
     font-family: "Poppins-Regular";
     margin-bottom: 5rem;
 }
+
 .info-card {
     background: var(--infocard-color);
     width: 80%;
@@ -247,6 +248,11 @@ html {
     padding: 2rem 4rem;
     margin: 1rem;
 
+    a { transition: color 0.2s ease-in-out; }
+    a:hover {
+        color: var(--accent-color);
+        transition: color 0.2s ease-in-out;
+    }
     p {
         margin: 0 0 1.5rem 0;
         font-size: 2rem;
@@ -257,6 +263,7 @@ html {
         font-size: 1.75rem;
     }
 }
+
 .title-card {
     display: flex;
     align-items: center;
@@ -1019,12 +1026,6 @@ html {
 }
 .back-btn:hover { box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5); }
 
-.info-card a { transition: color 0.2s ease-in-out; }
-.info-card a:hover {
-    color: var(--accent-color);
-    transition: color 0.2s ease-in-out;
-}
-
 .proj-info-card {
     flex: 1;
     display: flex;
@@ -1068,6 +1069,24 @@ html {
     }
 }
 
+.proj-info-divider {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    div {
+        flex: 1;
+        background: var(--button-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        border-radius: 1.5rem;
+        padding: 1rem 2rem;
+    }
+    .info-card-label, p { margin: 0; }
+    p { font-size: 1.75rem; }
+}
 
 
 
@@ -1244,6 +1263,17 @@ html {
     }
     .saf p { font-size: 1.75rem; }
     .language p { font-size: 1.75rem; }
+
+    .proj-info-divider {
+        flex-direction: column;
+        gap: 1rem;
+    
+        div {
+            width: 100%;
+            background: var(--button-color);
+        }
+        p { font-size: 1.75rem; }
+    }
 }
 
 
@@ -1480,6 +1510,13 @@ html {
         }
     }
     .language p { font-size: 1.5rem; }
+
+    .proj-info-divider {
+        gap: .75rem;
+
+        div { background: var(--mobile-button-color); }
+        p { font-size: 1.5rem; }
+    }
 }
 
 
@@ -1627,7 +1664,8 @@ html {
             max-width: 2.25rem; 
             max-height: 2.25rem; 
         }
-        p { font-size: 1.25rem; }
     }
     .saf p { width: 100%; }
+
+    .proj-info-divider p { font-size: 1.5rem; }
 }   
