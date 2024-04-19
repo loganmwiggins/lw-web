@@ -1079,26 +1079,22 @@ html {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background: var(--button-color);
     color: var(--secondary-color);
     border-radius: 2rem;
-    padding: 2rem 3rem;
-    margin: 1rem .5rem;
 
     p {
         font-size: 1.75rem;
         margin: 0;
     }
-    img {
-        width: 50%;
-        border-radius: 1rem;
-    }
 }
 .proj-img-ctnr {
-    justify-content: center;
     align-items: center;
-    margin-top: 0;
-    margin-bottom: 2rem;
+    margin: 1.5rem 0;
+
+    img {
+        width: 30%;
+        border-radius: 1rem;
+    }
 }
 
 .saf {
@@ -1309,9 +1305,8 @@ html {
         width: 20rem !important;
     }
     .proj-card-empty { padding: 0; }
-    .proj-info-card { 
-        margin: 1rem 0;
-        p { font-size: 1.75rem; } 
+    .proj-info-card p { font-size: 1.75rem; } 
+    .proj-img-ctnr {
         img { width: 75%; }
     }
     .saf p { font-size: 1.75rem; }
@@ -1545,9 +1540,8 @@ html {
         }
     }
     
-    .proj-info-card {
-        background: var(--mobile-button-color);
-        p { font-size: 1.5rem; }
+    .proj-info-card p { font-size: 1.5rem; }
+    .proj-img-ctnr {
         img { width: 100%; }
     }
     .ext-link { 
