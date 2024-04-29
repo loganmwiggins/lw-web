@@ -13,12 +13,14 @@
     src: url(assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 
+
 /* LINK DECORATION */
 /* ------------------------------ */
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: var(--secondary-color);
 }
+
 
 /* COLOR VARS */
 /* ------------------------------ */
@@ -97,6 +99,7 @@ a:link, a:visited, a:hover, a:active {
 .filter-white { filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%); }
 .filter-accent { filter: invert(26%) sepia(94%) saturate(2660%) hue-rotate(238deg) brightness(103%) contrast(99%); }
 
+
 /* ANIMATIONS */
 /* ------------------------------ */
 /* Scroll animations */
@@ -153,6 +156,7 @@ a:link, a:visited, a:hover, a:active {
     }
 }
 /* ------------------------------ */
+
 
 /* MAIN COMPONENTS */
 /* ------------------------------ */
