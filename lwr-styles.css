@@ -1326,6 +1326,15 @@ html {
         }
         p { font-size: 1.75rem; }
     }
+
+    .goal-ctnr {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    
+        h1 { font-size: 2rem; }
+        p { font-size: 1.75rem; }
+        .goal-num { background: var(--button-color); }
+    }
 }
 
 
@@ -1570,6 +1579,14 @@ html {
         div { background: var(--mobile-button-color); }
         p { font-size: 1.5rem; }
     }
+
+    .goal-ctnr {
+        margin-bottom: 1.5rem;
+    
+        h1 { font-size: 1.75rem; }
+        p { font-size: 1.5rem; }
+        .goal-num { padding: .65rem 1.5rem; }
+    }
 }
 
 
@@ -1725,4 +1742,14 @@ html {
     .saf p { width: 100%; }
 
     .proj-info-divider p { font-size: 1.5rem; }
+
+    .goal-ctnr {
+        gap: .5rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        align-items: start;
+
+        h1 { font-size: 1.5rem; }
+        p { font-size: 1.5rem; }
+    }
 }   
