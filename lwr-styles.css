@@ -320,10 +320,18 @@ html {
     flex: 0.25 !important;
     transition: flex 0.2s ease;
 
-    .menu-button, .theme-button { width: 50%; }
-    .menu-button-content { justify-content: center; }
-    .menu-button-content h2 { display: none; }
-    .menu-button-content img { margin-right: 0; }
+    .menu-button {
+        width: 65%;
+        padding: 1rem;
+    }
+    .menu-button-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: .25rem;
+        
+        h2 { font-size: 1.25rem; }
+        img { margin-right: 0; }
+    }
     .collapse-btn img { 
         transform: rotate(180deg); 
         transition: transform 0.2s ease-in-out;
@@ -1169,10 +1177,7 @@ html {
     
     /* "NAV": LAPTOPS */
     .menu-button { width: fit-content; }
-    .menu-button-content {
-        img { margin: 0; }
-        h2 { display: none; }
-    }
+    .menu-button-content img { margin: 0; }
     .bottom-nav-ctnr { display: none; } /* hides nav toggle */
     .display-right { flex: 8; } /* ratio to nav menu (1:8) */
 
@@ -1401,22 +1406,10 @@ html {
         padding: 0; 
         width: 100%;
     }
-    .menu-button:hover,
-    .theme-button:hover { 
+    .menu-button:hover { 
         background: none; 
         .menu-button-content img { opacity: 0.75; }
         .menu-button-content h2 { opacity: 0.75; }
-    }
-    .theme-button-ctnr {
-        width: 100%;
-        min-width: 40px;
-        margin: 0 2rem 0 .5rem; /* space btwn btns */
-    }
-    .theme-button {
-        background: none;
-        margin: 0 0.75rem;
-        padding: 0;
-        width: 100%;
     }
     .menu-button-content {
         flex-direction: column;
