@@ -571,9 +571,6 @@ html {
             filter: invert(43%) sepia(77%) saturate(3520%) hue-rotate(185deg) brightness(106%) contrast(104%);
         }
         p {
-            color: var(--secondary-color);
-            color: rgb(0, 119, 255);
-            color: #00c5ff;
             color: #0099ff;
             opacity: 0.85;
             font-size: 1.75rem;
@@ -607,7 +604,6 @@ html {
 
 
 /* "RESUME" PAGE */
-/* Buttons */
 .pdf-btn-ctnr { display: flex; }
 .pdf-btn {
     display: flex;
@@ -874,7 +870,6 @@ html {
 
 
 /* "PROJECTS" PAGE */
-.su-card { color: blue; }
 .proj-detail-title { justify-content: left !important; }
 .project-detail { 
     padding: 3rem 4rem; 
