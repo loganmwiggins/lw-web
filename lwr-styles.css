@@ -194,7 +194,7 @@ html {
     font-size: 1.5rem;
     border-radius: 2rem;
 
-    img { max-width: 2rem; margin-left: 1rem; }
+    img { width: 2rem; height: 2rem; margin-left: 1rem; }
 }
 .copy-message.active { top: 1rem; }
 #tooltip {
@@ -287,11 +287,6 @@ html {
     display: flex;
     align-items: center;
 
-    img {
-        max-width: 13rem;
-        border-radius: 20rem;
-        box-shadow: .5rem .5rem 2rem rgba(122, 122, 122, .2);
-    }
     h1 { 
         font-family: "Poppins-Bold";
         font-size: 4rem;
@@ -368,8 +363,8 @@ html {
     opacity: 0.8;
 
     img {
-        max-width: 25px;
-        max-height: 25px;
+        width: 25px;
+        height: 25px;
         margin-right: 2rem;
         opacity: 0.75;
     }
@@ -402,8 +397,8 @@ html {
     cursor: pointer;
 
     img {
-        max-width: 25px;
-        max-height: 25px;
+        width: 25px;
+        height: 25px;
         opacity: .5;
         transition: transform 0.2s ease-in-out;
     }
@@ -470,8 +465,8 @@ html {
         cursor: pointer;
 
         img { 
-            max-width: 2.25rem; 
-            max-height: 2.25rem; 
+            width: 2.25rem; 
+            height: 2.25rem; 
             margin-right: 1rem;
             opacity: .8;
         }
@@ -496,8 +491,8 @@ html {
     margin-bottom: 1.5rem;
 
     img { 
-        max-width: 2.25rem; 
-        max-height: 2.25rem; 
+        width: 2.25rem; 
+        height: 2.25rem; 
         margin-right: 1rem;
         opacity: .8;
     }
@@ -617,7 +612,8 @@ html {
     cursor: pointer;
 
     img {
-        max-width: 2rem;
+        width: 2rem;
+        height: 2rem;
         margin-right: 1rem;
         filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(107%) contrast(102%);
     }
@@ -656,7 +652,6 @@ html {
     img {
         flex: 1;
         max-width: 10rem;
-        max-height: 10rem;
         margin-right: 3rem;
     }
 }
@@ -918,8 +913,8 @@ html {
     cursor: pointer;
 
     img { 
-        max-width: 2.5rem;
-        max-height: 2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
     p { 
         font-size: 1.5rem; 
@@ -1173,9 +1168,6 @@ html {
         .info-card-label { font-size: 1.75rem; }
     }
     .title-card { width: 65%; }
-    .title-card-left { 
-        img { max-width: 10rem; }
-    }
 
     
     /* "NAV": LAPTOPS */
@@ -1198,8 +1190,8 @@ html {
             font-size: 1.75rem; 
 
             img { 
-                max-width: 2.25rem; 
-                max-height: 2.25rem; 
+                width: 2.25rem; 
+                height: 2.25rem; 
                 margin-right: 1rem;
             }
         }
@@ -1218,17 +1210,13 @@ html {
         gap: 2rem;
     }
     .index-title-card-left { gap: 2rem; }
-    .index-tags {
-        div {
-            p { font-size: 1.75rem; }
-        }
-    }
+    .index-tags div p { font-size: 1.75rem; }
     
 
     /* "RESUME": LAPTOPS */
     .pdf-btn {
         margin-left: 0;
-        padding: 0.75rem 3rem;
+        padding: .75rem 3rem;
     }
     .resume-card-btn-ctnr {
         margin-top: 1rem;
@@ -1245,7 +1233,6 @@ html {
 
         img { 
             max-width: 8rem;
-            max-height: 8rem;
             margin-right: 2rem;
         }
     }
@@ -1380,8 +1367,6 @@ html {
     }
     .title-card-left {
         text-align: center; 
-
-        img { max-width: 8rem; }    /*for NON-INDEX title cards*/
         h1 { font-size: 3rem; }
     }
 
@@ -1435,8 +1420,8 @@ html {
             font-size: 1.75rem; 
 
             img { 
-                max-width: 2.25rem; 
-                max-height: 2.25rem; 
+                width: 2.25rem; 
+                height: 2.25rem; 
                 margin-right: 1rem;
             }
         }
@@ -1453,6 +1438,7 @@ html {
     .index-title-card-left { gap: 1rem; }
     .index-tags {
         div {
+            background: var(--mobile-button-color);
             p { font-size: 1.5rem; }
         }
     }
@@ -1460,9 +1446,7 @@ html {
 
     /* "RESUME": TABLETS */
     .pdf-btn {
-        padding: 1rem 3rem;
-        
-        img { max-width: 1.75rem; }
+        img { width: 1.75rem; height: 1.75rem; }
         p { font-size: 1.5rem; }
     }
     .pdf-btn:hover { box-shadow: none; }
@@ -1471,7 +1455,6 @@ html {
 
         img { 
             max-width: 6rem;
-            max-height: 6rem;
             margin-right: 2rem; 
         }
         .skills-arrow { margin: 1rem 0 0 0; }
@@ -1592,9 +1575,6 @@ html {
     }
     .title-card { margin: 4rem .5rem .5rem .5rem; }
     .title-card-left {
-        img {
-            max-width: 7rem;
-        }
         h1 { font-size: 2.25rem; }
         p { white-space: nowrap; }
     }
@@ -1602,7 +1582,6 @@ html {
 
     /* "NAV": MOBILE */
     #theme-text { white-space: nowrap; }
-
     .settings-window {
         width: 25rem;
 
@@ -1614,16 +1593,14 @@ html {
             font-size: 1.5rem; 
 
             img { 
-                max-width: 2rem; 
-                max-height: 2rem; 
+                width: 2rem; 
+                height: 2rem; 
                 margin-right: 1rem;
             }
         }
         select { font-size: 1.5rem; }
     }
-    .settings-footer {
-        p { font-size: 1.5rem; }
-    }
+    .settings-footer p { font-size: 1.5rem; }
 
 
     /* "HOME": MOBILE */
@@ -1633,7 +1610,7 @@ html {
 
     /* "RESUME": MOBILE */
     .pdf-btn {
-        img { max-width: 1.5rem; }
+        img { width: 1.5rem; height: 1.5rem; }
         p { font-size: 1.25rem; }
     }
     .resume-card {
@@ -1693,8 +1670,8 @@ html {
 
     .ext-link { 
         img { 
-            max-width: 2.25rem; 
-            max-height: 2.25rem; 
+            width: 2.25rem; 
+            height: 2.25rem; 
         }
     }
     .saf p { width: 100%; }
