@@ -823,14 +823,13 @@ html {
     height: 1rem;
     width: 4rem;
     margin-right: 0.4rem;
-}
-.filled { background-color: var(--accent-color); }
-.filled-pink { background-color: #EF4765; }
-.filled-teal { background-color: #47aeeb; }
-.empty {
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     opacity: 0.25;
 }
+.filled { background: var(--accent-color); opacity: 1; }
+.filled-pink { background-color: #EF4765; opacity: 1; }
+.filled-teal { background-color: #47aeeb; opacity: 1; }
+
 .course-card-ctnr {
     display: flex;
     flex-flow: wrap;
