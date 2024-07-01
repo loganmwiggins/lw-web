@@ -205,9 +205,11 @@ html {
     color: #fff;
     border-radius: .5rem;
     margin-left: 2.5rem;
+    margin-bottom: 6.5rem;
     padding: .5rem 1rem;
     font-size: 1.25rem;
-    margin-bottom: 10rem;
+    font-family: "Poppins-Regular";
+    white-space: nowrap;
 }
 .dynamic-window {
     background: var(--window-color);
@@ -269,6 +271,7 @@ html {
     }
 }
 
+/* Page titles */
 .title-card {
     display: flex;
     align-items: center;
@@ -279,7 +282,7 @@ html {
     border-radius: 2rem;
     font-size: 1.5rem;
 }
-.title-card-left {  /*for non-index title cards*/
+.title-card-left {
     flex: 2;
     display: flex;
     align-items: center;
@@ -295,6 +298,11 @@ html {
         opacity: 0.9;
         margin: 0;
     }
+}
+.title-card-right {
+    flex: 1;
+    display: flex;
+    justify-content: right;
 }
 
 .only-show-on-mobile { display: none; }
@@ -503,11 +511,11 @@ html {
 
 
 /* "HOME" PAGE */
-.index-title-text {
+.index-title-card-left {
+    flex: 2;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    margin: 0 4rem;
+    gap: 1.5rem;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;
@@ -515,84 +523,85 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+.index-title-card-right {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+}
+.name-and-photo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 
-    h1 {
+    img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 100%;
+        box-shadow: .5rem .5rem 2rem rgba(122, 122, 122, .2);
+    }
+    h1 { 
         font-family: "Poppins-Bold";
         font-size: 4rem;
         opacity: 0.9;
         margin: 0;
     }
-    p {
-        color: var(--secondary-color);
-        opacity: 0.5;
-        font-size: 1.75rem;
-        font-weight: 600;
-        padding: 0;
-        margin: 0;
+}
+.index-tags {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    gap: 1rem;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background: var(--button-color);
+        padding: .25rem 1rem;
+        border-radius: .75rem;
+
+        img {
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 0;
+            box-shadow: none;
+            opacity: 0.85;
+            filter: invert(43%) sepia(77%) saturate(3520%) hue-rotate(185deg) brightness(106%) contrast(104%);
+        }
+        p {
+            color: var(--secondary-color);
+            color: rgb(0, 119, 255);
+            color: #00c5ff;
+            color: #0099ff;
+            opacity: 0.85;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+        }
     }
 }
-.title-card-right {
-    flex: 1;
-    display: flex;
-    justify-content: right;
-}
-.role {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(to right bottom, rgb(96, 81, 254), rgb(218, 130, 240));
-    background-size: 150% 150%;
-    animation: gradient 2.5s ease-in-out infinite;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0;
-    border-radius: 1.5rem;
-    width: 75%;
-
-    /* disable dragging + selecting  */
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-.index-contact-btn-ctnr {
-    background: var(--infocard-color);
-    width: 80%;
-    margin: 1rem;
-    padding: 2rem 4rem;
-    border-radius: 2rem;
-}
-.contact-row {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-}
-.index-contact-btn {
-    flex: 1;
+.contact-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins-Regular";
-    font-size: 2rem;
-    background: var(--button-color);
-    color: var(--secondary-color);
+    background: none;
     border: none;
-    border-radius: 2rem;
-    padding: 1.5rem 3rem;
+    padding: 0;
+    margin: 0;
     cursor: pointer;
 
     img {
-        max-width: 2.25rem;
-        max-height: 2.25rem;
-        min-width: 2.25rem;
-        min-height: 2.25rem;
+        width: 2.25rem;
+        height: 2.25rem;
         margin: 0;
-        opacity: 0.9;
+        opacity: 0.35;
     }
 }
-.index-contact-btn:hover { 
-    box-shadow: var(--button-hvr-shadow); 
+.contact-btn:hover { 
+    img { opacity: 1; }
     #tooltip { display: block; }
 }
 
@@ -1209,22 +1218,16 @@ html {
     /* "HOME": LAPTOPS */
     .index-title-card {
         flex-direction: column;
+        align-items: start;
         width: 65%;
+        gap: 2rem;
     }
-    .index-title-text { 
-        margin: 0 2rem; 
-        h1 { font-size: 4rem; }
-        p { font-size: 1.75rem; }
+    .index-title-card-left { gap: 2rem; }
+    .index-tags {
+        div {
+            p { font-size: 1.75rem; }
+        }
     }
-    .role {
-        width: 100%;
-        padding: 0 4rem;
-        margin-top: 2rem;
-
-        p { margin: 1rem; }
-    }
-    .index-contact-btn-ctnr { width: 65%; }
-    .index-contact-btn { font-size: 1.75rem; }
     
 
     /* "RESUME": LAPTOPS */
@@ -1451,26 +1454,12 @@ html {
 
 
     /* "HOME": TABLETS */
-    .index-title-text { 
-        text-align: left; 
-
-        h1 { font-size: 3rem; }
-        p { font-size: 1.75rem; }
-    }
-    .index-contact-btn-ctnr {
-        width: 70%;
-        background: var(--mobile-infocard-color);
-        margin: .5rem 0;
-    }
-    .index-contact-btn {
-        background: var(--mobile-button-color);
-        padding: 1.5rem;
-    }
-    .index-contact-btn:hover {
-        background: var(--mobile-button-hvr-color);
-        box-shadow: none; 
-
-        #tooltip { display: none; }
+    .name-and-photo h1 { font-size: 3.5rem; }
+    .index-title-card-left { gap: 1rem; }
+    .index-tags {
+        div {
+            p { font-size: 1.5rem; }
+        }
     }
 
 
@@ -1643,26 +1632,8 @@ html {
 
 
     /* "HOME": MOBILE */
-    .index-title-text {
-        margin: 0 0 0 2rem;
-
-        h1 { font-size: 2.25rem; }
-        p { font-size: 1.5rem; }
-    }
-    .role { font-size: 1.25rem; }
-    .index-contact-btn {
-        font-size: 1.25rem;
-        padding: 1rem;
-        border-radius: 1.5rem;
-
-        img { 
-            max-width: 2rem; 
-            max-height: 2rem; 
-            min-width: 2rem; 
-            min-height: 2rem; 
-        }
-        p { margin-left: 0; }
-    }
+    .name-and-photo h1 { font-size: 3rem; }
+    .index-tags div p { font-size: 1.5rem; }
 
 
     /* "RESUME": MOBILE */

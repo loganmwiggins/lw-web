@@ -30,7 +30,7 @@
     <div class="alert-ctnr">
         <div class="copy-message">
             <p>Copied to clipboard</p>
-            <img src="assets/icons/contact-icons/check.svg" draggable="false">
+            <img src="assets/icons/index-icons/check.svg" draggable="false">
         </div>
     </div>
 
@@ -66,7 +66,7 @@
             <!-- Bottom nav -->
             <div class="bottom-nav-ctnr">
                 <button type="button" class="collapse-btn" onclick="toggleNav()">
-                    <img src="assets/icons/nav-icons/collapse.svg" id="collapse-icon">
+                    <img src="assets/icons/nav-icons/collapse.svg" id="collapse-icon" draggable="false">
                 </button>
             </div>
         </div>
@@ -75,34 +75,42 @@
         <div class="display-right">
             <div class="display-body">
                 <div class="title-card index-title-card scroll-hidden">
-                    <div class="title-card-left">
-                        <img src="assets/headshot-min.jpg" draggable="false">
-                        <div class="index-title-text">
+                    <div class="index-title-card-left">
+                        <div class="name-and-photo">
+                            <img src="assets/headshot-min.jpg" class="hide-on-tablet draggable="false">
                             <h1>Logan Wiggins</h1>
-                            <p class="hide-on-mobile">B.S. in Information Technology</p>
+                        </div>
+                        <div class="index-tags">
+                            <div>
+                                <img src="assets/icons/index-icons/briefcase.svg" draggable="false">
+                                <p>Software Engineer</p>
+                            </div>
+                            <div>
+                                <img src="assets/icons/index-icons/grad-cap.svg" draggable="false">
+                                <p>B.S. in Information Technology</p>
+                            </div>
+                            <div>
+                                <img src="assets/icons/index-icons/location.svg" draggable="false">
+                                <p>Deerfield Beach, FL</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="title-card-right">
-                        <div class="role"><p>Software Developer</p></div>
-                    </div>
-                </div>
-                <div class="index-contact-btn-ctnr scroll-hidden">
-                    <div class="contact-row">
-                        <button id="email-btn" class="index-contact-btn" value="loganmwiggins1@gmail.com" onclick="copyEmail()">
+                    <div class="index-title-card-right">
+                        <button id="email-btn" class="contact-btn" value="loganmwiggins1@gmail.com" onclick="copyEmail()">
                             <span id="tooltip">Copy email</span>
-                            <img src="assets/icons/contact-icons/mail.svg" id="email-icon" draggable="false">
+                            <img src="assets/icons/index-icons/mail.svg" id="email-icon" draggable="false">
                         </button>
-                        <button class="index-contact-btn" onclick="openLinkedin()">
+                        <button class="contact-btn" onclick="openLinkedin()">
                             <span id="tooltip">Open LinkedIn</span>
-                            <img src="assets/icons/contact-icons/linkedin.svg" id="linkedin-icon" draggable="false">
+                            <img src="assets/icons/index-icons/linkedin.svg" id="linkedin-icon" draggable="false">
                         </button>
-                        <button class="index-contact-btn" onclick="openGitHub()">
+                        <button class="contact-btn" onclick="openGitHub()">
                             <span id="tooltip">Open GitHub</span>
-                            <img src="assets/icons/contact-icons/github.svg" id="github-icon" draggable="false">
+                            <img src="assets/icons/index-icons/github.svg" id="github-icon" draggable="false">
                         </button>
-                        <button class="index-contact-btn" onclick="openYouTube()">
+                        <button class="contact-btn" onclick="openYouTube()">
                             <span id="tooltip">Open YouTube</span>
-                            <img src="assets/icons/contact-icons/youtube.svg" id="youtube-icon" draggable="false">
+                            <img src="assets/icons/index-icons/youtube.svg" id="youtube-icon" draggable="false">
                         </button>
                     </div>
                 </div>
@@ -123,7 +131,8 @@
                         my skills and knowledge in software development to real-world challenges and opportunities. Throughout my
                         time at FSU, I honed my professional skills through internships, jobs, coursework, and personal projects,
                         preparing myself for a successful career in software development and engineering. I am passionate about
-                        leveraging technology to drive innovation and create impactful solutions. I am beyond excited to explore
+                        leveraging technology to drive innovation and create impactful solutions. In my new role as a software 
+                        engineer at JM Family Enterprises on the Southeast Toyota Finance team, I am beyond excited to explore
                         new opportunities and contribute to the professional world with enthusiasm and dedication.
                     </p>
                 </div>
