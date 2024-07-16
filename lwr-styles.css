@@ -260,12 +260,12 @@ html {
         transition: color 0.2s ease-in-out;
     }
     p {
-        margin: 0 0 1.5rem 0;
+        margin: 0 0 1rem 0;
         font-size: 2rem;
     }
     .info-card-label {
         opacity: 0.6;
-        margin: 1.5rem 0 1rem 0;
+        margin: 1rem 0;
         font-size: 1.75rem;
         cursor: default;
     }
@@ -835,6 +835,7 @@ html {
     display: flex;
     flex-flow: wrap;
     padding-bottom: 2rem;
+    gap: 1rem;
 }
 .course-card {
     display: flex;
@@ -844,7 +845,6 @@ html {
     color: var(--secondary-color);
     border-radius: 2rem;
     padding: 1.5rem 3rem;
-    margin: 1rem .5rem 0;
 
     /* disable dragging + selecting  */
     -webkit-user-drag: none;
@@ -957,7 +957,7 @@ html {
     display: flex;
     flex-flow: wrap;
     align-items: center;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     cursor: default;
 }
 .language {
@@ -991,7 +991,7 @@ html {
     border: none;
     border-radius: 1.5rem;
     padding: 2rem 3rem;
-    margin: 1rem 1rem;
+    margin: 1rem;
     overflow: hidden;
     box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
