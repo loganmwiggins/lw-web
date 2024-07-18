@@ -1652,7 +1652,10 @@ html {
     .promo-card-text { margin-top: 0; }
     .promo { display: none; }
 
-    .resume-card-skills h3 { font-size: 1.25rem; }
+    .resume-card-skills {
+        h3 { font-size: 1.25rem; }
+        .resume-card-description { font-size: 1.25rem; }
+    }
     .rcs p {
         font-size: 1.25rem;
         border-radius: 1.75rem;

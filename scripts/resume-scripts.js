@@ -9,52 +9,34 @@ sessionStorage.setItem("location", "resume");
 
 // RESUME CARD
 
-    let skillsArrowFsu = document.getElementById("skills-arrow-fsu");
-    let skillsArrowAitp = document.getElementById("skills-arrow-aitp");
-    let skillsArrowStars = document.getElementById("skills-arrow-stars");
+    let skillsArrowJmf = document.getElementById("skills-arrow-jmf");
     let skillsArrowPcg = document.getElementById("skills-arrow-pcg");
     let skillsArrowCot = document.getElementById("skills-arrow-cot");
     let skillsArrow223 = document.getElementById("skills-arrow-223");
     let skillsArrowSt = document.getElementById("skills-arrow-st");
     let skillsArrowPub = document.getElementById("skills-arrow-pub");
+    let skillsArrowFsu = document.getElementById("skills-arrow-fsu");
+    let skillsArrowAitp = document.getElementById("skills-arrow-aitp");
+    let skillsArrowStars = document.getElementById("skills-arrow-stars");
 
-    let skillsFsu = document.getElementById("skills-fsu");
-    let skillsAitp = document.getElementById("skills-aitp");
-    let skillsStars = document.getElementById("skills-stars");
+    let skillsJmf = document.getElementById("skills-jmf");
     let skillsPcg = document.getElementById("skills-pcg");
     let skillsCot = document.getElementById("skills-cot");
     let skills223 = document.getElementById("skills-223");
     let skillsSt = document.getElementById("skills-st");
     let skillsPub = document.getElementById("skills-pub");
+    let skillsFsu = document.getElementById("skills-fsu");
+    let skillsAitp = document.getElementById("skills-aitp");
+    let skillsStars = document.getElementById("skills-stars");
 
-    function toggleSkillsFsu() {
-        if (skillsFsu.style.display == "flex") {
-            skillsFsu.style.display = "none";
-            skillsArrowFsu.classList.remove("rotate");
+    function toggleSkillsJmf() {
+        if (skillsJmf.style.display == "flex") {
+            skillsJmf.style.display = "none";
+            skillsArrowJmf.classList.remove("rotate");
         }
         else {
-            skillsFsu.style.display = "flex";
-            skillsArrowFsu.classList.add("rotate");
-        }
-    }
-    function toggleSkillsAitp() {
-        if (skillsAitp.style.display == "flex") {
-            skillsAitp.style.display = "none";
-            skillsArrowAitp.classList.remove("rotate");
-        }
-        else {
-            skillsAitp.style.display = "flex";
-            skillsArrowAitp.classList.add("rotate");
-        }
-    }
-    function toggleSkillsStars() {
-        if (skillsStars.style.display == "flex") {
-            skillsStars.style.display = "none";
-            skillsArrowStars.classList.remove("rotate");
-        }
-        else {
-            skillsStars.style.display = "flex";
-            skillsArrowStars.classList.add("rotate");
+            skillsJmf.style.display = "flex";
+            skillsArrowJmf.classList.add("rotate");
         }
     }
     function toggleSkillsPcg() {
@@ -105,6 +87,36 @@ sessionStorage.setItem("location", "resume");
         else {
             skillsPub.style.display = "flex";
             skillsArrowPub.classList.add("rotate");
+        }
+    }
+    function toggleSkillsFsu() {
+        if (skillsFsu.style.display == "flex") {
+            skillsFsu.style.display = "none";
+            skillsArrowFsu.classList.remove("rotate");
+        }
+        else {
+            skillsFsu.style.display = "flex";
+            skillsArrowFsu.classList.add("rotate");
+        }
+    }
+    function toggleSkillsAitp() {
+        if (skillsAitp.style.display == "flex") {
+            skillsAitp.style.display = "none";
+            skillsArrowAitp.classList.remove("rotate");
+        }
+        else {
+            skillsAitp.style.display = "flex";
+            skillsArrowAitp.classList.add("rotate");
+        }
+    }
+    function toggleSkillsStars() {
+        if (skillsStars.style.display == "flex") {
+            skillsStars.style.display = "none";
+            skillsArrowStars.classList.remove("rotate");
+        }
+        else {
+            skillsStars.style.display = "flex";
+            skillsArrowStars.classList.add("rotate");
         }
     }
 
