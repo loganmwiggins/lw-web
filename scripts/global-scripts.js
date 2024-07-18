@@ -1,3 +1,5 @@
+console.log(window.location);
+
 // NAV ROUTING
 
     function routeToHome() { window.open("https://www.loganwiggins.com/", "_self"); }

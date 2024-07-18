@@ -1,3 +1,7 @@
+// if (window.location == "https://loganwiggins.com") {
+//     window.open("https://www.loganwiggins.com", "_self");
+// }
+
 sessionStorage.setItem("location", "home");
 
 // INDEX CONTACT LINKS
