@@ -1,3 +1,24 @@
+// REROUTING
+
+    if (window.location.href == "https://loganwiggins.com/projects?" || window.location.href == "https://loganwiggins.com/projects?/") {
+        window.open("https://www.loganwiggins.com/projects?", "_self");
+    }
+
+    else if (window.location.href == "https://loganwiggins.com/projects-loganwiggins?" || window.location.href == "https://loganwiggins.com/projects-loganwiggins?/") {
+        window.open("https://www.loganwiggins.com/projects-loganwiggins?", "_self");
+    }
+    else if (window.location.href == "https://loganwiggins.com/projects-holdeverything?" || window.location.href == "https://loganwiggins.com/projects-holdeverything?/") {
+        window.open("https://www.loganwiggins.com/projects-holdeverything?", "_self");
+    }
+    else if (window.location.href == "https://loganwiggins.com/projects-induserv?" || window.location.href == "https://loganwiggins.com/projects-induserv?/") {
+        window.open("https://www.loganwiggins.com/projects-induserv?", "_self");
+    }
+    else if (window.location.href == "https://loganwiggins.com/projects-intconvert?" || window.location.href == "https://loganwiggins.com/projects-intconvert?/") {
+        window.open("https://www.loganwiggins.com/projects-intconvert?", "_self");
+    }
+
+// --------------------
+
 sessionStorage.setItem("location", "projects");
 
 // "ALL PROJECTS" CARD LINKS

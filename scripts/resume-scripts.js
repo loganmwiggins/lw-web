@@ -1,3 +1,8 @@
+// REROUTING
+if (window.location.href == "https://loganwiggins.com/resume?" || window.location.href == "https://loganwiggins.com/resume?/") {
+    window.open("https://www.loganwiggins.com/resume?", "_self");
+}
+
 sessionStorage.setItem("location", "resume");
 
 // RESUME BUTTON

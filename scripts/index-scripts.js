@@ -1,6 +1,6 @@
-// if (window.location == "https://loganwiggins.com") {
-//     window.open("https://www.loganwiggins.com", "_self");
-// }
+if (window.location.href == "https://loganwiggins.com" || window.location.href == "https://loganwiggins.com/") {
+    window.open("https://www.loganwiggins.com", "_self");
+}
 
 sessionStorage.setItem("location", "home");
 
