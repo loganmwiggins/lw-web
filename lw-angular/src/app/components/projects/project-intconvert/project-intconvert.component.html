@@ -1,0 +1,149 @@
+<div class="display-body">
+    <div class="title-card scroll-hidden">
+        <div class="title-card-right proj-detail-title">
+            <button class="back-btn" routerLink="/projects">
+                <img src="assets/icons/project-icons/back-white.svg" draggable="false">
+                All Projects
+            </button>
+        </div>
+    </div>
+
+    <!-- Details -->
+    <div class="info-card project-detail scroll-hidden">
+        
+        <div class="proj-detail-head">
+            <h1>IntConvert</h1>
+        </div>
+        <p>
+            IntConvert was developed with the goal of creating a simple, intuitive, and
+            well-designed application for converting integers with different bases. As a result, with this app, users
+            are able to easily make accurate conversions between the binary, octal, decimal, and hexadecimal number systems.
+        </p>
+        <div class="ext-links-row">
+            <div class="ext-link" (click)="openICsite()">
+                <img src="assets/icons/project-icons/external-circle-grey.svg" draggable="false">
+                <p class="hide-on-tablet">Open</p>
+            </div>
+            <div class="ext-link" (click)="openICGitHub()">
+                <img src="assets/icons/project-icons/github-circle-grey.svg" draggable="false">
+                <p class="hide-on-tablet">GitHub</p>
+            </div>
+            <div class="ext-link" (click)="openICYouTube()">
+                <img src="assets/icons/project-icons/youtube-circle-grey.svg" draggable="false">
+                <p class="hide-on-tablet">Demo</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mockup -->
+    <div class="info-card scroll-hidden">
+        <img src="assets/images/project-mockups/ic-mockup-min.png" draggable="false" class="proj-mockup">
+    </div>
+
+    <!-- Information -->
+    <div class="info-card scroll-hidden">
+        <div class="proj-info-divider">
+            <div>
+                <p class="info-card-label">Project Type</p>
+                <p>Personal Software Project</p>
+            </div>
+            <div>
+                <p class="info-card-label">Role</p>
+                <p>Sole Developer</p>
+            </div>
+            <div>
+                <p class="info-card-label">Last Updated</p>
+                <p>January 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Goals & Requirements -->
+    <div class="info-card scroll-hidden">
+        <p class="info-card-label">Goals & Requirements</p>
+        <div class="goal-ctnr">
+            <div class="goal-num"><p>1</p></div>
+            <div class="goal-text">
+                <h1>Conversions Between 4 Bases</h1>
+                <p>
+                    The main goal of this project was to allow users to convert integers between the
+                    binary, octal, decimal, and hexadecimal number systems. This is the minimum viable functionality
+                    of the application and was vital to the project. Additionally, I did not want to use 
+                    libraries for the conversions in order to get practice with programming logic and arithmetic.
+                </p>
+            </div>
+        </div>
+        <div class="goal-ctnr">
+            <div class="goal-num"><p>2</p></div>
+            <div class="goal-text">
+                <h1>Formula Calculation</h1>
+                <p>
+                    In addition to converting the integers between the number systems, I wanted to be able to show
+                    users how to perform the calculations themselves by displaying the math and functions required. Teaching
+                    users how to do the conversions on their own was just as important to me as the conversions themselves.
+                </p>
+            </div>
+        </div>
+        <div class="goal-ctnr">
+            <div class="goal-num"><p>3</p></div>
+            <div class="goal-text">
+                <h1>Input Validation</h1>
+                <p>
+                    I knew there could be issues with users trying to convert numbers that aren't compatible
+                    with the different number bases. Implementing validation for my input field was an important
+                    requirement for this project.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Languages Used -->
+    <div class="info-card scroll-hidden">
+        <p class="info-card-label">Languages Used</p>
+        <div class="lang-bar">
+            <div 
+                style="width: 66.8%; 
+                background-color: #ef4765;
+                border-radius: 2rem 0 0 2rem;"
+            ></div>
+            <div 
+                style="width: 20.9%; 
+                background-color: #47aeeb;"
+            ></div>
+            <div 
+                style="width: 12.3%; 
+                background-color: #6051fe;
+                border-radius: 0 2rem 2rem 0;"
+            ></div>
+        </div>
+        <div class="languages-ctnr">
+            <div class="language">
+                <div class="lang-indicator" style="background-color: #ef4765;"></div>
+                <p>JavaScript (66.8%)</p>
+            </div>
+            <div class="language">
+                <div class="lang-indicator" style="background-color: #47aeeb;"></div>
+                <p>CSS (20.9%)</p>
+            </div>
+            <div class="language">
+                <div class="lang-indicator" style="background-color: #6051fe;"></div>
+                <p>HTML (12.3%)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills & Features -->
+    <div class="info-card scroll-hidden">
+        <p class="info-card-label">Skills & Features</p>
+        <div class="saf">
+            <p>Custom conversion functions</p>
+            <p>Conversion formula calculation</p>
+            <p>UI/UX design</p>
+            <p>Dark/light theme feature</p>
+            <p>CSS media queries (responsive design)</p>
+            <p>CSS animation</p>
+            <p>Website optimization</p>
+            <p>Logo design</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,184 @@
+/* You can add GLOBAL STYLES to this file, and also import other style files */
+@import url("assets/stylesheets/fonts.css");
+@import url("assets/stylesheets/colors.css");
+@import url("assets/stylesheets/animations.css");
+/* *** */
+
+/* SCREEN WIDTH: DESKTOPS/TVS */
+html {
+    background-color: var(--accent-color);
+    font-family: "Poppins-Regular";
+    font-size: 62.5%; /* sets base font size to 10px (easy to use rem sizing) */
+}
+
+body { margin: 0; }
+
+/* Alert */
+.alert-ctnr {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 5;
+}
+
+.copy-message { 
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -100%;
+    transition: top 0.3s;
+
+    padding: .5rem 3rem;
+    background-color: black;
+    color: white;
+    box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.25);
+    font-size: 1.5rem;
+    border-radius: 2rem;
+
+    img { width: 2rem; height: 2rem; margin-left: 1rem; }
+}
+.copy-message.active { top: 1rem; }
+
+.display-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-family: "Poppins-Regular";
+    margin-bottom: 5rem;
+}
+
+.info-card {
+    background: var(--infocard-color);
+    width: 80%;
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+    margin: 1rem;
+
+    a { transition: color 0.2s ease-in-out; }
+    a:hover {
+        color: var(--accent-color);
+        transition: color 0.2s ease-in-out;
+    }
+    p {
+        margin: 0 0 1rem 0;
+        font-size: 2rem;
+    }
+    .info-card-label {
+        opacity: 0.6;
+        margin: 1rem 0;
+        font-size: 1.75rem;
+        cursor: default;
+    }
+}
+
+a:link, a:visited, a:hover, a:active { text-decoration: none; color: var(--secondary-color); }
+
+/* Page titles */
+.title-card {
+    display: flex;
+    align-items: center;
+    background: var(--infocard-color);
+    width: 80%;
+    margin: 4rem 0 1rem 0;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+.title-card-left {
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+    h1 { 
+        font-family: "Poppins-Bold";
+        font-size: 4rem;
+        opacity: 0.9;
+        margin: 0;
+    }
+}
+.title-card-right {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.only-show-on-mobile { display: none !important; }
+
+
+
+
+
+/* SCREEN WIDTH: LAPTOPS */
+@media (max-width: 1200px) {
+    .hide-on-laptop { display: none; }
+    .only-show-on-mobile { display: none !important; }
+
+    .info-card {
+        width: 65%;
+        font-size: 1.2rem;
+        padding: 2rem 4rem;
+        margin: 1rem;
+
+        p { font-size: 2rem; }
+        .info-card-label { font-size: 1.75rem; }
+    }
+    
+    .title-card { width: 65%; }
+}
+
+
+
+
+
+/* SCREEN WIDTH: TABLETS */
+@media (max-width: 800px) {
+    .hide-on-tablet { display: none; }
+    .only-show-on-mobile { display: none !important; }
+
+    .info-card {
+        margin: .5rem 0;
+        width: 70%;
+        background: var(--mobile-infocard-color);
+
+        p { font-size: 1.75rem; }
+        .info-card-label { font-size: 1.5rem; }
+    }
+    .title-card {
+        flex-direction: column;
+        width: 70%;
+        background: var(--mobile-infocard-color);
+        margin: 4rem 0 .5rem 0;
+    }
+    .title-card-left {
+        text-align: center; 
+        h1 { font-size: 3rem; }
+    }
+}
+
+
+
+
+
+/* SCREEN WIDTH: MOBILE */
+@media (max-width: 500px) {
+    .hide-on-mobile { display: none; }
+    .only-show-on-mobile { display: block !important; }
+    .info-card {
+        background: var(--mobile-infocard-color);
+        margin: .5rem 0;
+        width: 70%;
+
+        p { font-size: 1.5rem; }
+        .info-card-label { font-size: 1.25rem; }
+        
+    }
+    .title-card { margin: 4rem .5rem .5rem .5rem; }
+    .title-card-left {
+        h1 { font-size: 2.25rem; }
+        p { white-space: nowrap; }
+    }
+}   

@@ -1,0 +1,50 @@
+<div class="nav-ctnr">
+    <!-- Directory -->
+    <button type="button" class="menu-button" routerLink="/home" routerLinkActive="active-link">
+        <div class="menu-button-content">
+            <img 
+                [src]="getImageSrc('/home', 'assets/icons/nav-icons/user.svg', 'assets/icons/nav-icons/user-filled.svg')"
+                id="homeIcon"
+                draggable="false"
+            >
+            <h2>Home</h2>
+        </div>
+    </button>
+    <button type="button" class="menu-button" routerLink="/resume" routerLinkActive="active-link">
+        <div class="menu-button-content">
+            <img 
+                [src]="getImageSrc('/resume', 'assets/icons/nav-icons/resume.svg', 'assets/icons/nav-icons/resume-filled.svg')"
+                id="resumeIcon"
+                draggable="false"
+            >
+            <h2>Resume</h2>
+        </div>
+    </button>
+    <button type="button" class="menu-button" routerLink="/projects" routerLinkActive="active-link">
+        <div class="menu-button-content">
+            <img
+                [src]="getImageSrc('/projects', 'assets/icons/nav-icons/projects.svg', 'assets/icons/nav-icons/projects-filled.svg')"
+                id="projectsIcon"
+                draggable="false"
+            >
+            <h2>Projects</h2>
+        </div>
+    </button>
+    <button type="button" class="menu-button" (click)="toggleSettingsMenu()">
+        <div class="menu-button-content">
+            <img
+                [src]="isSettingsOpen ? 'assets/icons/nav-icons/options-filled.svg' : 'assets/icons/nav-icons/options.svg'"
+                id="settingsIcon"
+                draggable="false"
+            >
+            <h2>Settings</h2>
+        </div>
+    </button>
+
+    <!-- Bottom nav -->
+    <div class="bottom-nav-ctnr">
+        <button type="button" class="collapse-btn" (click)="toggleNavCollapse()">
+            <img src="assets/icons/nav-icons/collapse.svg" id="collapseIcon" draggable="false">
+        </button>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+/* Scroll animations */
+.scroll-hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-25%);
+
+    transition: opacity 1s, filter 1s, transform 1s;
+}
+
+.scroll-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+
+/* Other animations */
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes openSettings {
+    0% { 
+        opacity: 0; 
+        translate: 20rem 0;
+    }
+    100% { 
+        opacity: 1;
+        translate: 0;
+    }
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes openResumeCard {
+    0% { 
+        opacity: 0; 
+        translate: 0 -15rem;
+    }
+    100% { 
+        opacity: 1;
+        translate: 0 -4rem;
+    }
+}
+
+
+
+@media(prefers-reduced-motion) {
+    .scroll-hidden { transition: none; }
+}

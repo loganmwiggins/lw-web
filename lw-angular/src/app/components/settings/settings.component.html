@@ -1,0 +1,23 @@
+<div class="settings-window">
+    <div class="settings-content">
+        <div class="settings-header">
+            <h1>Settings</h1>
+            <p class="settings-close-btn" (click)="onToggleSettings()">Close</p>
+        </div>
+        <div class="setting-ctnr">
+            <div class="setting-row">
+                <img [src]="siteColor == 'light' ? 'assets/icons/nav-icons/sun.svg' : 'assets/icons/nav-icons/moon.svg'" draggable="false" id="themeIcon">
+                <button id="sitecolor-btn" (click)="onChangeColor()">
+                    <div>{{ siteColor == "light" ? 'Light mode' : 'Dark mode' }}</div>
+                </button>
+            </div>
+            <div class="setting-row">
+                <img src="assets/icons/settings-icons/brush.svg" draggable="false" id="brushIcon">
+                <select id="theme-select" [value]="siteTheme" (change)="onChangeTheme($event)">
+                    <option value="glass">Glass</option>
+                    <option value="minimal">Minimal</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
