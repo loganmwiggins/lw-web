@@ -1,6 +1,5 @@
 ## Logan Wiggins Personal Website
 
---------
 
 #### Welcome
 
@@ -8,7 +7,8 @@ I began working on this website back in November of 2022 with no prior experienc
 
 #### Notable features
 
-- UI/UX design
-- Light/dark mode toggle
+- Stunning UI/UX design
+- User UI personalization (light/dark mode and themes)
 - Resume card skills dropdown
 - Custom tooltips
+- Custom alerts
