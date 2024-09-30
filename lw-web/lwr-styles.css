@@ -744,7 +744,10 @@ html {
 }
 .rcs-close-btn { display: none; }
 
-.skills-arrow { transition: transform 0.2s ease; }
+.skills-arrow { 
+    opacity: .75;
+    transition: transform 0.2s ease; 
+}
 
 #skills-jmf p {
     background: #0c8591;
