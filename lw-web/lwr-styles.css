@@ -1438,8 +1438,11 @@ html {
 
 
     /* "HOME": TABLETS */
-    .name-and-photo h1 { font-size: 3.5rem; }
-    .index-title-card-left { gap: 1rem; }
+    .index-title-card-left { gap: 2rem; }
+    .name-and-photo {
+        img { width: 5rem; height: 5rem; }
+        h1 { font-size: 2.75rem; }
+    } 
     .index-tags {
         div {
             background: var(--mobile-button-color);
@@ -1622,7 +1625,10 @@ html {
 
 
     /* "HOME": MOBILE */
-    .name-and-photo h1 { font-size: 3rem; }
+    .name-and-photo {
+        img { width: 4.5rem; height: 4.5rem; }
+        h1 { font-size: 2.5rem; }
+    } 
     .index-tags div p { font-size: 1.5rem; }
 
 
