@@ -603,7 +603,10 @@ html {
 .pdf-btn {
     display: flex;
     align-items: center;
-    background: linear-gradient(to bottom right, #EF4765, #ff79d7);
+    /* background: linear-gradient(to bottom right, #EF4765, #ff79d7); */
+    /* background: linear-gradient(to bottom right, #4a90e2, #6a5acd); */
+    background: linear-gradient(to bottom right, #57a2d1, #6a5acd);
+
     border: none;
     border-radius: 1rem;
     margin-left: 1rem;
@@ -625,7 +628,7 @@ html {
     }
 }
 .pdf-btn:hover {
-    box-shadow: 0 0 1rem rgba(239, 71, 101, 0.75);
+    box-shadow: 0 0 1rem #4a90e2;
     transition: box-shadow 0.2s ease;
 }
 .pdf-btn:active { box-shadow: none; }
@@ -1082,7 +1085,8 @@ html {
     h1 { font-size: 1.5rem }
 }
 .back-btn {
-    background: linear-gradient(to bottom right, #EF4765, #ff79d7);
+    /* background: linear-gradient(to bottom right, #EF4765, #ff79d7); */
+    background: linear-gradient(to bottom right, #57a2d1, #6a5acd);
     border: none;
     border-radius: 1rem;
     color: white;
@@ -1095,7 +1099,10 @@ html {
     transition: box-shadow .1s ease-in-out;
     align-items: center;
 }
-.back-btn:hover { box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(250, 90, 255, 0.5); }
+.back-btn:hover { 
+    box-shadow: 0 0 1rem #4a90e2;
+    transition: box-shadow 0.2s ease;
+}
 
 .proj-info-card {
     flex: 1;
