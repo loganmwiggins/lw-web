@@ -745,19 +745,11 @@ html {
 .rcs-close-btn { display: none; }
 
 .skills-arrow { transition: transform 0.2s ease; }
-#skills-fsu p { 
-    background: #811d35; 
-    border: 1px solid #4b111e;
+
+#skills-jmf p {
+    background: #0c8591;
+    border: 1px solid #0a6169;
     color: #fff; 
-    opacity: .8;
-}
-#skills-aitp p {
-    background: #ffc559;
-    border: 1px solid #d1a148;
-}
-#skills-stars p {
-    background: #82e6ff;
-    border: 1px solid #6abed3;
 }
 #skills-pcg p {
     background: #abee6d;
@@ -780,6 +772,20 @@ html {
 #skills-pub p {
     background: #73e97d;
     border: 1px solid #58b15f;
+}
+#skills-fsu p { 
+    background: #811d35; 
+    border: 1px solid #4b111e;
+    color: #fff; 
+    opacity: .8;
+}
+#skills-aitp p {
+    background: #ffc559;
+    border: 1px solid #d1a148;
+}
+#skills-stars p {
+    background: #82e6ff;
+    border: 1px solid #6abed3;
 }
 
 /* Skill cards section */
