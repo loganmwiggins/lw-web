@@ -288,7 +288,7 @@ html {
     align-items: center;
 
     h1 { 
-        font-family: "Poppins-Bold";
+        font-family: "Poppins-Medium";
         font-size: 4rem;
         opacity: 0.9;
         margin: 0;
@@ -537,7 +537,7 @@ html {
         box-shadow: .5rem .5rem 2rem rgba(122, 122, 122, .2);
     }
     h1 { 
-        font-family: "Poppins-Bold";
+        font-family: "Poppins-Medium";
         font-size: 4rem;
         opacity: 0.9;
         margin: 0;
