@@ -1642,8 +1642,8 @@ html {
 
     /* "HOME": MOBILE */
     .name-and-photo {
-        img { width: 4.5rem; height: 4.5rem; }
-        h1 { font-size: 2.5rem; }
+        img { width: 4.75rem; height: 4.75rem; }
+        h1 { font-size: 2.25rem; }
     } 
     .index-tags div p { font-size: 1.5rem; }
 
